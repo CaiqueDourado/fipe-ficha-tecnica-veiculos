@@ -10,21 +10,11 @@ The FIPE table is Brazil's monthly reference of used and new vehicle prices (ins
 
 ## How each vehicle is structured
 
-Linked by FIPE code and model year, the tables nest into one record per vehicle: brand → model (FIPE code) → model year → monthly prices and specification versions, plus the model's product pairs. `scripts/make_json.py` in the repository writes it from these files. The Ford EcoSport Freestyle 1.6 16V Flex 2012, trimmed (the whole record: https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/blob/main/docs/example-vehicle.json):
+Linked by FIPE code and model year, the tables nest into one record per vehicle: brand → model (FIPE code) → model year → monthly prices and specification versions, plus the model's product pairs. `scripts/make_json.py` in the repository writes it from these files. One car, the Ford EcoSport Freestyle 1.6 16V Flex 2012:
 
-```json
-{"marca": "Ford", "tipo_veiculo": "carro",
- "modelos": [{"codigo_modelo": 6157, "codigo_fipe": "003367-7", "modelo": "EcoSport FREESTYLE 1.6 16V Flex 5p",
-   "anos": [{"ano_modelo": 2012, "zero_km": false,
-     "precos": [{"referencia": "2020-01", "valor": 33276, "combustivel": "Gasolina", "fonte": "dump"}, …,
-                {"referencia": "2026-10", "valor": 41862, "combustivel": "Flex", "fonte": "fipe_api"}],
-     "fichas": [{"id_versao": 37057, "versao": "Freestyle 1.6 16V (Flex)",
-                 "motor": {"potencia_cv": "115 (Etanol) / 110 (Gasolina)", …},
-                 "medidas": {"comprimento_mm": 4239, "porta_malas_l": 296, …},
-                 "itens": {"airbag_motorista": true, "freios_abs": true, …},
-                 "caracteristicas": {"Conforto / Ar condicionado": "Sim", …}}]}],
-   "produtos": {"pares": 15, "por_confianca": {"baixa": 15}, "exemplos": […]}}]}
-```
+![One vehicle, one record in JSON](https://raw.githubusercontent.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/main/docs/img/vehicle-json.png)
+
+The whole record: https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/blob/main/docs/example-vehicle.json
 
 ![Used vehicle prices, January 2020 = 100](https://raw.githubusercontent.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/main/docs/img/used-prices.png)
 

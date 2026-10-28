@@ -29,6 +29,10 @@ do modelo. O `scripts/make_json.py` escreve essa árvore a partir de `sample/` o
 Kaggle. O Ford EcoSport Freestyle 1.6 16V Flex 2012, resumido (o registro inteiro, com os 39 preços e as 81
 características de cada versão, está em [docs/example-vehicle.json](docs/example-vehicle.json)):
 
+![Um veículo, um registro em JSON](docs/img/vehicle-json.png)
+
+<details><summary>JSON em texto</summary>
+
 ```json
 {
   "marcas": [
@@ -111,6 +115,8 @@ características de cada versão, está em [docs/example-vehicle.json](docs/exam
   ]
 }
 ```
+
+</details>
 
 - `precos`: um item por mês de referência. O combustível mudou de "Gasolina" para "Flex" entre as duas
   fontes ([qualidade dos dados](docs/data-quality.md), em inglês).
@@ -284,7 +290,7 @@ sample/        todas as linhas de 300 modelos sorteados, em CSV
 schema/        definição das colunas e metadados
 scripts/       exportar_fipe.py (SQL Server -> Parquet), coletor_fipe.py (API oficial da FIPE),
                probe_globo_fipe.py, probe_brasilapi_fipe.py, perfil_fipe.py, build_veiculos.py,
-               validate.py, make_figures.py, make_json.py, docs.py
+               validate.py, make_figures.py, make_json.py, make_json_image.py, docs.py
 textos/        texto a partir dos dados (python -m textos); tests/ os testes
 notebooks/     eda.ipynb
 docs/          metodologia, qualidade, APIs, dicionário de dados, JSON de exemplo, descrição do Kaggle, imagens

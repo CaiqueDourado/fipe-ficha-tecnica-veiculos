@@ -28,6 +28,10 @@ model. `scripts/make_json.py` writes it, from `sample/` or from the full Kaggle 
 Freestyle 1.6 16V Flex 2012, trimmed (the whole record, with its 39 prices and 81 specifications per
 version, is in [docs/example-vehicle.json](docs/example-vehicle.json)):
 
+![One vehicle, one record in JSON](docs/img/vehicle-json.png)
+
+<details><summary>JSON as text</summary>
+
 ```json
 {
   "marcas": [
@@ -110,6 +114,8 @@ version, is in [docs/example-vehicle.json](docs/example-vehicle.json)):
   ]
 }
 ```
+
+</details>
 
 - `precos`: one entry per reference month. The fuel changed from "Gasolina" to "Flex" between the two
   sources ([data quality](docs/data-quality.md)).
@@ -266,7 +272,7 @@ sample/        every row of 300 random models, in CSV
 schema/        column definitions and dataset metadata
 scripts/       exportar_fipe.py (SQL Server -> Parquet), coletor_fipe.py (official FIPE API),
                probe_globo_fipe.py, probe_brasilapi_fipe.py, perfil_fipe.py, build_veiculos.py,
-               validate.py, make_figures.py, make_json.py, docs.py
+               validate.py, make_figures.py, make_json.py, make_json_image.py, docs.py
 textos/        text from the data (python -m textos); tests/ its tests
 notebooks/     eda.ipynb
 docs/          methodology, data quality, APIs, data dictionary, example JSON, Kaggle description, images
