@@ -21,57 +21,13 @@ Dados de veículos do Brasil em três partes:
   produto da [base do catálogo de e-commerce](https://github.com/CaiqueDourado/catalogo-produtos-ecommerce-brasil)
   (tapetes, palhetas, capas...). Cada par tem um nível de alerta, porque a maioria está errada.
 
-| Arquivo | Linhas | O que tem |
-|---|---:|---|
-| `marcas` | 245 | marcas da FIPE e tipo de veículo |
-| `modelos` | 11.948 | modelos (versões) da FIPE, código FIPE e nomes curtos usados no casamento |
-| `precos` | 1.653.840 | preço por mês, código FIPE, ano-modelo e combustível |
-| `fichas` | 37.794 | uma linha por versão, com 81 colunas de ficha técnica |
-| `ficha_caracteristicas` | 2.704.962 | a mesma ficha em formato longo |
-| `ficha_titulos` | 87 | títulos de seção e perguntas de FAQ para escrever texto a partir da ficha |
-| `veiculo_produto` | 25.456.723 | modelo de veículo × grupo de produto, com `confianca` (alta, media, baixa) |
-
-Os arquivos completos (Parquet) estão no [Kaggle](https://www.kaggle.com/datasets/caiquedourado/fipe-ficha-tecnica-veiculos).
-Este repositório tem os scripts, a documentação e a pasta `sample/`, com todas as linhas de 300 modelos
-sorteados.
-
-## Um carro nas três partes
-
-**Ford EcoSport Freestyle 1.6 16V Flex 2012** (código FIPE `003367-7`, modelo 6157), em `sample/`:
-
-| | |
-|---|---|
-| FIPE, janeiro de 2020 | R$ 33.276 |
-| FIPE, janeiro de 2022 | R$ 41.247 |
-| FIPE, fevereiro de 2023 | R$ 42.026 |
-| FIPE, outubro de 2026 | R$ 41.862 |
-| Mobiauto, setembro de 2022 | R$ 41.403 |
-| Ficha técnica | 115 cv (etanol) / 110 cv (gasolina), porta-malas de 296 l, airbag do motorista e do passageiro, ABS |
-| Produtos casados por "EcoSport" | todos com `confianca = baixa`: a chave casou 12.656 produtos |
-
-Um carro que tinha oito anos em 2020 ficou 24% mais caro em dois anos, e em outubro de 2026 ainda valia
-26% a mais que em janeiro de 2020. Não foi exceção:
-
-![Preços de usados, janeiro de 2020 = 100](docs/img/used-prices.pt-BR.png)
-
-Carros, motos e caminhões usados, do mesmo código FIPE e ano-modelo, subiram de 20% a 28% entre meados de
-2021 e meados de 2022, quando faltavam veículos novos. Em fevereiro de 2023, os preços ainda não tinham
-voltado.
-
-Quanto do preço de zero km um carro mantém, por idade, em outubro de 2026 (mediana de 917 carros com preço
-de zero km e preços de usado do mesmo código FIPE):
-
-![Parte do preço de zero km por idade](docs/img/depreciation.pt-BR.png)
-
-86% no primeiro ano, 57% depois de cinco anos, 39% depois de dez e 28% depois de quinze.
-
 ## Como cada veículo está estruturado
 
-As sete tabelas se encaixam numa árvore: **marca → modelo (código FIPE) → ano-modelo → preços por mês e
-versões da ficha técnica**, mais os pares de produto do modelo. O `scripts/make_json.py` escreve essa
-árvore a partir de `sample/` ou dos arquivos completos do Kaggle. O EcoSport acima, resumido (o registro
-inteiro, com os 39 preços e as 81 características de cada versão, está em
-[docs/example-vehicle.json](docs/example-vehicle.json)):
+Ligadas por código FIPE e ano-modelo, as sete tabelas se encaixam num registro por veículo: **marca →
+modelo (código FIPE) → ano-modelo → preços por mês e versões da ficha técnica**, mais os pares de produto
+do modelo. O `scripts/make_json.py` escreve essa árvore a partir de `sample/` ou dos arquivos completos do
+Kaggle. O Ford EcoSport Freestyle 1.6 16V Flex 2012, resumido (o registro inteiro, com os 39 preços e as 81
+características de cada versão, está em [docs/example-vehicle.json](docs/example-vehicle.json)):
 
 ```json
 {
@@ -171,6 +127,52 @@ python scripts/make_json.py                                           # sample/ 
 python scripts/make_json.py --fipe 003367-7 --ano 2012 --out carro.json
 python scripts/make_json.py --data <pasta do Kaggle> --out veiculos.jsonl # todos os modelos, um por linha
 ```
+
+## Arquivos
+
+| Arquivo | Linhas | O que tem |
+|---|---:|---|
+| `marcas` | 245 | marcas da FIPE e tipo de veículo |
+| `modelos` | 11.948 | modelos (versões) da FIPE, código FIPE e nomes curtos usados no casamento |
+| `precos` | 1.653.840 | preço por mês, código FIPE, ano-modelo e combustível |
+| `fichas` | 37.794 | uma linha por versão, com 81 colunas de ficha técnica |
+| `ficha_caracteristicas` | 2.704.962 | a mesma ficha em formato longo |
+| `ficha_titulos` | 87 | títulos de seção e perguntas de FAQ para escrever texto a partir da ficha |
+| `veiculo_produto` | 25.456.723 | modelo de veículo × grupo de produto, com `confianca` (alta, media, baixa) |
+
+Os arquivos completos (Parquet) estão no [Kaggle](https://www.kaggle.com/datasets/caiquedourado/fipe-ficha-tecnica-veiculos).
+Este repositório tem os scripts, a documentação e a pasta `sample/`, com todas as linhas de 300 modelos
+sorteados.
+
+## Um carro nas três partes
+
+**Ford EcoSport Freestyle 1.6 16V Flex 2012** (código FIPE `003367-7`, modelo 6157), em `sample/`:
+
+| | |
+|---|---|
+| FIPE, janeiro de 2020 | R$ 33.276 |
+| FIPE, janeiro de 2022 | R$ 41.247 |
+| FIPE, fevereiro de 2023 | R$ 42.026 |
+| FIPE, outubro de 2026 | R$ 41.862 |
+| Mobiauto, setembro de 2022 | R$ 41.403 |
+| Ficha técnica | 115 cv (etanol) / 110 cv (gasolina), porta-malas de 296 l, airbag do motorista e do passageiro, ABS |
+| Produtos casados por "EcoSport" | todos com `confianca = baixa`: a chave casou 12.656 produtos |
+
+Um carro que tinha oito anos em 2020 ficou 24% mais caro em dois anos, e em outubro de 2026 ainda valia
+26% a mais que em janeiro de 2020. Não foi exceção:
+
+![Preços de usados, janeiro de 2020 = 100](docs/img/used-prices.pt-BR.png)
+
+Carros, motos e caminhões usados, do mesmo código FIPE e ano-modelo, subiram de 20% a 28% entre meados de
+2021 e meados de 2022, quando faltavam veículos novos. Em fevereiro de 2023, os preços ainda não tinham
+voltado.
+
+Quanto do preço de zero km um carro mantém, por idade, em outubro de 2026 (mediana de 917 carros com preço
+de zero km e preços de usado do mesmo código FIPE):
+
+![Parte do preço de zero km por idade](docs/img/depreciation.pt-BR.png)
+
+86% no primeiro ano, 57% depois de cinco anos, 39% depois de dez e 28% depois de quinze.
 
 ## De onde vieram os dados
 

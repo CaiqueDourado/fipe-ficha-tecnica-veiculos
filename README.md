@@ -20,54 +20,13 @@ Brazilian vehicle data in three parts:
   of the [e-commerce catalog dataset](https://github.com/CaiqueDourado/catalogo-produtos-ecommerce-brasil)
   (floor mats, wiper blades, covers...), each with a warning level, because most are wrong.
 
-| File | Rows | What |
-|---|---:|---|
-| `marcas` | 245 | FIPE brands and vehicle type |
-| `modelos` | 11,948 | FIPE models (versions), FIPE code, short names used for matching |
-| `precos` | 1,653,840 | price per month, FIPE code, model year and fuel |
-| `fichas` | 37,794 | one row per version, 81 specification columns |
-| `ficha_caracteristicas` | 2,704,962 | the same specifications in long form |
-| `ficha_titulos` | 87 | section titles and FAQ questions for writing text from the specifications |
-| `veiculo_produto` | 25,456,723 | vehicle model × product group, with `confianca` (alta, media, baixa) |
-
-The full files (Parquet) are on [Kaggle](https://www.kaggle.com/datasets/caiquedourado/fipe-ficha-tecnica-veiculos).
-This repository has the scripts, the documentation and `sample/`: every row of 300 random models.
-
-## One car in all three parts
-
-**Ford EcoSport Freestyle 1.6 16V Flex 2012** (FIPE code `003367-7`, model 6157), in `sample/`:
-
-| | |
-|---|---|
-| FIPE, January 2020 | R$ 33,276 |
-| FIPE, January 2022 | R$ 41,247 |
-| FIPE, February 2023 | R$ 42,026 |
-| FIPE, October 2026 | R$ 41,862 |
-| Mobiauto, September 2022 | R$ 41,403 |
-| Specifications | 115 cv (ethanol) / 110 cv (gasoline), 296 l trunk, driver and passenger airbags, ABS |
-| Products matched by "EcoSport" | all `confianca = baixa`: the key matched 12,656 products |
-
-A car that was eight years old in 2020 became 24% more expensive in two years, and in October 2026 it was
-still worth 26% more than in January 2020. It was not an exception:
-
-![Used vehicle prices, January 2020 = 100](docs/img/used-prices.png)
-
-Used cars, motorcycles and trucks of the same FIPE code and model year rose 20–28% from mid-2021 to
-mid-2022, when new vehicles were scarce, and did not come back down by February 2023.
-
-How much of the zero km price a car keeps, by age, in October 2026 (median of 917 cars with a zero km
-price and used prices of the same FIPE code):
-
-![Share of the zero km price by age](docs/img/depreciation.png)
-
-86% in the first year, 57% after five years, 39% after ten and 28% after fifteen.
-
 ## How each vehicle is structured
 
-The seven tables nest into one tree: **brand → model (FIPE code) → model year → monthly prices and
-specification versions**, plus the product pairs of the model. `scripts/make_json.py` writes it, from
-`sample/` or from the full Kaggle files. The EcoSport above, trimmed (the whole record, with its 39
-prices and 81 specifications per version, is in [docs/example-vehicle.json](docs/example-vehicle.json)):
+Linked by FIPE code and model year, the seven tables nest into one record per vehicle: **brand → model
+(FIPE code) → model year → monthly prices and specification versions**, plus the product pairs of the
+model. `scripts/make_json.py` writes it, from `sample/` or from the full Kaggle files. The Ford EcoSport
+Freestyle 1.6 16V Flex 2012, trimmed (the whole record, with its 39 prices and 81 specifications per
+version, is in [docs/example-vehicle.json](docs/example-vehicle.json)):
 
 ```json
 {
@@ -166,6 +125,50 @@ python scripts/make_json.py                                           # sample/ 
 python scripts/make_json.py --fipe 003367-7 --ano 2012 --out carro.json
 python scripts/make_json.py --data <kaggle folder> --out veiculos.jsonl # all models, one per line
 ```
+
+## Files
+
+| File | Rows | What |
+|---|---:|---|
+| `marcas` | 245 | FIPE brands and vehicle type |
+| `modelos` | 11,948 | FIPE models (versions), FIPE code, short names used for matching |
+| `precos` | 1,653,840 | price per month, FIPE code, model year and fuel |
+| `fichas` | 37,794 | one row per version, 81 specification columns |
+| `ficha_caracteristicas` | 2,704,962 | the same specifications in long form |
+| `ficha_titulos` | 87 | section titles and FAQ questions for writing text from the specifications |
+| `veiculo_produto` | 25,456,723 | vehicle model × product group, with `confianca` (alta, media, baixa) |
+
+The full files (Parquet) are on [Kaggle](https://www.kaggle.com/datasets/caiquedourado/fipe-ficha-tecnica-veiculos).
+This repository has the scripts, the documentation and `sample/`: every row of 300 random models.
+
+## One car in all three parts
+
+**Ford EcoSport Freestyle 1.6 16V Flex 2012** (FIPE code `003367-7`, model 6157), in `sample/`:
+
+| | |
+|---|---|
+| FIPE, January 2020 | R$ 33,276 |
+| FIPE, January 2022 | R$ 41,247 |
+| FIPE, February 2023 | R$ 42,026 |
+| FIPE, October 2026 | R$ 41,862 |
+| Mobiauto, September 2022 | R$ 41,403 |
+| Specifications | 115 cv (ethanol) / 110 cv (gasoline), 296 l trunk, driver and passenger airbags, ABS |
+| Products matched by "EcoSport" | all `confianca = baixa`: the key matched 12,656 products |
+
+A car that was eight years old in 2020 became 24% more expensive in two years, and in October 2026 it was
+still worth 26% more than in January 2020. It was not an exception:
+
+![Used vehicle prices, January 2020 = 100](docs/img/used-prices.png)
+
+Used cars, motorcycles and trucks of the same FIPE code and model year rose 20–28% from mid-2021 to
+mid-2022, when new vehicles were scarce, and did not come back down by February 2023.
+
+How much of the zero km price a car keeps, by age, in October 2026 (median of 917 cars with a zero km
+price and used prices of the same FIPE code):
+
+![Share of the zero km price by age](docs/img/depreciation.png)
+
+86% in the first year, 57% after five years, 39% after ten and 28% after fifteen.
 
 ## Where the data came from
 
