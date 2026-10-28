@@ -20,7 +20,7 @@ em CSV aqui, Parquet no Kaggle, e um arquivo SQLite e o JSON por veículo nas [r
   sim ou não (airbags, ABS, ar-condicionado...). Veio das páginas da tabela FIPE do Mobiauto, em setembro
   de 2022.
 - **Casamento veículo × produto**: 25,5 milhões de pares candidatos entre modelos da FIPE e os grupos de
-  produto da [base do catálogo de e-commerce](https://github.com/CaiqueDourado/catalogo-produtos-ecommerce-brasil)
+  produto da [base do catálogo de e-commerce](https://github.com/CaiqueDourado/brazilian-ecommerce-products)
   (tapetes, palhetas, capas...). Cada par tem um nível de alerta, porque a maioria está errada.
 
 ## Como cada veículo está estruturado
@@ -138,7 +138,7 @@ python scripts/make_json.py --data <pasta do Kaggle> --out veiculos.jsonl # todo
 
 ### Os mesmos pares, do lado do produto
 
-O `veiculo_produto` lido ao contrário: um grupo de produto do [catálogo de e-commerce](https://github.com/CaiqueDourado/catalogo-produtos-ecommerce-brasil) e todos os
+O `veiculo_produto` lido ao contrário: um grupo de produto do [catálogo de e-commerce](https://github.com/CaiqueDourado/brazilian-ecommerce-products) e todos os
 veículos da FIPE casados com ele, agrupados pela chave que casou. Um jogo de calotas de centro de roda para o
 Mercedes GLC 250, resumido (o registro inteiro está em [docs/example-product.json](docs/example-product.json)):
 
@@ -411,7 +411,7 @@ stats.json     contagens de cada etapa do build
 
 ## Relacionados
 
-- [catalogo-produtos-ecommerce-brasil](https://github.com/CaiqueDourado/catalogo-produtos-ecommerce-brasil): os grupos de produto de `veiculo_produto`.
+- [brazilian-ecommerce-products](https://github.com/CaiqueDourado/brazilian-ecommerce-products): os grupos de produto de `veiculo_produto`.
 - [DedupKit](https://github.com/CaiqueDourado/DedupKit): casamento de nomes de produtos em português, o problema por trás do ruído de `veiculo_produto`.
 - [PtBr.Text](https://github.com/CaiqueDourado/PtBr.Text): texto em português a partir de dados para .NET (número por extenso, dinheiro, plural e gênero), a mesma ideia do `textos/`.
 - [municipios-e-estados-do-brasil](https://github.com/CaiqueDourado/municipios-e-estados-do-brasil): estados e municípios, para análises regionais.

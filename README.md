@@ -19,7 +19,7 @@ Parquet on Kaggle, and a SQLite file and JSON per vehicle in the [releases](http
 - **Specifications** of 37,794 car and motorcycle versions: engine, power, consumption, dimensions and 58
   yes/no items (airbags, ABS, air conditioning...), from the FIPE pages of Mobiauto, September 2022.
 - **Vehicle × product matches**: 25.5 million candidate pairs between FIPE models and the product groups
-  of the [e-commerce catalog dataset](https://github.com/CaiqueDourado/catalogo-produtos-ecommerce-brasil)
+  of the [e-commerce catalog dataset](https://github.com/CaiqueDourado/brazilian-ecommerce-products)
   (floor mats, wiper blades, covers...), each with a warning level, because most are wrong.
 
 ## How each vehicle is structured
@@ -136,7 +136,7 @@ python scripts/make_json.py --data <kaggle folder> --out veiculos.jsonl # all mo
 
 ### The same pairs, from the product side
 
-`veiculo_produto` read the other way: one product group of the [e-commerce catalog](https://github.com/CaiqueDourado/catalogo-produtos-ecommerce-brasil) and every FIPE
+`veiculo_produto` read the other way: one product group of the [e-commerce catalog](https://github.com/CaiqueDourado/brazilian-ecommerce-products) and every FIPE
 vehicle matched to it, grouped by the key that matched. A set of wheel center caps for the Mercedes GLC 250,
 trimmed (the whole record is in [docs/example-product.json](docs/example-product.json)):
 
@@ -393,7 +393,7 @@ stats.json     counts of every build step
 
 ## Related
 
-- [catalogo-produtos-ecommerce-brasil](https://github.com/CaiqueDourado/catalogo-produtos-ecommerce-brasil): the product groups of `veiculo_produto`.
+- [brazilian-ecommerce-products](https://github.com/CaiqueDourado/brazilian-ecommerce-products): the product groups of `veiculo_produto`.
 - [DedupKit](https://github.com/CaiqueDourado/DedupKit): matching product names in Portuguese, the problem behind the noise in `veiculo_produto`.
 - [PtBr.Text](https://github.com/CaiqueDourado/PtBr.Text): Portuguese text from data for .NET (numbers in words, money, plural and gender), the same idea as `textos/`.
 - [municipios-e-estados-do-brasil](https://github.com/CaiqueDourado/municipios-e-estados-do-brasil): Brazilian states and cities, for regional analysis.

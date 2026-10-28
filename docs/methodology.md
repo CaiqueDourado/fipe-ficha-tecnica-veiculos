@@ -75,7 +75,7 @@ Changes for the release:
 
 For the auto parts pages of the author's sites ("Tapete para Gol", "Palheta para Onix"), each FIPE model
 was searched by name inside the names of the product groups of the
-[e-commerce catalog dataset](https://github.com/CaiqueDourado/catalogo-produtos-ecommerce-brasil):
+[e-commerce catalog dataset](https://github.com/CaiqueDourado/brazilian-ecommerce-products):
 
 1. brand + first word (`VW Gol`), with the brand rewritten for GM, VW, Mercedes and Harley-Davidson (the key
    keeps the SQL wildcard: `MERCEDES% GLC` stands for "Mercedes-Benz GLC");
