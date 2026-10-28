@@ -1,0 +1,246 @@
+codigo_marca,marca,tipo_veiculo,slug,fonte
+1,Acura,carro,acura,dump
+2,Agrale,carro,agrale,dump
+3,Alfa Romeo,carro,alfa-romeo,dump
+4,AM Gen,carro,am-gen,dump
+5,Asia Motors,carro,asia-motors,dump
+6,Audi,carro,audi,dump
+7,BMW,carro,bmw,dump
+8,BRM,carro,brm,dump
+9,Buggy,carro,buggy,dump
+10,Cadillac,carro,cadillac,dump
+11,CBT Jipe,carro,cbt-jipe,dump
+12,Chrysler,carro,chrysler,dump
+13,Citroën,carro,citroen,dump
+14,Cross Lander,carro,cross-lander,dump
+15,Daewoo,carro,daewoo,dump
+16,Daihatsu,carro,daihatsu,dump
+17,Dodge,carro,dodge,dump
+18,Engesa,carro,engesa,dump
+19,Envemo,carro,envemo,dump
+20,Ferrari,carro,ferrari,dump
+21,Fiat,carro,fiat,dump
+22,Ford,carro,ford,dump
+23,GM - Chevrolet,carro,gm-chevrolet,dump
+24,Gurgel,carro,gurgel,dump
+25,Honda,carro,honda,dump
+26,Hyundai,carro,hyundai,dump
+27,Isuzu,carro,isuzu,dump
+28,Jaguar,carro,jaguar,dump
+29,Jeep,carro,jeep,dump
+30,JPX,carro,jpx,dump
+31,Kia Motors,carro,kia-motors,dump
+32,Lada,carro,lada,dump
+33,Land Rover,carro,land-rover,dump
+34,Lexus,carro,lexus,dump
+35,Lotus,carro,lotus,dump
+36,Maserati,carro,maserati,dump
+37,Matra,carro,matra,dump
+38,Mazda,carro,mazda,dump
+39,Mercedes-Benz,carro,mercedes-benz,dump
+40,Mercury,carro,mercury,dump
+41,Mitsubishi,carro,mitsubishi,dump
+42,Miura,carro,miura,dump
+43,Nissan,carro,nissan,dump
+44,Peugeot,carro,peugeot,dump
+45,Plymouth,carro,plymouth,dump
+46,Pontiac,carro,pontiac,dump
+47,Porsche,carro,porsche,dump
+48,Renault,carro,renault,dump
+49,Rover,carro,rover,dump
+50,Saab,carro,saab,dump
+51,Saturn,carro,saturn,dump
+52,Seat,carro,seat,dump
+54,Subaru,carro,subaru,dump
+55,Suzuki,carro,suzuki,dump
+56,Toyota,carro,toyota,dump
+57,Troller,carro,troller,dump
+58,Volvo,carro,volvo,dump
+59,VW - VolksWagen,carro,vw-volkswagen,dump
+60,ADLY,moto,adly,dump
+61,AGRALE,moto,agrale,dump
+62,APRILIA,moto,aprilia,dump
+63,ATALA,moto,atala,dump
+64,BAJAJ,moto,bajaj,dump
+65,BETA,moto,beta,dump
+66,BIMOTA,moto,bimota,dump
+67,BMW,moto,bmw,dump
+68,BRANDY,moto,brandy,dump
+69,byCristo,moto,bycristo,dump
+70,CAGIVA,moto,cagiva,dump
+71,CALOI,moto,caloi,dump
+72,DAELIM,moto,daelim,dump
+73,DERBI,moto,derbi,dump
+74,DUCATI,moto,ducati,dump
+75,EMME,moto,emme,dump
+76,GAS GAS,moto,gas-gas,dump
+77,HARLEY-DAVIDSON,moto,harley-davidson,dump
+78,HARTFORD,moto,hartford,dump
+79,HERO,moto,hero,dump
+80,HONDA,moto,honda,dump
+81,HUSABERG,moto,husaberg,dump
+82,HUSQVARNA,moto,husqvarna,dump
+85,KAWASAKI,moto,kawasaki,dump
+86,KIMCO,moto,kimco,dump
+87,KTM,moto,ktm,dump
+88,L'AQUILA,moto,laquila,dump
+89,LAVRALE,moto,lavrale,dump
+90,MOTO GUZZI,moto,moto-guzzi,dump
+91,MV AGUSTA,moto,mv-agusta,dump
+92,MVK,moto,mvk,dump
+93,ORCA,moto,orca,dump
+94,PEUGEOT,moto,peugeot,dump
+95,PIAGGIO,moto,piaggio,dump
+96,SANYANG,moto,sanyang,dump
+97,SIAMOTO,moto,siamoto,dump
+98,SUNDOWN,moto,sundown,dump
+99,SUZUKI,moto,suzuki,dump
+100,TRIUMPH,moto,triumph,dump
+101,YAMAHA,moto,yamaha,dump
+102,AGRALE,caminhao,agrale,dump
+103,CHEVROLET,caminhao,chevrolet,dump
+104,FIAT,caminhao,fiat,dump
+105,FORD,caminhao,ford,dump
+106,GMC,caminhao,gmc,dump
+108,MARCOPOLO,caminhao,marcopolo,dump
+109,MERCEDES-BENZ,caminhao,mercedes-benz,dump
+110,NAVISTAR,caminhao,navistar,dump
+111,NEOBUS,caminhao,neobus,dump
+112,PUMA-ALFA,caminhao,puma-alfa,dump
+113,SAAB-SCANIA,caminhao,saab-scania,dump
+114,SCANIA,caminhao,scania,dump
+115,VOLKSWAGEN,caminhao,volkswagen,dump
+116,VOLVO,caminhao,volvo,dump
+117,BUELL,moto,buell,dump
+118,KASINSKI,moto,kasinski,dump
+119,TRAXX,moto,traxx,dump
+120,Walk,carro,walk,dump
+121,CICCOBUS,caminhao,ciccobus,dump
+122,IVECO,caminhao,iveco,dump
+123,Bugre,carro,bugre,dump
+125,SSANGYONG,carro,ssangyong,dump
+126,MIZA,moto,miza,dump
+127,LOBINI,carro,lobini,dump
+128,FYM,moto,fym,dump
+129,KAHENA,moto,kahena,dump
+130,BRAVA,moto,brava,dump
+131,AMAZONAS,moto,amazonas,dump
+132,FOX,moto,fox,dump
+133,GREEN,moto,green,dump
+134,SHINERAY,moto,shineray,dump
+135,WUYANG,moto,wuyang,dump
+136,CHANA,carro,chana,dump
+137,DAYANG,moto,dayang,dump
+138,HAOBAO,moto,haobao,dump
+139,LERIVO,moto,lerivo,dump
+140,Mahindra,carro,mahindra,dump
+141,JIAPENG VOLCANO,moto,jiapeng-volcano,dump
+142,DAYUN,moto,dayun,dump
+143,GARINNI,moto,garinni,dump
+144,WALKBUS,caminhao,walkbus,dump
+145,DAFRA,moto,dafra,dump
+146,Malaguti,moto,malaguti,dump
+147,EFFA,carro,effa,dump
+148,Lon-V,moto,lon-v,dump
+149,Fibravan,carro,fibravan,dump
+150,BRP,moto,brp,dump
+151,JONNY,moto,jonny,dump
+152,HAFEI,carro,hafei,dump
+153,GREAT WALL,carro,great-wall,dump
+154,JINBEI,carro,jinbei,dump
+155,BUENO,moto,bueno,dump
+156,MINI,carro,mini,dump
+157,smart,carro,smart,dump
+158,IROS,moto,iros,dump
+159,LANDUM,moto,landum,dump
+160,MRX,moto,mrx,dump
+161,Caoa Chery/Chery,carro,caoa-chery-chery,dump
+162,Benelli,moto,benelli,dump
+163,Wake,carro,wake,dump
+164,PEGASSI,moto,pegassi,dump
+165,TAC,carro,tac,dump
+166,SINOTRUK,caminhao,sinotruk,dump
+167,MG,carro,mg,dump
+168,LIFAN,carro,lifan,dump
+169,REGAL PARTOR,moto,regal-partor,dump
+170,Fyber,carro,fyber,dump
+171,LAMBORGHINI,carro,lamborghini,dump
+172,REGAL RARTOR,moto,regal-rartor,dump
+173,REGAL RAPTOR,moto,regal-raptor,dump
+174,JOHNNYPAG,moto,johnnypag,dump
+175,MAGRÃO TRICICLOS,moto,magrao-triciclos,dump
+176,TARGOS,moto,targos,dump
+177,JAC,carro,jac,dump
+178,LIFAN,moto,lifan,dump
+179,EFFA-JMC,caminhao,effa-jmc,dump
+180,VENTO,moto,vento,dump
+181,HYUNDAI,caminhao,hyundai,dump
+182,CHANGAN,carro,changan,dump
+183,SHINERAY,carro,shineray,dump
+184,MAN,caminhao,man,dump
+185,RAM,carro,ram,dump
+186,RELY,carro,rely,dump
+187,TIGER,moto,tiger,dump
+188,JAC,caminhao,jac,dump
+189,ASTON MARTIN,carro,aston-martin,dump
+190,FOTON,carro,foton,dump
+191,FOTON,caminhao,foton,dump
+192,Royal Enfield,moto,royal-enfield,dump
+193,SHACMAN,caminhao,shacman,dump
+194,MAXIBUS,caminhao,maxibus,dump
+195,Rolls-Royce,carro,rolls-royce,dump
+196,MASCARELLO,caminhao,mascarello,dump
+197,DAF,caminhao,daf,dump
+198,RIGUETE,moto,riguete,dump
+199,GEELY,carro,geely,dump
+200,MOTORINO,moto,motorino,dump
+201,MOTOCAR,moto,motocar,dump
+202,INDIAN,moto,indian,dump
+203,HAOJUE,moto,haojue,dump
+204,KYMCO,moto,kymco,dump
+205,BEE,moto,bee,dump
+206,BEPOBUS,caminhao,bepobus,dump
+207,Baby,carro,baby,dump
+208,IVECO,carro,iveco,dump
+209,FUSCO MOTOSEGURA,moto,fusco-motosegura,dump
+210,POLARIS,moto,polaris,dump
+211,Mclaren,carro,mclaren,dump
+212,BULL,moto,bull,dump
+213,HITECH ELETRIC,carro,hitech-eletric,dump
+214,HITECH ELECTRIC,carro,hitech-electric,dump
+215,VOLTZ,moto,voltz,dump
+216,AVELLOZ,moto,avelloz,dump
+236,CAB Motors,carro,cab-motors,dump
+237,SUPER SOCO,moto,super-soco,dump
+238,BYD,carro,byd,dump
+239,NIU,moto,niu,dump
+240,GWM,carro,,fipe_api
+241,D2D Motors,carro,,fipe_api
+242,ZONTES,moto,,fipe_api
+243,WATTS,moto,,fipe_api
+244,Ventane Motors,moto,,fipe_api
+245,Caoa Chery,carro,,fipe_api
+246,DFSK,carro,,fipe_api
+247,SERES,carro,,fipe_api
+248,FEVER,moto,,fipe_api
+249,FEVER,carro,,fipe_api
+250,NETA,carro,,fipe_api
+251,Jaecoo,carro,,fipe_api
+252,Omoda,carro,,fipe_api
+253,ZEEKR,carro,,fipe_api
+254,GAC,carro,,fipe_api
+255,MOTOMORINI,moto,,fipe_api
+256,VESPA,moto,,fipe_api
+257,ARROW,caminhao,,fipe_api
+258,LEVA,moto,,fipe_api
+259,Mobílli,moto,,fipe_api
+260,Leapmotor,carro,,fipe_api
+261,Hisun,moto,,fipe_api
+262,SBM,moto,,fipe_api
+263,Denza,carro,,fipe_api
+264,Jetour,carro,,fipe_api
+265,Caoa Changan,carro,,fipe_api
+266,CFMOTO,moto,,fipe_api
+267,SWM,moto,,fipe_api
+268,VOGE,moto,,fipe_api
+269,ARROW,carro,,fipe_api

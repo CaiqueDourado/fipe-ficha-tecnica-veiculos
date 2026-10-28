@@ -1,0 +1,301 @@
+codigo_modelo,codigo_marca,tipo_veiculo,codigo_fipe,modelo,modelo_curto,primeiro_nome,primeiro_segundo_nome,primeiro_nome_marca,slug,fonte
+46,6,carro,008001-2,80 2.0,80,80,,Audi 80,80-2-0,dump
+65,6,carro,008006-3,A3 1.8 Turbo 3p Mec.,A3,A3,A3 1.8,Audi A3,a3-1-8-turbo-3p-mec,dump
+126,6,carro,008062-4,A8 4.2 Quattro Tiptronic,A8,A8,A8 4.2,Audi A8,a8-4-2-quattro-tiptronic,dump
+134,6,carro,008069-1,S4 2.7 Avant Turbo Quattro,S4,S4,S4 2.7,Audi S4,s4-2-7-avant-turbo-quattro,dump
+141,6,carro,008099-3,S6 4.2 V8 40V Quattro Mec,S6,S6,S6 4.2,Audi S6,s6-4-2-v8-40v-quattro-mec,dump
+182,7,carro,009094-8,325iA 2.5 24V Protection,325iA,325iA,325iA 2.5,BMW 325iA,325ia-2-5-24v-protection,dump
+300,13,carro,011003-5,Evasion VSX Turbo,Evasion VSX Turbo,Evasion,Evasion VSX,Citroën Evasion,evasion-vsx-turbo,dump
+315,13,carro,011016-7,Xantia SX 1.8,Xantia SX,Xantia,Xantia SX,Citroën Xantia,xantia-sx-1-8,dump
+362,15,carro,030009-8,Lanos SX 1.6 16V Aut.,Lanos SX,Lanos,Lanos SX,Daewoo Lanos,lanos-sx-1-6-16v-aut,dump
+367,15,carro,030014-4,Nubira SW CDX 2.0 16V Aut.,Nubira SW CDX,Nubira,Nubira SW,Daewoo Nubira,nubira-sw-cdx-2-0-16v-aut,dump
+402,17,carro,013011-7,Dakota Sport 5.2 V8,Dakota Sport,Dakota,Dakota Sport,Dodge Dakota,dakota-sport-5-2-v8,dump
+410,17,carro,013009-5,Stealth 3.0 MPI,Stealth,Stealth,Stealth 3.0,Dodge Stealth,stealth-3-0-mpi,dump
+433,20,carro,031006-9,456 GTA,456 GTA,456,,Ferrari 456,456-gta,dump
+452,21,carro,001167-3,Doblo EX 1.3 Fire 16V 80cv 4/5p,Doblo EX,Doblo,Doblo EX,Fiat Doblo,doblo-ex-1-3-fire-16v-80cv-4-5p,dump
+463,21,carro,001130-4,Ducato-10 Furgão 2.5 Diesel,Ducato-10 Furgão,Ducato-10,Ducato-10 Furgão,Fiat Ducato-10,ducato-10-furgao-2-5-diesel,dump
+509,21,carro,001009-0,Palio 1.6 mpi 16V 2p,Palio,Palio,Palio 1.6,Fiat Palio,palio-1-6-mpi-16v-2p,dump
+568,21,carro,001033-2,Premio CS 1.6/ 1.5/ 1.3 2p,Premio CS,Premio,Premio CS,Fiat Premio,premio-cs-1-6-1-5-1-3-2p,dump
+657,22,carro,003021-0,Belina GL 1.8 / 1.6,Belina GL,Belina,Belina GL,Ford Belina,belina-gl-1-8-1-6,dump
+709,22,carro,003041-4,Escort XR3 2.0i Conversível,Escort XR3,Escort,Escort XR3,Ford Escort,escort-xr3-2-0i-conversivel,dump
+786,22,carro,003287-5,Fiesta Sed. Personnalité 1.0 8V 4p,Fiesta Sed. Personnalité,Fiesta,Fiesta Sed.,Ford Fiesta,fiesta-sed-personnalite-1-0-8v-4p,dump
+910,22,carro,003191-7,Taurus LX SW 3.0 V6 24V,Taurus LX SW,Taurus,Taurus LX,Ford Taurus,taurus-lx-sw-3-0-v6-24v,dump
+937,23,carro,004312-5,Astra Advantage 2.0 MPFI FlexPower 8V 3p,Astra Advantage,Astra,Astra Advantage,GM - Chevrolet Astra,astra-advantage-2-0-mpfi-flexpower-8v-3p,dump
+941,23,carro,004253-6,Astra Elegance 2.0 MPFI FlexPower 8V 3p,Astra Elegance,Astra,Astra Elegance,GM - Chevrolet Astra,astra-elegance-2-0-mpfi-flexpower-8v-3p,dump
+973,23,carro,004116-5,C-10 De Luxe 2.5/4.1,C-10 De Luxe,C-10,C-10 De,GM - Chevrolet C-10,c-10-de-luxe-2-5-4-1,dump
+980,23,carro,004155-6,Camaro RS 5.0 V8,Camaro RS,Camaro,Camaro RS,GM - Chevrolet Camaro,camaro-rs-5-0-v8,dump
+1018,23,carro,004286-2,Corsa Hat. Joy 1.8 MPFI 8V FlexPower 5p,Corsa Hat. Joy,Corsa,Corsa Hat.,GM - Chevrolet Corsa,corsa-hat-joy-1-8-mpfi-8v-flexpower-5p,dump
+1074,23,carro,004034-7,D-20 S / Luxe 3.9/4.0 Diesel,D-20 S / Luxe,D-20,D-20 S,GM - Chevrolet D-20,d-20-s-luxe-3-9-4-0-diesel,dump
+1076,23,carro,004036-3,D-20 S / El Caminho 3.9/4.0 CD T.Dies,D-20 S / El Caminho,D-20,D-20 S,GM - Chevrolet D-20,d-20-s-el-caminho-3-9-4-0-cd-t-dies,dump
+1130,23,carro,004018-5,S10 Blazer Std. 2.2 MPFI / EFI,S10 Blazer Std,S10,S10 Blazer,GM - Chevrolet S10,s10-blazer-std-2-2-mpfi-efi,dump
+1186,23,carro,004151-3,Silverado Sport/ Fleet Side 5.7 CS,Silverado Sport/ Fleet Side,Silverado,Silverado Sport/,GM - Chevrolet Silverado,silverado-sport-fleet-side-5-7-cs,dump
+1216,23,carro,004296-0,Vectra Elegance 2.0 MPFI,Vectra Elegance,Vectra,Vectra Elegance,GM - Chevrolet Vectra,vectra-elegance-2-0-mpfi,dump
+1269,25,carro,014043-0,Civic Sedan LXL 1.7 16V 130cv Mec 4p,Civic Sedan LXL,Civic,Civic Sedan,Honda Civic,civic-sedan-lxl-1-7-16v-130cv-mec-4p,dump
+1293,26,carro,015033-9,Atos Prime GLS 1.0 Mec.,Atos Prime GLS,Atos,Atos Prime,Hyundai Atos,atos-prime-gls-1-0-mec,dump
+1460,33,carro,033023-0,Discovery ES TD5 2.5 4x4 4p Diesel Aut.,Discovery ES TD5,Discovery,Discovery ES,Land Rover Discovery,discovery-es-td5-2-5-4x4-4p-diesel-aut,dump
+1474,34,carro,057020-6,ES-300 3.0,ES-300,ES-300,,Lexus ES-300,es-300-3-0,dump
+1577,39,carro,021082-0,Classic 6.0,Classic,Classic,,Mercedes-Benz Classic,classic-6-0,dump
+1581,39,carro,021116-8,CLK-320 AvantGarde Cabriolet,CLK-320 AvantGarde Cabriolet,CLK-320,CLK-320 AvantGarde,Mercedes-Benz CLK-320,clk-320-avantgarde-cabriolet,dump
+1736,41,carro,022037-0,Lancer LS 1.8,Lancer LS,Lancer,Lancer LS,Mitsubishi Lancer,lancer-ls-1-8,dump
+1746,41,carro,022055-8,Pajero GLS 3.0 V6 4p Aut.,Pajero GLS,Pajero,Pajero GLS,Mitsubishi Pajero,pajero-gls-3-0-v6-4p-aut,dump
+1747,41,carro,022047-7,Pajero GLS 3.0 V6 4p Mec.,Pajero GLS,Pajero,Pajero GLS,Mitsubishi Pajero,pajero-gls-3-0-v6-4p-mec,dump
+1781,43,carro,023051-0,350Z 3.5 V6 280cv/ 312cv 2p,350Z,350Z,350Z 3.5,Nissan 350Z,350z-3-5-v6-280cv-312cv-2p,dump
+1861,44,carro,024095-8,206 Selection 1.6 16V 110cv 3p,206 Selection,206,206 Selection,Peugeot 206,206-selection-1-6-16v-110cv-3p,dump
+1910,44,carro,024012-5,405 SRi 2.0,405 SRi,405,405 SRi,Peugeot 405,405-sri-2-0,dump
+1954,47,carro,035026-5,911 Carrera 4S Cabriolet-4 3.6/3.8,911 Carrera,911,911 Carrera,Porsche 911,911-carrera-4s-cabriolet-4-3-6-3-8,dump
+1966,47,carro,035019-2,911 Carrera Evo Coupe,911 Carrera Evo Coupe,911,911 Carrera,Porsche 911,911-carrera-evo-coupe,dump
+2043,48,carro,025010-4,Laguna Nevada RT/ RXE 2.0s 16V,Laguna Nevada RT/ RXE,Laguna,Laguna Nevada,Renault Laguna,laguna-nevada-rt-rxe-2-0s-16v,dump
+2095,50,carro,053001-8,9000 CD 2.3 Turbo,9000 CD,9000,9000 CD,Saab 9000,9000-cd-2-3-turbo,dump
+2150,54,carro,027026-1,Legacy GL/ GLS 2.0 Aut.,Legacy GL/ GLS,Legacy,Legacy GL/,Subaru Legacy,legacy-gl-gls-2-0-aut,dump
+2166,55,carro,028010-0,Baleno Wagon 1.6 16V Aut.,Baleno Wagon,Baleno,Baleno Wagon,Suzuki Baleno,baleno-wagon-1-6-16v-aut,dump
+2173,55,carro,028037-2,Grand Vitara 2.0 16V 5p/Gold Mec. (Arg.),Grand Vitara,Grand,Grand Vitara,Suzuki Grand,grand-vitara-2-0-16v-5p-gold-mec-arg,dump
+2177,55,carro,028027-5,Grand Vitara 2.5 V6 5p Aut.,Grand Vitara,Grand,Grand Vitara,Suzuki Grand,grand-vitara-2-5-v6-5p-aut,dump
+2200,55,carro,028017-8,Vitara JLX 2.0 V6 4x4,Vitara JLX,Vitara,Vitara JLX,Suzuki Vitara,vitara-jlx-2-0-v6-4x4,dump
+2250,56,carro,002076-1,Hilux CD SR 4x4 3.0 8V 90cv Diesel,Hilux CD SR,Hilux,Hilux CD,Toyota Hilux,hilux-cd-sr-4x4-3-0-8v-90cv-diesel,dump
+2263,56,carro,002086-9,Hilux CS D4-D 4x4 2.5 16V 102cv TB Dies.,Hilux CS D4-D,Hilux,Hilux CS,Toyota Hilux,hilux-cs-d4-d-4x4-2-5-16v-102cv-tb-dies,dump
+2294,57,carro,056006-5,T-4 4x4 3.0 TB Int. Cap. Lona Diesel,T-4,T-4,T-4 4x4,Troller T-4,t-4-4x4-3-0-tb-int-cap-lona-diesel,dump
+2301,58,carro,029031-9,850 GLT SW 2.5 20V,850 GLT SW,850,850 GLT,Volvo 850,850-glt-sw-2-5-20v,dump
+2317,58,carro,029013-0,S40 T-4,S40 T-4,S40,,Volvo S40,s40-t-4,dump
+2332,58,carro,029046-7,S80 2.9 ARM,S80,S80,S80 2.9,Volvo S80,s80-2-9-arm,dump
+2370,59,carro,005205-1,Fox City 1.0 Mi/ 1.0Mi Total Flex 8V 5p,Fox City,Fox,Fox City,VW - VolksWagen Fox,fox-city-1-0-mi-1-0mi-total-flex-8v-5p,dump
+2383,59,carro,005147-0,Gol 1.0 Plus 16v 4p,Gol,Gol,Gol 1.0,VW - VolksWagen Gol,gol-1-0-plus-16v-4p,dump
+2384,59,carro,005150-0,Gol 1.0 Plus 8v 2p,Gol,Gol,Gol 1.0,VW - VolksWagen Gol,gol-1-0-plus-8v-2p,dump
+2407,59,carro,005030-0,Gol 1000 Mi Plus 8v 2p e 4p,Gol,Gol,Gol 1000,VW - VolksWagen Gol,gol-1000-mi-plus-8v-2p-e-4p,dump
+2586,61,moto,801006-4,ELEFANT 27.5 190cc,ELEFANT,ELEFANT,ELEFANT 27.5,AGRALE ELEFANT,elefant-27-5-190cc,dump
+2626,67,moto,803015-4,F 650 GS/Dakar,F,F,F 650,BMW F,f-650-gs-dakar,dump
+2670,72,moto,807001-6,ALTINO 100cc,ALTINO,ALTINO,,DAELIM ALTINO,altino-100cc,dump
+2673,72,moto,807004-0,VF 125 D,VF,VF,VF 125,DAELIM VF,vf-125-d,dump
+2678,73,moto,844007-7,GPR 50R 49cc,GPR,GPR,GPR 50R,DERBI GPR,gpr-50r-49cc,dump
+2726,77,moto,810040-3,ELECTRA GLIDE SCREAMING EAGLE,ELECTRA GLIDE SCREAMING EAGLE,ELECTRA,ELECTRA GLIDE,HARLEY-DAVIDSON ELECTRA,electra-glide-screaming-eagle,dump
+2807,80,moto,811033-6,NX-4 FALCON 400,NX-4 FALCON,NX-4,NX-4 FALCON,HONDA NX-4,nx-4-falcon-400,dump
+2839,82,moto,812013-7,TE 400,TE,TE,,HUSQVARNA TE,te-400,dump
+2952,93,moto,820004-1,JC 125-8,JC,JC,,ORCA JC,jc-125-8,dump
+2979,98,moto,824004-3,FIFTY 50cc,FIFTY,FIFTY,,SUNDOWN FIFTY,fifty-50cc,dump
+2994,99,moto,825043-0,BOULEVARD C1500,BOULEVARD C1500,BOULEVARD,,SUZUKI BOULEVARD,boulevard-c1500,dump
+3013,99,moto,825040-5,INTRUDER 125,INTRUDER,INTRUDER,,SUZUKI INTRUDER,intruder-125,dump
+3044,100,moto,826024-9,SPEED TRIPLE 955i,SPEED TRIPLE,SPEED,SPEED TRIPLE,TRIUMPH SPEED,speed-triple-955i,dump
+3126,102,caminhao,501025-0,8000 Furgovan 4.3 TDI 145cv Aut 4p,8000 Furgovan,8000,8000 Furgovan,AGRALE 8000,8000-furgovan-4-3-tdi-145cv-aut-4p,dump
+3160,105,caminhao,504083-3,CARGO 1217 3-Eixos 2p (diesel),CARGO,CARGO,CARGO 1217,FORD CARGO,cargo-1217-3-eixos-2p-diesel,dump
+3185,105,caminhao,504032-9,CARGO 1615 3-Eixos 2p (diesel),CARGO,CARGO,CARGO 1615,FORD CARGO,cargo-1615-3-eixos-2p-diesel,dump
+3230,105,caminhao,504059-0,F-13000 3-Eixos 2p (diesel),F-13000,F-13000,F-13000 3-Eixos,FORD F-13000,f-13000-3-eixos-2p-diesel,dump
+3350,109,caminhao,509031-8,709 2p (diesel),709,709,709 2p,MERCEDES-BENZ 709,709-2p-diesel,dump
+3368,109,caminhao,509240-0,Atego 2425 3-Eixos 2p (diesel),Atego,Atego,Atego 2425,MERCEDES-BENZ Atego,atego-2425-3-eixos-2p-diesel,dump
+3417,109,caminhao,509072-5,L-1517 3-Eixos 2p (diesel),L-1517,L-1517,L-1517 3-Eixos,MERCEDES-BENZ L-1517,l-1517-3-eixos-2p-diesel,dump
+3544,114,caminhao,513039-5,P-93 H 250 4x2 2p (diesel),P-93 H,P-93,P-93 H,SCANIA P-93,p-93-h-250-4x2-2p-diesel,dump
+3560,114,caminhao,513045-0,R-113 H 320 4x2 2p (diesel),R-113 H,R-113,R-113 H,SCANIA R-113,r-113-h-320-4x2-2p-diesel,dump
+3609,114,caminhao,513073-5,T-114 GA 360 4x2 NZ 2p (diesel),T-114 GA,T-114,T-114 GA,SCANIA T-114,t-114-ga-360-4x2-nz-2p-diesel,dump
+3650,115,caminhao,515084-1,13-190 2p (diesel),13-190,13-190,13-190 2p,VOLKSWAGEN 13-190,13-190-2p-diesel,dump
+3733,116,caminhao,516069-3,FH-12 420 6x2 2p (diesel),FH-12,FH-12,FH-12 420,VOLVO FH-12,fh-12-420-6x2-2p-diesel,dump
+3735,116,caminhao,516014-6,FH-12 420 GLOBETROTTER 4x2 2p (diesel),FH-12,FH-12,FH-12 420,VOLVO FH-12,fh-12-420-globetrotter-4x2-2p-diesel,dump
+3739,116,caminhao,516082-0,FH-12 460 6x2 2p TA/TB (diesel),FH-12,FH-12,FH-12 460,VOLVO FH-12,fh-12-460-6x2-2p-ta-tb-diesel,dump
+3762,116,caminhao,516068-5,NH-12 420 6x2 2p (diesel),NH-12,NH-12,NH-12 420,VOLVO NH-12,nh-12-420-6x2-2p-diesel,dump
+3810,105,caminhao,504108-2,CARGO 2831 6x4 T 3-Eixos 2p (diesel),CARGO,CARGO,CARGO 2831,FORD CARGO,cargo-2831-6x4-t-3-eixos-2p-diesel,dump
+3819,23,carro,004327-3,Meriva SS 1.8 MPFI 8V FlexPower 5p,Meriva SS,Meriva,Meriva SS,GM - Chevrolet Meriva,meriva-ss-1-8-mpfi-8v-flexpower-5p,dump
+3867,119,moto,814006-5,JH 70,JH,JH,,TRAXX JH,jh-70,dump
+3893,39,carro,021185-0,C-350 Sportcoupé 3.5 24V  272cv,C-350 Sportcoupé,C-350,C-350 Sportcoupé,Mercedes-Benz C-350,c-350-sportcoupe-3-5-24v-272cv,dump
+3904,48,carro,025112-7,Clio Authentique Hi-Flex 1.0 16V 5p,Clio Authentique Hi-Flex,Clio,Clio Authentique,Renault Clio,clio-authentique-hi-flex-1-0-16v-5p,dump
+3975,48,carro,025120-8,Megane Sedan Dynamique Hi-Flex 1.6 16V,Megane Sedan Dynamique Hi-Flex,Megane,Megane Sedan,Renault Megane,megane-sedan-dynamique-hi-flex-1-6-16v,dump
+3979,57,carro,056009-0,PANTANAL 3.0 TDI Elet. 4x4 CS Diesel,PANTANAL,PANTANAL,PANTANAL 3.0,Troller PANTANAL,pantanal-3-0-tdi-elet-4x4-cs-diesel,dump
+4046,122,caminhao,506025-7,STRALIS HD 450-S38T 2p (diesel),STRALIS HD,STRALIS,STRALIS HD,IVECO STRALIS,stralis-hd-450-s38t-2p-diesel,dump
+4106,125,carro,055001-9,Musso DX 2.9 Diesel,Musso DX,Musso,Musso DX,SSANGYONG Musso,musso-dx-2-9-diesel,dump
+4121,31,carro,018039-4,Magentis EX 2.0 16V Aut.,Magentis EX,Magentis,Magentis EX,Kia Motors Magentis,magentis-ex-2-0-16v-aut,dump
+4173,74,moto,808022-4,MONSTER S4-RS Testastretta 998cc,MONSTER S4-RS Testastretta,MONSTER,MONSTER S4-RS,DUCATI MONSTER,monster-s4-rs-testastretta-998cc,dump
+4271,116,caminhao,516122-3,NL-12 360 6x4 2p (diesel),NL-12,NL-12,NL-12 360,VOLVO NL-12,nl-12-360-6x4-2p-diesel,dump
+4432,7,carro,009125-1,550iA Security 4.8 32V,550iA Security,550iA,550iA Security,BMW 550iA,550ia-security-4-8-32v,dump
+4477,31,carro,018066-1,Sportage EX 2.0 16V Mec.,Sportage EX,Sportage,Sportage EX,Kia Motors Sportage,sportage-ex-2-0-16v-mec,dump
+4611,114,caminhao,513179-0,P-310 B 8x4 2p (diesel),P-310 B,P-310,P-310 B,SCANIA P-310,p-310-b-8x4-2p-diesel,dump
+4640,147,carro,066003-5,ULC VAN 1.0 8V 5p,ULC VAN,ULC,ULC VAN,EFFA ULC,ulc-van-1-0-8v-5p,dump
+4656,95,moto,822020-4,Liberty 200 200cc,Liberty,Liberty,Liberty 200,PIAGGIO Liberty,liberty-200-200cc,dump
+4658,101,moto,827071-6,XTZ 250X,XTZ,XTZ,,YAMAHA XTZ,xtz-250x,dump
+4702,39,carro,021214-8,SL-65 AMG 6.0 V12 612cv Aut,SL-65 AMG,SL-65,SL-65 AMG,Mercedes-Benz SL-65,sl-65-amg-6-0-v12-612cv-aut,dump
+4727,44,carro,024151-2,207 XS 1.6 Flex 16V 5p Aut.,207 XS,207,207 XS,Peugeot 207,207-xs-1-6-flex-16v-5p-aut,dump
+4788,91,moto,839005-3,BRUTALE 910R,BRUTALE,BRUTALE,,MV AGUSTA BRUTALE,brutale-910r,dump
+4841,23,carro,004357-5,CAPTIVA SPORT FWD 2.4 16V 171/185cv,CAPTIVA SPORT FWD,CAPTIVA,CAPTIVA SPORT,GM - Chevrolet CAPTIVA,captiva-sport-fwd-2-4-16v-171-185cv,dump
+4880,85,moto,817049-5,NINJA 250R,NINJA,NINJA,,KAWASAKI NINJA,ninja-250r,dump
+4924,23,carro,004360-5,Classic Life/LS 1.0 VHC FlexP. 4p,Classic Life/LS,Classic,Classic Life/LS,GM - Chevrolet Classic,classic-life-ls-1-0-vhc-flexp-4p,dump
+4986,44,carro,024160-1,307 Presence 2.0 Flex 16V 5p Aut.,307 Presence,307,307 Presence,Peugeot 307,307-presence-2-0-flex-16v-5p-aut,dump
+4992,59,carro,005295-7,Polo SPORTLINE I MOTION 1.6 T.Flex 5p,Polo SPORTLINE I MOTION,Polo,Polo SPORTLINE,VW - VolksWagen Polo,polo-sportline-i-motion-1-6-t-flex-5p,dump
+5014,159,moto,869001-4,MOTO TRUCK LD 150 ZH,MOTO TRUCK LD,MOTO,MOTO TRUCK,LANDUM MOTO,moto-truck-ld-150-zh,dump
+5023,21,carro,001283-1,Ducato Cargo Longo 2.3 ME Diesel,Ducato Cargo Longo,Ducato,Ducato Cargo,Fiat Ducato,ducato-cargo-longo-2-3-me-diesel,dump
+5028,21,carro,001286-6,Ducato Minibus 2.3 T.Alto ME Diesel,Ducato Minibus,Ducato,Ducato Minibus,Fiat Ducato,ducato-minibus-2-3-t-alto-me-diesel,dump
+5035,39,carro,021227-0,ML-350 3.0 V6  4x4 Diesel,ML-350,ML-350,ML-350 3.0,Mercedes-Benz ML-350,ml-350-3-0-v6-4x4-diesel,dump
+5075,156,carro,071006-7,COOPER CABRIO S 1.6 Aut.,COOPER CABRIO S,COOPER,COOPER CABRIO,MINI COOPER,cooper-cabrio-s-1-6-aut,dump
+5111,44,carro,024165-2,207 X-Line 1.4 Flex 8V 5p,207 X-Line,207,207 X-Line,Peugeot 207,207-x-line-1-4-flex-8v-5p,dump
+5115,59,carro,005314-7,Golf  BLACK EDITON 2.0 Mi T. Flex 8V Tip,Golf  BLACK EDITON,Golf,Golf,VW - VolksWagen Golf,golf-black-editon-2-0-mi-t-flex-8v-tip,dump
+5153,85,moto,817050-9,D-TRACKER X 250cc,D-TRACKER X,D-TRACKER,D-TRACKER X,KAWASAKI D-TRACKER,d-tracker-x-250cc,dump
+5206,114,caminhao,513190-1,R-380 A 4x2 2p (diesel),R-380 A,R-380,R-380 A,SCANIA R-380,r-380-a-4x2-2p-diesel,dump
+5223,77,moto,810052-7,XL 883N IRON,XL,XL,XL 883N,HARLEY-DAVIDSON XL,xl-883n-iron,dump
+5226,148,moto,863004-6,DELUXE 152cc,DELUXE,DELUXE,,Lon-V DELUXE,deluxe-152cc,dump
+5236,6,carro,008146-9,R8 5.2 V10 Quattro R-tronic/S-tronic,R8,R8,R8 5.2,Audi R8,r8-5-2-v10-quattro-r-tronic-s-tronic,dump
+5304,26,carro,015076-2,i30cw 2.0 16V 145cv Mec. 5p,i30cw,i30cw,i30cw 2.0,Hyundai i30cw,i30cw-2-0-16v-145cv-mec-5p,dump
+5323,114,caminhao,513195-2,R-420 A 4x2 HIGHLINE 2p (diesel),R-420 A,R-420,R-420 A,SCANIA R-420,r-420-a-4x2-highline-2p-diesel,dump
+5377,171,carro,078003-0,Gallardo Coupe Valentino Balboni LP550-2,Gallardo Coupe Valentino Balboni LP550-2,Gallardo,Gallardo Coupe,LAMBORGHINI Gallardo,gallardo-coupe-valentino-balboni-lp550-2,dump
+5460,74,moto,808034-8,MULTISTRADA 1200 1198cc,MULTISTRADA,MULTISTRADA,MULTISTRADA 1200,DUCATI MULTISTRADA,multistrada-1200-1198cc,dump
+5463,21,carro,001342-0,Punto ESSENCE Dualogic 1.6 Flex 16V 5p,Punto ESSENCE Dualogic,Punto,Punto ESSENCE,Fiat Punto,punto-essence-dualogic-1-6-flex-16v-5p,dump
+5470,154,carro,070006-1,TOPIC VAN STD 2.0 16V 4p,TOPIC VAN STD,TOPIC,TOPIC VAN,JINBEI TOPIC,topic-van-std-2-0-16v-4p,dump
+5475,58,carro,029080-7,C30 T-5 R-DESIGN 2.5 230cv Aut.,C30 T-5 R-DESIGN,C30,C30 T-5,Volvo C30,c30-t-5-r-design-2-5-230cv-aut,dump
+5500,39,carro,021242-3,C-250 CGI Sport 1.8 16V Aut.,C-250 CGI Sport,C-250,C-250 CGI,Mercedes-Benz C-250,c-250-cgi-sport-1-8-16v-aut,dump
+5616,21,carro,001359-5,500 Sport Air 1.4 16V/1.4 Flex 16V Aut.,500 Sport Air,500,500 Sport,Fiat 500,500-sport-air-1-4-16v-1-4-flex-16v-aut,dump
+5723,23,carro,004383-4,COBALT LS 1.4 8V FlexPower 4p,COBALT LS,COBALT,COBALT LS,GM - Chevrolet COBALT,cobalt-ls-1-4-8v-flexpower-4p,dump
+5746,39,carro,021250-4,CLS-350 CGI 3.5 306cv Aut.,CLS-350 CGI,CLS-350,CLS-350 CGI,Mercedes-Benz CLS-350,cls-350-cgi-3-5-306cv-aut,dump
+5774,109,caminhao,509293-0,Axor 2041 S/LS 2p (diesel) (E5),Axor,Axor,Axor 2041,MERCEDES-BENZ Axor,axor-2041-s-ls-2p-diesel-e5,dump
+5777,109,caminhao,509284-1,Atego 2426 6x2 2p (diesel) (E5),Atego,Atego,Atego 2426,MERCEDES-BENZ Atego,atego-2426-6x2-2p-diesel-e5,dump
+5807,114,caminhao,513238-0,G-480 B 8x4 2p (diesel) (E5),G-480 B,G-480,G-480 B,SCANIA G-480,g-480-b-8x4-2p-diesel-e5,dump
+5816,114,caminhao,513223-1,R-480 A 6x4 2p (diesel) (E5),R-480 A,R-480,R-480 A,SCANIA R-480,r-480-a-6x4-2p-diesel-e5,dump
+5829,114,caminhao,513214-2,P-310 A 4x2 2p (diesel) (E5),P-310 A,P-310,P-310 A,SCANIA P-310,p-310-a-4x2-2p-diesel-e5,dump
+5874,182,carro,081001-0,MINI STAR CS 1.0 8V 53cv (Pick-Up),MINI STAR CS,MINI,MINI STAR,CHANGAN MINI,mini-star-cs-1-0-8v-53cv-pick-up,dump
+5938,48,carro,025188-7,SANDERO STEPWAY Hi-F. R. CURL 1.6 16V 5p,SANDERO STEPWAY Hi-F. R. CURL,SANDERO,SANDERO STEPWAY,Renault SANDERO,sandero-stepway-hi-f-r-curl-1-6-16v-5p,dump
+5966,105,caminhao,504138-4,CARGO 1723 E Turbo 2p (diesel)(E5),CARGO,CARGO,CARGO 1723,FORD CARGO,cargo-1723-e-turbo-2p-diesel-e5,dump
+6024,122,caminhao,506087-7,TECTOR 170E22 ATTACK 4x2 2p (dies.)(E5),TECTOR,TECTOR,TECTOR 170E22,IVECO TECTOR,tector-170e22-attack-4x2-2p-dies-e5,dump
+6033,39,carro,021256-3,E-350 CGI Executive 3.5 306cv Aut.,E-350 CGI Executive,E-350,E-350 CGI,Mercedes-Benz E-350,e-350-cgi-executive-3-5-306cv-aut,dump
+6046,7,carro,009160-0,328iA 2.0 TB/2.0 TB Flex 16V 4p,328iA,328iA,328iA 2.0,BMW 328iA,328ia-2-0-tb-2-0-tb-flex-16v-4p,dump
+6119,39,carro,021258-0,E-63 AMG 5.5 V8 Bi-Turbo Aut.,E-63 AMG,E-63,E-63 AMG,Mercedes-Benz E-63,e-63-amg-5-5-v8-bi-turbo-aut_1,dump
+6124,39,carro,021264-4,ML-350 Sport CGI 3.5 V6 306cv 4x4 Aut.,ML-350 Sport CGI,ML-350,ML-350 Sport,Mercedes-Benz ML-350,ml-350-sport-cgi-3-5-v6-306cv-4x4-aut,dump
+6144,6,carro,008170-1,A4 2.0 16V TFSI Quattro Stronic,A4,A4,A4 2.0,Audi A4,a4-2-0-16v-tfsi-quattro-stronic,dump
+6150,7,carro,009166-9,650iA 4.4 407cv Bi-Turbo,650iA,650iA,650iA 4.4,BMW 650iA,650ia-4-4-407cv-bi-turbo,dump
+6157,22,carro,003367-7,EcoSport FREESTYLE 1.6 16V Flex 5p,EcoSport FREESTYLE,EcoSport,EcoSport FREESTYLE,Ford EcoSport,ecosport-freestyle-1-6-16v-flex-5p,dump
+6226,111,caminhao,517008-7,THUNDER WAY LOT./ESC. (diesel)(E5),THUNDER WAY LOT./ESC. (diesel)(E5),THUNDER,THUNDER WAY,NEOBUS THUNDER,thunder-way-lot-esc-diesel-e5,dump
+6244,55,carro,028050-0,Jimny 4SUN 1.3 16V,Jimny,Jimny,Jimny 4SUN,Suzuki Jimny,jimny-4sun-1-3-16v,dump
+6343,189,carro,085002-0,Vantage Coupe 4.7 V8 425cv,Vantage Coupe,Vantage,Vantage Coupe,ASTON MARTIN Vantage,vantage-coupe-4-7-v8-425cv,dump
+6400,48,carro,025195-0,Master 2.3 dCi Chassi 16V Diesel,Master,Master,Master 2.3,Renault Master,master-2-3-dci-chassi-16v-diesel,dump
+6425,22,carro,003380-4,Fiesta S 1.0 8V Flex 5p,Fiesta S,Fiesta,Fiesta S,Ford Fiesta,fiesta-s-1-0-8v-flex-5p,dump
+6476,192,moto,879001-9,Classic/Classic Chrome 500cc,Classic/Classic Chrome,Classic/Classic,Classic/Classic Chrome,Royal Enfield Classic,classic-classic-chrome-500cc,dump
+6532,23,carro,004436-9,PRISMA Sed. LT 1.4 8V FlexPower 4p Aut.,PRISMA Sed. LT,PRISMA,PRISMA Sed.,GM - Chevrolet PRISMA,prisma-sed-lt-1-4-8v-flexpower-4p-aut,dump
+6563,156,carro,071024-5,COOPER CABRIO John Works 1.6 Aut.,COOPER CABRIO John Works,COOPER,COOPER CABRIO,MINI COOPER,cooper-cabrio-john-works-1-6-aut,dump
+6564,156,carro,071022-9,COOPER COUPE John Works 1.6 Aut.,COOPER COUPE John Works,COOPER,COOPER COUPE,MINI COOPER,cooper-coupe-john-works-1-6-aut,dump
+6619,80,moto,811118-9,CB 500F,CB,CB,,HONDA CB,cb-500f,dump
+6736,122,caminhao,506136-9,DAILY Minibus FRETAM. 55C17 (dies.) (E5),DAILY Minibus FRETAM,DAILY,DAILY Minibus,IVECO DAILY,daily-minibus-fretam-55c17-dies-e5,dump
+6775,13,carro,011139-2,C3 Picasso Tendance 1.6 Flex 16V 5p Aut.,C3 Picasso Tendance,C3,C3 Picasso,Citroën C3,c3-picasso-tendance-1-6-flex-16v-5p-aut,dump
+6786,59,carro,005384-8,Gol Trendline 1.0 T.Flex 8V 5p,Gol Trendline,Gol,Gol Trendline,VW - VolksWagen Gol,gol-trendline-1-0-t-flex-8v-5p,dump
+6796,59,carro,005397-0,Gol Trendline 1.6 T.Flex 8V 5p,Gol Trendline,Gol,Gol Trendline,VW - VolksWagen Gol,gol-trendline-1-6-t-flex-8v-5p,dump
+6799,59,carro,005386-4,Saveiro Trendline 1.6 T.Flex 8V,Saveiro Trendline,Saveiro,Saveiro Trendline,VW - VolksWagen Saveiro,saveiro-trendline-1-6-t-flex-8v,dump
+6813,59,carro,005382-1,VOYAGE I MOTION Evidence 1.6 T.Flex 8V,VOYAGE I MOTION Evidence,VOYAGE,VOYAGE I,VW - VolksWagen VOYAGE,voyage-i-motion-evidence-1-6-t-flex-8v,dump
+6844,47,carro,035055-9,Macan S 3.0 Bi-Turbo,Macan S,Macan,Macan S,Porsche Macan,macan-s-3-0-bi-turbo,dump
+6856,150,moto,864011-4,can-am Outlander X MR 650 4X4 Quadr.,can-am Outlander X MR,can-am,can-am Outlander,BRP can-am,can-am-outlander-x-mr-650-4x4-quadr,dump
+6934,59,carro,005407-0,Fox Comfortline 1.0 Flex 8V 5p,Fox Comfortline,Fox,Fox Comfortline,VW - VolksWagen Fox,fox-comfortline-1-0-flex-8v-5p,dump
+6968,47,carro,035057-5,Boxster GTS 3.4 330cv,Boxster GTS,Boxster,Boxster GTS,Porsche Boxster,boxster-gts-3-4-330cv,dump
+7016,108,caminhao,508059-2,VOLARE LIMOUSINE W9/DW9 (diesel)(E5),VOLARE LIMOUSINE W9/DW9 (diesel)(E5),VOLARE,VOLARE LIMOUSINE,MARCOPOLO VOLARE,volare-limousine-w9-dw9-diesel-e5,dump
+7046,56,carro,002136-9,Hilux CD SRV 4x2 2.7 Flex 16V Aut.,Hilux CD SRV,Hilux,Hilux CD,Toyota Hilux,hilux-cd-srv-4x2-2-7-flex-16v-aut,dump
+7090,13,carro,011153-8,AIRCROSS SALOMON EXCLUSIVE 1.6 Flex Aut.,AIRCROSS SALOMON EXCLUSIVE,AIRCROSS,AIRCROSS SALOMON,Citroën AIRCROSS,aircross-salomon-exclusive-1-6-flex-aut,dump
+7109,80,moto,811129-4,NXR 160 BROS ESD FLEXONE,NXR,NXR,NXR 160,HONDA NXR,nxr-160-bros-esd-flexone,dump
+7155,26,carro,015118-1,HB20 Spicy 1.6 Flex 16V Aut.,HB20 Spicy,HB20,HB20 Spicy,Hyundai HB20,hb20-spicy-1-6-flex-16v-aut,dump
+7254,6,carro,008200-7,A6 2.0 TFSI 252cv S tronic 4p,A6,A6,A6 2.0,Audi A6,a6-2-0-tfsi-252cv-s-tronic-4p,dump
+7267,44,carro,024215-2,208 Allure 1.6 Flex 16V 5p Aut.,208 Allure,208,208 Allure,Peugeot 208,208-allure-1-6-flex-16v-5p-aut,dump
+7332,87,moto,818043-1,DUKE 200/ABS,DUKE,DUKE,,KTM DUKE,duke-200-abs,dump
+7356,39,carro,021332-2,GT S AMG 4.0 V8 Bi-Turbo 510cv,GT S AMG,GT,GT S,Mercedes-Benz GT,gt-s-amg-4-0-v8-bi-turbo-510cv,dump
+7365,58,carro,029102-1,XC 60 T-5 KINETIC 2.0 245cv FWD 5p,XC,XC,XC 60,Volvo XC,xc-60-t-5-kinetic-2-0-245cv-fwd-5p,dump
+7369,184,caminhao,524003-4,TGX 29.480 6x4 2p (diesel)(E5),TGX,TGX,TGX 29.480,MAN TGX,tgx-29-480-6x4-2p-diesel-e5,dump
+7459,47,carro,035067-2,Panamera Edition 3.6 v6 310cv,Panamera Edition,Panamera,Panamera Edition,Porsche Panamera,panamera-edition-3-6-v6-310cv,dump
+7525,80,moto,811139-1,CG 160 START,CG,CG,CG 160,HONDA CG,cg-160-start,dump
+7537,6,carro,008207-4,A4 Launch Edition 2.0 TFSI 190cv S troni,A4 Launch Edition,A4,A4 Launch,Audi A4,a4-launch-edition-2-0-tfsi-190cv-s-troni,dump
+7551,33,carro,033122-8,Range R.EVOQUE SD4 HSE 2.2 Dies. Aut.5p,Range R.EVOQUE SD4 HSE,Range Rover,Range R.EVOQUE,Land Rover Range Rover,range-r-evoque-sd4-hse-2-2-dies-aut-5p,dump
+7564,56,carro,002152-0,ETIOS XS 1.5 Flex 16V 5p Aut.,ETIOS XS,ETIOS,ETIOS XS,Toyota ETIOS,etios-xs-1-5-flex-16v-5p-aut,dump
+7576,109,caminhao,509317-1,Actros 2651 S 6x4 2p (diesel)(E5),Actros,Actros,Actros 2651,MERCEDES-BENZ Actros,actros-2651-s-6x4-2p-diesel-e5,dump
+7578,116,caminhao,516193-2,FH-420 GLOBETROTTER 8x2 2p (diesel)(E5),FH-420 GLOBETROTTER,FH-420,FH-420 GLOBETROTTER,VOLVO FH-420,fh-420-globetrotter-8x2-2p-diesel-e5,dump
+7690,23,carro,004472-5,ONIX HATCH ACTIV 1.4 8V Flex 5p Mec.,ONIX HATCH ACTIV,ONIX,ONIX HATCH,GM - Chevrolet ONIX,onix-hatch-activ-1-4-8v-flex-5p-mec,dump
+7710,44,carro,024224-1,408 Sedan Griffe 1.6 TB Flex 16V 4p Aut.,408 Sedan Griffe,408,408 Sedan,Peugeot 408,408-sedan-griffe-1-6-tb-flex-16v-4p-aut,dump
+7749,100,moto,826058-3,TIGER 1200 EXPLORER XCA,TIGER,TIGER,TIGER 1200,TRIUMPH TIGER,tiger-1200-explorer-xca,dump
+7753,22,carro,003430-4,Fiesta SE Style 1.6 16V Flex Mec. 5p,Fiesta SE Style,Fiesta,Fiesta SE,Ford Fiesta,fiesta-se-style-1-6-16v-flex-mec-5p,dump
+7885,36,carro,034030-8,Levante S 3.0 V6 430cv Aut.,Levante S,Levante,Levante S,Maserati Levante,levante-s-3-0-v6-430cv-aut,dump
+7929,203,moto,885002-0,CHOPPER ROAD 150,CHOPPER ROAD,CHOPPER,CHOPPER ROAD,HAOJUE CHOPPER,chopper-road-150,dump
+7957,39,carro,021377-2,C-180 CGI Coupe Avant. 1.6 TB 16V Aut.,C-180 CGI Coupe Avant,C-180,C-180 CGI,Mercedes-Benz C-180,c-180-cgi-coupe-avant-1-6-tb-16v-aut,dump
+7972,177,carro,080017-1,T40 1.5 JET Flex 16V 5p Mec.,T40,T40,T40 1.5,JAC T40,t40-1-5-jet-flex-16v-5p-mec,dump
+8061,44,carro,024231-4,208 URBANTECH1.6 Flex 16V 5p Aut.,208 URBANTECH1.6 Flex,208,208 URBANTECH1.6,Peugeot 208,208-urbantech1-6-flex-16v-5p-aut,dump
+8140,77,moto,810080-2,ROAD GLIDE ULTRA FLTRU,ROAD GLIDE ULTRA FLTRU,ROAD,ROAD GLIDE,HARLEY-DAVIDSON ROAD,road-glide-ultra-fltru,dump
+8375,145,moto,861024-0,NEXT 300cc,NEXT,NEXT,,DAFRA NEXT,next-300cc,dump
+8381,209,moto,887004-7,CARGA Gás 160cc,CARGA Gás,CARGA,CARGA Gás,FUSCO MOTOSEGURA CARGA,carga-gas-160cc,dump
+8481,34,carro,057044-3,NX-300h F-Sport 2.5 16V Aut.(Hybrid),NX-300h F-Sport,NX-300h,NX-300h F-Sport,Lexus NX-300h,nx-300h-f-sport-2-5-16v-aut-hybrid,dump
+8532,59,carro,005506-9,AMAROK Extreme CD 3.0 4x4 TB Dies. Aut.,AMAROK Extreme CD,AMAROK,AMAROK Extreme,VW - VolksWagen AMAROK,amarok-extreme-cd-3-0-4x4-tb-dies-aut,dump
+8604,114,caminhao,513285-1,G-410 A 6x2 2p (diesel)(E5),G-410 A,G-410,G-410 A,SCANIA G-410,g-410-a-6x2-2p-diesel-e5,dump
+8632,211,carro,090004-4,720S Coupe 4.0 Bi-Turbo V8 2p,720S Coupe,720S,720S Coupe,Mclaren 720S,720s-coupe-4-0-bi-turbo-v8-2p,dump
+8674,41,carro,022178-3,Pajero Sport HPE 2.4 4x4 Diesel Aut.,Pajero Sport HPE,Pajero,Pajero Sport,Mitsubishi Pajero,pajero-sport-hpe-2-4-4x4-diesel-aut,dump
+8704,59,carro,005516-6,up! Extreme 1.0 TSI Total Flex 12V 5p,up! Extreme,up!,up! Extreme,VW - VolksWagen up!,up-extreme-1-0-tsi-total-flex-12v-5p,dump
+8755,48,carro,025283-2,STEPWAY Iconic Flex 1.6 16V Aut.,STEPWAY Iconic Flex,STEPWAY,STEPWAY Iconic,Renault STEPWAY,stepway-iconic-flex-1-6-16v-aut,dump
+8769,6,carro,008246-5,A4 Avant Prest. Plus 2.0 TFSI S-tronic,A4 Avant Prest. Plus,A4,A4 Avant,Audi A4,a4-avant-prest-plus-2-0-tfsi-s-tronic,dump
+8778,21,carro,001522-9,CRONOS HGT 1.8 16V Flex Aut.,CRONOS HGT,CRONOS,CRONOS HGT,Fiat CRONOS,cronos-hgt-1-8-16v-flex-aut,dump
+8815,6,carro,008254-6,A7 Sportback Perf. 3.0 TFSI S-tron Quat.,A7 Sportback Perf,A7,A7 Sportback,Audi A7,a7-sportback-perf-3-0-tfsi-s-tron-quat,dump
+8837,56,carro,002182-2,Corolla Altis Hybrid 1.8 16V Flex Aut.,Corolla Altis Hybrid,Corolla,Corolla Altis,Toyota Corolla,corolla-altis-hybrid-1-8-16v-flex-aut,dump
+8843,214,carro,091006-6,e.co Cargo 10kW (Elétrico),e.co Cargo,e.co,e.co Cargo,HITECH ELECTRIC e.co,e-co-cargo-10kw-eletrico,dump
+8868,47,carro,035120-2,Cayenne E-Hybrid 3.0 V6 462cv,Cayenne E-Hybrid,Cayenne,Cayenne E-Hybrid,Porsche Cayenne,cayenne-e-hybrid-3-0-v6-462cv,dump
+8893,23,carro,004513-6,ONIX HATCH LTZ 1.0 12V TB Flex 5p Mec.,ONIX HATCH LTZ,ONIX,ONIX HATCH,GM - Chevrolet ONIX,onix-hatch-ltz-1-0-12v-tb-flex-5p-mec,dump
+8919,39,carro,021421-3,Sprinter 416 VAN L. T.A. 10L 2.2 Diesel,Sprinter,Sprinter,Sprinter 416,Mercedes-Benz Sprinter,sprinter-416-van-l-t-a-10l-2-2-diesel,dump
+8971,58,carro,029138-2,S60 T8 POLESTAR 2.0 4p Híbrido,S60 T8 POLESTAR,S60,S60 T8,Volvo S60,s60-t8-polestar-2-0-4p-hibrido,dump
+8983,6,carro,008256-2,A3 Sed. Perform. Black 2.0 TFSI S-tronic,A3 Sed. Perform. Black,A3,A3 Sed.,Audi A3,a3-sed-perform-black-2-0-tfsi-s-tronic,dump
+8984,7,carro,009259-2,i8 Roadster e-Drive 1.5 TB 12V Aut.,i8 Roadster e-Drive,i8,i8 Roadster,BMW i8,i8-roadster-e-drive-1-5-tb-12v-aut,dump
+9016,208,carro,089013-8,DAILY CHASSI 55-170 CD 3.0 (Diesel)(E5),DAILY CHASSI,DAILY,DAILY CHASSI,IVECO DAILY,daily-chassi-55-170-cd-3-0-diesel-e5,dump
+9017,208,carro,089006-5,DAILY CHASSI 65-170 Curto 3.0 (Die.)(E5),DAILY CHASSI,DAILY,DAILY CHASSI,IVECO DAILY,daily-chassi-65-170-curto-3-0-die-e5,dump
+9057,39,carro,021443-4,GLE-53 AMG 3.0 TB 4MATIC+ Hybrid,GLE-53 AMG,GLE-53,GLE-53 AMG,Mercedes-Benz GLE-53,gle-53-amg-3-0-tb-4matic-hybrid,dump
+9070,145,moto,861027-4,CITYCOM HD 300i,CITYCOM HD,CITYCOM,CITYCOM HD,DAFRA CITYCOM,citycom-hd-300i,dump
+9082,23,carro,004528-4,EQUINOX Midnight 1.5 Turbo 172cv Aut.,EQUINOX Midnight,EQUINOX,EQUINOX Midnight,GM - Chevrolet EQUINOX,equinox-midnight-1-5-turbo-172cv-aut,dump
+9086,57,carro,056017-0,T-4 TX4 4x4 3.2 20V Cap. Rígido Diesel,T-4 TX4,T-4,T-4 TX4,Troller T-4,t-4-tx4-4x4-3-2-20v-cap-rigido-diesel,dump
+9132,109,caminhao,509325-2,Actros 2653 MP5 LS 6X4 2p (diesel)(E5),Actros,Actros,Actros 2653,MERCEDES-BENZ Actros,actros-2653-mp5-ls-6x4-2p-diesel-e5,dump
+9214,39,carro,021455-8,GLB 200 Launch Edition 1.3 TB 16V Aut.,GLB,GLB,GLB 200,Mercedes-Benz GLB,glb-200-launch-edition-1-3-tb-16v-aut,dump
+9266,99,moto,825077-4,DL 1000  V-STROM ADVENTURE,DL,DL,DL 1000,SUZUKI DL,dl-1000-v-strom-adventure_1,dump
+9413,212,moto,888007-7,Ciclo City Veloce 1000W (Elétrica),Ciclo City Veloce,Ciclo,Ciclo City,BULL Ciclo,ciclo-city-veloce-1000w-eletrica_1,dump
+9427,211,carro,090005-2,570S Coupé 3.8 Bi-Turbo V8,570S Coupé,570S,570S Coupé,Mclaren 570S,570s-coupe-3-8-bi-turbo-v8_1,dump
+9490,47,carro,035134-2,Taycan (Elétrico),Taycan (Elétrico),Taycan,,Porsche Taycan,taycan-eletrico,dump
+9492,161,carro,073033-5,Tiggo 2 SMILE 1.5 16V Flex Aut.,Tiggo,Tiggo,Tiggo 2,Caoa Chery/Chery Tiggo,tiggo-2-smile-1-5-16v-flex-aut,dump
+9496,58,carro,029147-1,XC 40 Recharge Pure Eletric (Elétrico),XC,XC,XC 40,Volvo XC,xc-40-recharge-pure-eletric-eletrico,dump
+9519,67,moto,803087-1,S 1000 RR-M Carbon,S,S,S 1000,BMW S,s-1000-rr-m-carbon,dump
+9531,59,carro,005529-8,TAOS Launching Ed. 1.4 250 TSI Flex Aut.,TAOS Launching Ed,TAOS,TAOS Launching,VW - VolksWagen TAOS,taos-launching-ed-1-4-250-tsi-flex-aut,dump
+9552,177,carro,080031-7,e-JS1 62cv 5p Aut. (Elétrico),e-JS1,e-JS1,e-JS1 62cv,JAC e-JS1,e-js1-62cv-5p-aut-eletrico,dump
+9568,145,moto,861029-0,CRUISYM 150,CRUISYM,CRUISYM,,DAFRA CRUISYM,cruisym-150,dump
+9614,29,carro,017082-8,Commander Overland T270 1.3 TB Flex Aut.,Commander Overland T270,Commander,Commander Overland,Jeep Commander,commander-overland-t270-1-3-tb-flex-aut,dump
+9631,44,carro,024255-1,e-208 GT 5p Aut. (Elétrico),e-208 GT,e-208,e-208 GT,Peugeot e-208,e-208-gt-5p-aut-eletrico,dump
+9696,208,carro,089028-6,DAILY CHASSI 35-160 Longo 3.0 (Diesel),DAILY CHASSI,DAILY,DAILY CHASSI,IVECO DAILY,daily-chassi-35-160-longo-3-0-diesel,dump
+9697,208,carro,089010-3,DAILY CHASSI 45-170 3.0 (Diesel),DAILY CHASSI,DAILY,DAILY CHASSI,IVECO DAILY,daily-chassi-45-170-3-0-diesel,dump
+9719,177,carro,080034-1,e-JS1 Extreme 62cv 5p Aut. (Elétrico),e-JS1 Extreme,e-JS1,e-JS1 Extreme,JAC e-JS1,e-js1-extreme-62cv-5p-aut-eletrico,dump
+9728,188,caminhao,525004-8,iEV 1200T PLUS (Elétrico),iEV,iEV,iEV 1200T,JAC iEV,iev-1200t-plus-eletrico,dump
+9756,44,carro,024261-6,Boxer Furgão 2.2 Turbo Diesel,Boxer Furgão,Boxer,Boxer Furgão,Peugeot Boxer,boxer-furgao-2-2-turbo-diesel,dump
+9919,21,carro,001550-4,Scudo Cargo 1.5 16V Turbo Diesel,Scudo Cargo,Scudo,Scudo Cargo,Fiat Scudo,scudo-cargo-1-5-16v-turbo-diesel,dump
+9946,58,carro,029155-2,XC 90 T-8 Plus 2.0 AWD (Híbrido),XC,XC,XC 90,Volvo XC,xc-90-t-8-plus-2-0-awd-hibrido,dump
+9998,33,carro,033197-0,Discovery Metrop. 3.0 4x4 Die. (Híb.),Discovery Metrop,Discovery,Discovery Metrop.,Land Rover Discovery,discovery-metrop-3-0-4x4-die-hib,dump
+10044,56,carro,002129-6,PRIUS 1.8 16V 5p Aut. (Híbrido),PRIUS,PRIUS,PRIUS 1.8,Toyota PRIUS,prius-1-8-16v-5p-aut-hibrido,dump
+10131,69,moto,842003-3,Triciclo Star II Top / Super Top/Flex,Triciclo Star II Top / Super Top/Flex,Triciclo,Triciclo Star,byCristo Triciclo,triciclo-star-ii-top-super-top-flex,dump
+10200,208,carro,089034-0,DAILY CHASSI 45-160 Curto 3.0 (Die.)(E6),DAILY CHASSI,DAILY,DAILY CHASSI,IVECO DAILY,daily-chassi-45-160-curto-3-0-die-e6,dump
+10306,114,caminhao,513353-0,P-280 B 6x4 2p (diesel)(E6),P-280 B,P-280,P-280 B,SCANIA P-280,p-280-b-6x4-2p-diesel-e6,dump
+10330,114,caminhao,513347-5,R-410 A 4x2 2p CNG (GNV)(E5),R-410 A,R-410,R-410 A,SCANIA R-410,r-410-a-4x2-2p-cng-gnv-e5,dump
+10387,85,moto,817090-8,Z 400 SE,Z,Z,Z 400,KAWASAKI Z,z-400-se,dump
+10606,116,caminhao,516261-0,FMX 540 8X4 2p (diesel) (E6),,,,,,fipe_api
+10680,29,carro,017092-5,Renegade T270 1.3 TB 4x2 Flex Aut.,,,,,,fipe_api
+10693,108,caminhao,508105-0,VOLARE ATT. 8 CURTO FRETAMENTO (die)(E6),,,,,,fipe_api
+10707,108,caminhao,508090-8,VOLARE ATTACK 8 E. LONGO RURAL (die)(E6),,,,,,fipe_api
+10720,108,caminhao,508079-7,VOLARE FLY 10 FRETAMENTO (diesel) (E6),,,,,,fipe_api
+10724,108,caminhao,508086-0,VOLARE FLY 9 FRETAMENTO (diesel) (E6),,,,,,fipe_api
+10742,245,carro,093015-6,Tiggo 5X PRO Max Drive1.5 TB (Híbrido),,,,,,fipe_api
+10794,237,moto,891001-4,TC 3000W (Elétrica),,,,,,fipe_api
+10802,47,carro,035113-0,911 Carrera 4 GTS Cabri. 3.0 24V (992),,,,,,fipe_api
+10825,7,carro,009218-5,M2 Coupe 3.0 Bi-Turbo 24V 3p,,,,,,fipe_api
+10834,31,carro,018097-1,Sportage EX Prestige 1.6 T-GDI (Híbrido),,,,,,fipe_api
+10849,115,caminhao,515203-8,25-380 Constellation 6x2 2p (diesel)(E6),,,,,,fipe_api
+10894,25,carro,014114-3,ZR-V Touring 2.0 16V 5p Aut.,,,,,,fipe_api
+10896,67,moto,803100-2,C 400 X Sport,,,,,,fipe_api
+10976,248,moto,897005-0,FR150 FRIGO (Elétrica),,,,,,fipe_api
+11027,67,moto,803106-1,R 1300 GS 719,,,,,,fipe_api
+11030,67,moto,803104-5,R 1300 GS Trophy,,,,,,fipe_api
+11154,85,moto,817095-9,NINJA 500,,,,,,fipe_api
+11158,85,moto,817096-7,Z 500,,,,,,fipe_api
+11215,13,carro,011239-9,BASALT Feel 1.0 Flex TB 200 5p Aut.,,,,,,fipe_api
+11249,100,moto,826104-0,SCRAMBLER 900cc STEALTH EDITION,,,,,,fipe_api
+11268,7,carro,009230-4,M4 CS Coupe 3.0 Bi-Turbo 2p,,,,,,fipe_api
+11373,31,carro,018104-8,EV9 GTL (Elétrico),,,,,,fipe_api
+11417,34,carro,057053-2,NX-350h 4x4 Luxury 2.5 16V Aut. (Híb.),,,,,,fipe_api
+11433,240,carro,096009-8,Tank 300 2.0 16V AWD Aut.(Hibrido),,,,,,fipe_api
+11461,36,carro,034034-0,MC20 3.0 V6 Bi-Tb Aut.,,,,,,fipe_api
+11524,64,moto,837009-5,PULSAR N150,,,,,,fipe_api
+11525,67,moto,803123-1,S 1000 RR-M Package,,,,,,fipe_api
+11594,122,caminhao,506190-3,TECTOR 31-320 8x2 AutoShift (E6),,,,,,fipe_api
+11670,192,moto,879027-2,Classic 350 Halcyon,,,,,,fipe_api
+11732,29,carro,017062-3,Renegade 1.8 4x2 Flex 16V Aut.,,,,,,fipe_api
+11735,240,carro,096015-2,Wey 07 1.5 Turbo AWD,,,,,,fipe_api
+11745,67,moto,803126-6,R 1300 RT Triple Black ASA,,,,,,fipe_api
+11839,47,carro,035175-0,Cayenne S Black Edition 3.0 V6,,,,,,fipe_api
+11886,264,carro,307003-4,T2 Advance,,,,,,fipe_api
+11898,87,moto,818054-7,SX 300,,,,,,fipe_api
+11957,39,carro,021567-8,Sprinter 417 Chassi Longo T. B.  2.0 Aut. (E6),,,,,,fipe_api
+11968,150,moto,864064-5,can-am Maverick R X 999T DCT (UTV),,,,,,fipe_api
+11998,56,carro,002179-2,RAV4 2.5 S 4x4  Aut.,,,,,,fipe_api
+12033,22,carro,003519-0,Ranger XL 2.0 4x4 Chassi Aut.,,,,,,fipe_api
+12095,116,caminhao,516273-4,FM 380 8x2 2p (E6),,,,,,fipe_api
+12110,47,carro,035157-1,Cayenne Coupe TB 4.0 V8 (Híbrido),,,,,,fipe_api
+12231,39,carro,021415-9,GLC-220D 2.0 TB 4M Off-Road Diesel,,,,,,fipe_api

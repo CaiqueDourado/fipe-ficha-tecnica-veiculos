@@ -1,0 +1,926 @@
+[
+ {
+  "table": "marcas",
+  "name": "codigo_marca",
+  "type": "integer",
+  "description_en": "FIPE brand code. Primary key.",
+  "description_pt": "Código da marca na FIPE. Chave primária."
+ },
+ {
+  "table": "marcas",
+  "name": "marca",
+  "type": "string",
+  "description_en": "Brand name as FIPE writes it (the same maker can appear once per vehicle type: 'GM - Chevrolet' for cars, 'CHEVROLET' for trucks).",
+  "description_pt": "Nome da marca como a FIPE escreve (a mesma montadora pode aparecer uma vez por tipo: 'GM - Chevrolet' em carros, 'CHEVROLET' em caminhões)."
+ },
+ {
+  "table": "marcas",
+  "name": "tipo_veiculo",
+  "type": "string",
+  "description_en": "carro, moto or caminhao.",
+  "description_pt": "carro, moto ou caminhao."
+ },
+ {
+  "table": "marcas",
+  "name": "slug",
+  "type": "string",
+  "description_en": "URL slug used by the author's sites; empty for brands that only came from the FIPE API.",
+  "description_pt": "Slug de URL usado nos sites do autor; vazio nas marcas que só vieram da API da FIPE."
+ },
+ {
+  "table": "marcas",
+  "name": "fonte",
+  "type": "string",
+  "description_en": "dump (author's database, 2020-2023) or fipe_api (collected from the official FIPE site).",
+  "description_pt": "dump (banco do autor, 2020-2023) ou fipe_api (coletado do site oficial da FIPE)."
+ },
+ {
+  "table": "modelos",
+  "name": "codigo_modelo",
+  "type": "integer",
+  "description_en": "FIPE model code (one per version). Primary key.",
+  "description_pt": "Código do modelo na FIPE (um por versão). Chave primária."
+ },
+ {
+  "table": "modelos",
+  "name": "codigo_marca",
+  "type": "integer",
+  "description_en": "Brand (marcas.codigo_marca).",
+  "description_pt": "Marca (marcas.codigo_marca)."
+ },
+ {
+  "table": "modelos",
+  "name": "tipo_veiculo",
+  "type": "string",
+  "description_en": "carro, moto or caminhao.",
+  "description_pt": "carro, moto ou caminhao."
+ },
+ {
+  "table": "modelos",
+  "name": "codigo_fipe",
+  "type": "string",
+  "description_en": "FIPE code (000000-0). A code can belong to more than one model when FIPE renamed the version.",
+  "description_pt": "Código FIPE (000000-0). Um código pode estar em mais de um modelo quando a FIPE renomeou a versão."
+ },
+ {
+  "table": "modelos",
+  "name": "modelo",
+  "type": "string",
+  "description_en": "Version name as FIPE writes it.",
+  "description_pt": "Nome da versão como a FIPE escreve."
+ },
+ {
+  "table": "modelos",
+  "name": "modelo_curto",
+  "type": "string",
+  "description_en": "Name up to the first number (engine size), used for matching. Empty for models that only came from the API.",
+  "description_pt": "Nome até o primeiro número (motorização), usado no casamento. Vazio nos modelos que só vieram da API."
+ },
+ {
+  "table": "modelos",
+  "name": "primeiro_nome",
+  "type": "string",
+  "description_en": "First word of the name ('Gol', 'Palio').",
+  "description_pt": "Primeira palavra do nome ('Gol', 'Palio')."
+ },
+ {
+  "table": "modelos",
+  "name": "primeiro_segundo_nome",
+  "type": "string",
+  "description_en": "First two words of the name.",
+  "description_pt": "Duas primeiras palavras do nome."
+ },
+ {
+  "table": "modelos",
+  "name": "primeiro_nome_marca",
+  "type": "string",
+  "description_en": "Short brand + first word ('VW Gol'), the most used matching key.",
+  "description_pt": "Marca curta + primeira palavra ('VW Gol'), a chave de casamento mais usada."
+ },
+ {
+  "table": "modelos",
+  "name": "slug",
+  "type": "string",
+  "description_en": "URL slug used by the author's sites.",
+  "description_pt": "Slug de URL usado nos sites do autor."
+ },
+ {
+  "table": "modelos",
+  "name": "fonte",
+  "type": "string",
+  "description_en": "dump or fipe_api (models launched after February 2023).",
+  "description_pt": "dump ou fipe_api (modelos lançados depois de fevereiro de 2023)."
+ },
+ {
+  "table": "precos",
+  "name": "referencia",
+  "type": "string",
+  "description_en": "Reference month of the FIPE table (first day, YYYY-MM-DD).",
+  "description_pt": "Mês de referência da tabela FIPE (primeiro dia, AAAA-MM-DD)."
+ },
+ {
+  "table": "precos",
+  "name": "codigo_fipe",
+  "type": "string",
+  "description_en": "FIPE code.",
+  "description_pt": "Código FIPE."
+ },
+ {
+  "table": "precos",
+  "name": "codigo_modelo",
+  "type": "integer",
+  "description_en": "Model (modelos.codigo_modelo).",
+  "description_pt": "Modelo (modelos.codigo_modelo)."
+ },
+ {
+  "table": "precos",
+  "name": "ano_modelo",
+  "type": "integer",
+  "description_en": "Model year; empty for zero km.",
+  "description_pt": "Ano-modelo; vazio para zero km."
+ },
+ {
+  "table": "precos",
+  "name": "zero_km",
+  "type": "boolean",
+  "description_en": "True for the zero km price (FIPE year 32000).",
+  "description_pt": "Verdadeiro para o preço de zero km (ano 32000 na FIPE)."
+ },
+ {
+  "table": "precos",
+  "name": "combustivel",
+  "type": "string",
+  "description_en": "Fuel as FIPE classifies it: Gasolina (includes flex), Diesel, Álcool, Elétrico...",
+  "description_pt": "Combustível como a FIPE classifica: Gasolina (inclui flex), Diesel, Álcool, Elétrico..."
+ },
+ {
+  "table": "precos",
+  "name": "valor",
+  "type": "float",
+  "description_en": "Average price in reais.",
+  "description_pt": "Preço médio em reais."
+ },
+ {
+  "table": "precos",
+  "name": "fonte",
+  "type": "string",
+  "description_en": "dump (2020-01 to 2023-02) or fipe_api (2026-10 on).",
+  "description_pt": "dump (2020-01 a 2023-02) ou fipe_api (2026-10 em diante)."
+ },
+ {
+  "table": "fichas",
+  "name": "id_versao",
+  "type": "integer",
+  "description_en": "Version id in the author's crawler. Primary key.",
+  "description_pt": "Id da versão no crawler do autor. Chave primária."
+ },
+ {
+  "table": "fichas",
+  "name": "tipo_veiculo",
+  "type": "string",
+  "description_en": "carro or moto, from the URL (the source has no trucks).",
+  "description_pt": "carro ou moto, pela URL (a fonte não tem caminhões)."
+ },
+ {
+  "table": "fichas",
+  "name": "marca",
+  "type": "string",
+  "description_en": "Brand as Mobiauto writes it.",
+  "description_pt": "Marca como o Mobiauto escreve."
+ },
+ {
+  "table": "fichas",
+  "name": "modelo",
+  "type": "string",
+  "description_en": "Model as Mobiauto writes it.",
+  "description_pt": "Modelo como o Mobiauto escreve."
+ },
+ {
+  "table": "fichas",
+  "name": "ano_modelo",
+  "type": "integer",
+  "description_en": "Model year, from the URL.",
+  "description_pt": "Ano-modelo, pela URL."
+ },
+ {
+  "table": "fichas",
+  "name": "ano_url",
+  "type": "string",
+  "description_en": "Year segment of the URL as collected (kept when it is not a number).",
+  "description_pt": "Trecho do ano na URL como coletado (mantido quando não é número)."
+ },
+ {
+  "table": "fichas",
+  "name": "versao",
+  "type": "string",
+  "description_en": "Version name.",
+  "description_pt": "Nome da versão."
+ },
+ {
+  "table": "fichas",
+  "name": "codigo_fipe",
+  "type": "string",
+  "description_en": "FIPE code given by the source; joins with precos and modelos. The same code can cover several versions.",
+  "description_pt": "Código FIPE informado pela fonte; liga com precos e modelos. O mesmo código pode cobrir várias versões."
+ },
+ {
+  "table": "fichas",
+  "name": "preco_mobiauto",
+  "type": "float",
+  "description_en": "Price shown by Mobiauto on the collection day (September 2022); empty when it showed zero.",
+  "description_pt": "Preço mostrado pelo Mobiauto no dia da coleta (setembro de 2022); vazio quando mostrava zero."
+ },
+ {
+  "table": "fichas",
+  "name": "data_coleta",
+  "type": "string",
+  "description_en": "Collection date.",
+  "description_pt": "Data da coleta."
+ },
+ {
+  "table": "fichas",
+  "name": "url",
+  "type": "string",
+  "description_en": "Source page.",
+  "description_pt": "Página de origem."
+ },
+ {
+  "table": "fichas",
+  "name": "ajuste_de_altura",
+  "type": "boolean",
+  "description_en": "Seats: has 'Ajuste de altura' (Sim/Não in the source).",
+  "description_pt": "Bancos: possui 'Ajuste de altura' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "ajuste_eletrico",
+  "type": "boolean",
+  "description_en": "Seats: has 'Ajuste elétrico' (Sim/Não in the source).",
+  "description_pt": "Bancos: possui 'Ajuste elétrico' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "bancos_de_couro",
+  "type": "boolean",
+  "description_en": "Seats: has 'Bancos de couro' (Sim/Não in the source).",
+  "description_pt": "Bancos: possui 'Bancos de couro' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "ar_condicionado",
+  "type": "boolean",
+  "description_en": "Comfort: has 'Ar condicionado' (Sim/Não in the source).",
+  "description_pt": "Conforto: possui 'Ar condicionado' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "ar_quente",
+  "type": "boolean",
+  "description_en": "Comfort: has 'Ar-quente' (Sim/Não in the source).",
+  "description_pt": "Conforto: possui 'Ar-quente' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "cambio_automatico",
+  "type": "boolean",
+  "description_en": "Comfort: has 'Câmbio automático' (Sim/Não in the source).",
+  "description_pt": "Conforto: possui 'Câmbio automático' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "direcao_eletrica",
+  "type": "boolean",
+  "description_en": "Comfort: has 'Direção elétrica' (Sim/Não in the source).",
+  "description_pt": "Conforto: possui 'Direção elétrica' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "direcao_hidraulica",
+  "type": "boolean",
+  "description_en": "Comfort: has 'Direção hidráulica' (Sim/Não in the source).",
+  "description_pt": "Conforto: possui 'Direção hidráulica' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "kit_acendimento_automatico_dos_farois",
+  "type": "boolean",
+  "description_en": "Comfort: has 'Kit acendimento automático dos faróis' (Sim/Não in the source).",
+  "description_pt": "Conforto: possui 'Kit acendimento automático dos faróis' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "piloto_automatico",
+  "type": "boolean",
+  "description_en": "Comfort: has 'Piloto automático' (Sim/Não in the source).",
+  "description_pt": "Conforto: possui 'Piloto automático' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "retrovisores_eletricos",
+  "type": "boolean",
+  "description_en": "Comfort: has 'Retrovisores elétricos' (Sim/Não in the source).",
+  "description_pt": "Conforto: possui 'Retrovisores elétricos' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "travas_eletricas",
+  "type": "boolean",
+  "description_en": "Comfort: has 'Travas elétricas' (Sim/Não in the source).",
+  "description_pt": "Conforto: possui 'Travas elétricas' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "trio_eletrico",
+  "type": "boolean",
+  "description_en": "Comfort: has 'Trio eletrico' (Sim/Não in the source).",
+  "description_pt": "Conforto: possui 'Trio eletrico' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "volante_com_regulagem_de_altura",
+  "type": "boolean",
+  "description_en": "Comfort: has 'Volante com regulagem de altura' (Sim/Não in the source).",
+  "description_pt": "Conforto: possui 'Volante com regulagem de altura' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "volante_multifuncional",
+  "type": "boolean",
+  "description_en": "Comfort: has 'Volante multifuncional' (Sim/Não in the source).",
+  "description_pt": "Conforto: possui 'Volante multifuncional' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "altura_mm",
+  "type": "string",
+  "description_en": "Dimensions: 'Altura (mm)' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Dimensões: 'Altura (mm)' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "comprimento_mm",
+  "type": "string",
+  "description_en": "Dimensions: 'Comprimento (mm)' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Dimensões: 'Comprimento (mm)' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "entre_eixos_mm",
+  "type": "string",
+  "description_en": "Dimensions: 'Entre-eixos (mm)' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Dimensões: 'Entre-eixos (mm)' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "largura_mm",
+  "type": "string",
+  "description_en": "Dimensions: 'Largura (mm)' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Dimensões: 'Largura (mm)' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "ocupantes",
+  "type": "string",
+  "description_en": "Dimensions: 'Ocupantes' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Dimensões: 'Ocupantes' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "peso_kg",
+  "type": "string",
+  "description_en": "Dimensions: 'Peso (kg)' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Dimensões: 'Peso (kg)' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "porta_malas_l",
+  "type": "string",
+  "description_en": "Dimensions: 'Porta-Malas (L)' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Dimensões: 'Porta-Malas (L)' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "tanque_l",
+  "type": "string",
+  "description_en": "Dimensions: 'Tanque (L)' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Dimensões: 'Tanque (L)' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "desemb_traseiro",
+  "type": "boolean",
+  "description_en": "Windows: has 'Desemb. traseiro' (Sim/Não in the source).",
+  "description_pt": "Janelas: possui 'Desemb. traseiro' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "limp_traseiro",
+  "type": "boolean",
+  "description_en": "Windows: has 'Limp. traseiro' (Sim/Não in the source).",
+  "description_pt": "Janelas: possui 'Limp. traseiro' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "teto_solar",
+  "type": "boolean",
+  "description_en": "Windows: has 'Teto solar' (Sim/Não in the source).",
+  "description_pt": "Janelas: possui 'Teto solar' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "vidros_eletricos_dianteiros",
+  "type": "boolean",
+  "description_en": "Windows: has 'Vidros elétricos dianteiros' (Sim/Não in the source).",
+  "description_pt": "Janelas: possui 'Vidros elétricos dianteiros' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "vidros_eletricos_traseiros",
+  "type": "boolean",
+  "description_en": "Windows: has 'Vidros elétricos traseiros' (Sim/Não in the source).",
+  "description_pt": "Janelas: possui 'Vidros elétricos traseiros' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "combustivel",
+  "type": "string",
+  "description_en": "Mechanics: 'Combustível' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Mecânica: 'Combustível' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "consumo_cidade_km_l",
+  "type": "string",
+  "description_en": "Mechanics: 'Consumo cidade (km/l)' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Mecânica: 'Consumo cidade (km/l)' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "consumo_estrada_km_l",
+  "type": "string",
+  "description_en": "Mechanics: 'Consumo estrada (km/l)' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Mecânica: 'Consumo estrada (km/l)' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "cambio",
+  "type": "string",
+  "description_en": "Mechanics: 'Câmbio' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Mecânica: 'Câmbio' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "direcao",
+  "type": "string",
+  "description_en": "Mechanics: 'Direção' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Mecânica: 'Direção' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "freios_dianteiros",
+  "type": "string",
+  "description_en": "Mechanics: 'Freios dianteiros' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Mecânica: 'Freios dianteiros' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "freios_traseiros",
+  "type": "string",
+  "description_en": "Mechanics: 'Freios traseiros' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Mecânica: 'Freios traseiros' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "motorizacao",
+  "type": "string",
+  "description_en": "Mechanics: 'Motorização' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Mecânica: 'Motorização' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "potencia_cv",
+  "type": "string",
+  "description_en": "Mechanics: 'Potência (cv)' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Mecânica: 'Potência (cv)' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "suspensao_dianteira",
+  "type": "string",
+  "description_en": "Mechanics: 'Suspensão dianteira' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Mecânica: 'Suspensão dianteira' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "suspensao_traseira",
+  "type": "string",
+  "description_en": "Mechanics: 'Suspensão traseira' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Mecânica: 'Suspensão traseira' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "tempo_0_100_s",
+  "type": "string",
+  "description_en": "Mechanics: 'Tempo 0-100 (s)' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Mecânica: 'Tempo 0-100 (s)' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "torque_kgf_m",
+  "type": "string",
+  "description_en": "Mechanics: 'Torque (kgf.m)' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Mecânica: 'Torque (kgf.m)' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "tracao",
+  "type": "string",
+  "description_en": "Mechanics: 'Tração' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Mecânica: 'Tração' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "velocidade_maxima_km_h",
+  "type": "string",
+  "description_en": "Mechanics: 'Velocidade máxima (km/h)' as text (numbers can carry the fuel, e.g. '122 (Etanol) / 115 (Gasolina)').",
+  "description_pt": "Mecânica: 'Velocidade máxima (km/h)' como texto (números podem trazer o combustível, ex. '122 (Etanol) / 115 (Gasolina)')."
+ },
+ {
+  "table": "fichas",
+  "name": "adaptado_para_deficiente_fisico",
+  "type": "boolean",
+  "description_en": "Other: has 'Adaptado para deficiente físico' (Sim/Não in the source).",
+  "description_pt": "Outros: possui 'Adaptado para deficiente físico' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "aerofolio",
+  "type": "boolean",
+  "description_en": "Other: has 'Aerofólio' (Sim/Não in the source).",
+  "description_pt": "Outros: possui 'Aerofólio' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "calotas",
+  "type": "boolean",
+  "description_en": "Other: has 'Calotas' (Sim/Não in the source).",
+  "description_pt": "Outros: possui 'Calotas' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "capa_de_banco",
+  "type": "boolean",
+  "description_en": "Other: has 'Capa de banco' (Sim/Não in the source).",
+  "description_pt": "Outros: possui 'Capa de banco' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "capota_maritima",
+  "type": "boolean",
+  "description_en": "Other: has 'Capota marítima' (Sim/Não in the source).",
+  "description_pt": "Outros: possui 'Capota marítima' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "cacamba_de_fibra",
+  "type": "boolean",
+  "description_en": "Other: has 'Caçamba de fibra' (Sim/Não in the source).",
+  "description_pt": "Outros: possui 'Caçamba de fibra' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "computador_de_bordo",
+  "type": "boolean",
+  "description_en": "Other: has 'Computador de bordo' (Sim/Não in the source).",
+  "description_pt": "Outros: possui 'Computador de bordo' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "farol_de_neblina",
+  "type": "boolean",
+  "description_en": "Other: has 'Farol de neblina' (Sim/Não in the source).",
+  "description_pt": "Outros: possui 'Farol de neblina' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "friso_lateral",
+  "type": "boolean",
+  "description_en": "Other: has 'Friso lateral' (Sim/Não in the source).",
+  "description_pt": "Outros: possui 'Friso lateral' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "gps",
+  "type": "boolean",
+  "description_en": "Other: has 'Gps' (Sim/Não in the source).",
+  "description_pt": "Outros: possui 'Gps' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "kit_gas",
+  "type": "boolean",
+  "description_en": "Other: has 'Kit gás' (Sim/Não in the source).",
+  "description_pt": "Outros: possui 'Kit gás' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "protetor_de_cacamba",
+  "type": "boolean",
+  "description_en": "Other: has 'Protetor de caçamba' (Sim/Não in the source).",
+  "description_pt": "Outros: possui 'Protetor de caçamba' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "rodas_de_liga_leve",
+  "type": "boolean",
+  "description_en": "Other: has 'Rodas de liga leve' (Sim/Não in the source).",
+  "description_pt": "Outros: possui 'Rodas de liga leve' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "sensor_de_chuva",
+  "type": "boolean",
+  "description_en": "Other: has 'Sensor de chuva' (Sim/Não in the source).",
+  "description_pt": "Outros: possui 'Sensor de chuva' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "sensor_de_estacionamento",
+  "type": "boolean",
+  "description_en": "Other: has 'Sensor de estacionamento' (Sim/Não in the source).",
+  "description_pt": "Outros: possui 'Sensor de estacionamento' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "sensor_de_farol",
+  "type": "boolean",
+  "description_en": "Other: has 'Sensor de farol' (Sim/Não in the source).",
+  "description_pt": "Outros: possui 'Sensor de farol' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "tracao_4x4",
+  "type": "boolean",
+  "description_en": "Other: has 'Tração 4x4' (Sim/Não in the source).",
+  "description_pt": "Outros: possui 'Tração 4x4' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "airbag_lateral",
+  "type": "boolean",
+  "description_en": "Safety: has 'Airbag lateral' (Sim/Não in the source).",
+  "description_pt": "Segurança: possui 'Airbag lateral' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "airbag_motorista",
+  "type": "boolean",
+  "description_en": "Safety: has 'Airbag motorista' (Sim/Não in the source).",
+  "description_pt": "Segurança: possui 'Airbag motorista' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "airbag_passageiro",
+  "type": "boolean",
+  "description_en": "Safety: has 'Airbag passageiro' (Sim/Não in the source).",
+  "description_pt": "Segurança: possui 'Airbag passageiro' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "alarme",
+  "type": "boolean",
+  "description_en": "Safety: has 'Alarme' (Sim/Não in the source).",
+  "description_pt": "Segurança: possui 'Alarme' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "brake_light",
+  "type": "boolean",
+  "description_en": "Safety: has 'Brake light' (Sim/Não in the source).",
+  "description_pt": "Segurança: possui 'Brake light' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "calha_de_chuva",
+  "type": "boolean",
+  "description_en": "Safety: has 'Calha de chuva' (Sim/Não in the source).",
+  "description_pt": "Segurança: possui 'Calha de chuva' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "controle_de_tracao",
+  "type": "boolean",
+  "description_en": "Safety: has 'Controle de tração' (Sim/Não in the source).",
+  "description_pt": "Segurança: possui 'Controle de tração' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "distribuicao_eletronica_de_frenagem",
+  "type": "boolean",
+  "description_en": "Safety: has 'Distribuição eletrônica de frenagem' (Sim/Não in the source).",
+  "description_pt": "Segurança: possui 'Distribuição eletrônica de frenagem' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "freios_abs",
+  "type": "boolean",
+  "description_en": "Safety: has 'Freios abs' (Sim/Não in the source).",
+  "description_pt": "Segurança: possui 'Freios abs' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "kit_visibilidade",
+  "type": "boolean",
+  "description_en": "Safety: has 'Kit visibilidade' (Sim/Não in the source).",
+  "description_pt": "Segurança: possui 'Kit visibilidade' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "sensor_estacionamento_re",
+  "type": "boolean",
+  "description_en": "Safety: has 'Sensor estacionamento ré' (Sim/Não in the source).",
+  "description_pt": "Segurança: possui 'Sensor estacionamento ré' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "trava_multilock",
+  "type": "boolean",
+  "description_en": "Safety: has 'Trava multilock' (Sim/Não in the source).",
+  "description_pt": "Segurança: possui 'Trava multilock' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "cd_player",
+  "type": "boolean",
+  "description_en": "Audio: has 'Cd player' (Sim/Não in the source).",
+  "description_pt": "Som: possui 'Cd player' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "cd_player_com_mp3",
+  "type": "boolean",
+  "description_en": "Audio: has 'Cd player com mp3' (Sim/Não in the source).",
+  "description_pt": "Som: possui 'Cd player com mp3' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "entrada_usb",
+  "type": "boolean",
+  "description_en": "Audio: has 'Entrada usb' (Sim/Não in the source).",
+  "description_pt": "Som: possui 'Entrada usb' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "kit_multimidia",
+  "type": "boolean",
+  "description_en": "Audio: has 'Kit multimídia' (Sim/Não in the source).",
+  "description_pt": "Som: possui 'Kit multimídia' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "kit_multimidia_com_tv_e_camera_de_re",
+  "type": "boolean",
+  "description_en": "Audio: has 'Kit multimídia com tv e câmera de ré' (Sim/Não in the source).",
+  "description_pt": "Som: possui 'Kit multimídia com tv e câmera de ré' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "mylink",
+  "type": "boolean",
+  "description_en": "Audio: has 'Mylink' (Sim/Não in the source).",
+  "description_pt": "Som: possui 'Mylink' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "radio_com_bluetooth",
+  "type": "boolean",
+  "description_en": "Audio: has 'Rádio com bluetooth' (Sim/Não in the source).",
+  "description_pt": "Som: possui 'Rádio com bluetooth' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "radio_fm_am",
+  "type": "boolean",
+  "description_en": "Audio: has 'Rádio fm/am' (Sim/Não in the source).",
+  "description_pt": "Som: possui 'Rádio fm/am' (Sim/Não na fonte)."
+ },
+ {
+  "table": "fichas",
+  "name": "toca_fitas",
+  "type": "boolean",
+  "description_en": "Audio: has 'Toca-fitas' (Sim/Não in the source).",
+  "description_pt": "Som: possui 'Toca-fitas' (Sim/Não na fonte)."
+ },
+ {
+  "table": "ficha_caracteristicas",
+  "name": "id_versao",
+  "type": "integer",
+  "description_en": "Version (fichas.id_versao).",
+  "description_pt": "Versão (fichas.id_versao)."
+ },
+ {
+  "table": "ficha_caracteristicas",
+  "name": "secao",
+  "type": "string",
+  "description_en": "Section: Bancos, Conforto, Dimensões, Janelas, Mecânica, Outros, Segurança, Som.",
+  "description_pt": "Seção: Bancos, Conforto, Dimensões, Janelas, Mecânica, Outros, Segurança, Som."
+ },
+ {
+  "table": "ficha_caracteristicas",
+  "name": "chave",
+  "type": "string",
+  "description_en": "Specification name in Portuguese.",
+  "description_pt": "Nome da característica."
+ },
+ {
+  "table": "ficha_caracteristicas",
+  "name": "valor",
+  "type": "string",
+  "description_en": "Value as collected; Sim/Não for items (decoded from the source's icons); empty when the source left it blank.",
+  "description_pt": "Valor como coletado; Sim/Não nos itens (decodificado dos ícones da fonte); vazio quando a fonte deixou em branco."
+ },
+ {
+  "table": "ficha_titulos",
+  "name": "tipo",
+  "type": "string",
+  "description_en": "secao (section title and lead-in sentence) or faq (question for a yes/no item).",
+  "description_pt": "secao (título da seção e frase de abertura) ou faq (pergunta de um item sim/não)."
+ },
+ {
+  "table": "ficha_titulos",
+  "name": "secao",
+  "type": "string",
+  "description_en": "Section, for tipo = secao.",
+  "description_pt": "Seção, quando tipo = secao."
+ },
+ {
+  "table": "ficha_titulos",
+  "name": "chave",
+  "type": "string",
+  "description_en": "Specification name, for tipo = faq.",
+  "description_pt": "Nome da característica, quando tipo = faq."
+ },
+ {
+  "table": "ficha_titulos",
+  "name": "titulo",
+  "type": "string",
+  "description_en": "Section title or FAQ question.",
+  "description_pt": "Título da seção ou pergunta do FAQ."
+ },
+ {
+  "table": "ficha_titulos",
+  "name": "texto_introdutorio",
+  "type": "string",
+  "description_en": "Sentence that introduces the list of items of the section.",
+  "description_pt": "Frase que abre a lista de itens da seção."
+ },
+ {
+  "table": "veiculo_produto",
+  "name": "codigo_modelo",
+  "type": "integer",
+  "description_en": "Vehicle model (modelos.codigo_modelo).",
+  "description_pt": "Modelo do veículo (modelos.codigo_modelo)."
+ },
+ {
+  "table": "veiculo_produto",
+  "name": "group_id",
+  "type": "integer",
+  "description_en": "Product group of the e-commerce catalog dataset (grupos.id).",
+  "description_pt": "Grupo de produto da base do catálogo de e-commerce (grupos.id)."
+ },
+ {
+  "table": "veiculo_produto",
+  "name": "chave",
+  "type": "string",
+  "description_en": "Name that matched: the model name was searched inside the product name.",
+  "description_pt": "Nome que casou: o nome do modelo foi procurado dentro do nome do produto."
+ },
+ {
+  "table": "veiculo_produto",
+  "name": "nivel",
+  "type": "string",
+  "description_en": "Which model name matched: modelo_primeiro_nome_marca, modelo_primeiro_nome or modelo_primeiro_segundo_nome.",
+  "description_pt": "Qual nome do modelo casou: modelo_primeiro_nome_marca, modelo_primeiro_nome ou modelo_primeiro_segundo_nome."
+ },
+ {
+  "table": "veiculo_produto",
+  "name": "produtos_da_chave",
+  "type": "integer",
+  "description_en": "How many product groups the same key matched. Large numbers mean a generic name.",
+  "description_pt": "Quantos grupos de produto a mesma chave casou. Números grandes indicam nome genérico."
+ },
+ {
+  "table": "veiculo_produto",
+  "name": "modelos_da_chave",
+  "type": "integer",
+  "description_en": "How many vehicle models share the key.",
+  "description_pt": "Quantos modelos de veículo têm a mesma chave."
+ },
+ {
+  "table": "veiculo_produto",
+  "name": "confianca",
+  "type": "string",
+  "description_en": "WARNING level: alta (< 100 products for the key), media (100-999), baixa (1,000 or more). Most rows are baixa; read the data quality report.",
+  "description_pt": "NÍVEL DE ALERTA: alta (< 100 produtos para a chave), media (100-999), baixa (1.000 ou mais). A maioria é baixa; leia o relatório de qualidade."
+ }
+]

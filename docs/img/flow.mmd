@@ -1,0 +1,17 @@
+flowchart LR
+  subgraph FIPE["FIPE prices"]
+    D["Monthly dumps<br/>2020-01 to 2023-02"]
+    G["g1 JSON<br/>stopped ~2022"]:::dead
+    B["BrasilAPI<br/>prices: HTTP 500"]:::dead
+    F["Official FIPE API<br/>2026-10 on"]
+  end
+  M["Mobiauto pages<br/>Sep 2022"]
+  C["E-commerce catalog<br/>product groups"]
+  D --> P[("marcas · modelos · precos")]
+  F --> P
+  G -. tried .-> P
+  B -. tried .-> P
+  M --> S[("fichas · ficha_caracteristicas")]
+  P --> V[("veiculo_produto<br/>with warning level")]
+  C --> V
+  classDef dead fill:#f3f3f3,stroke:#bbbbbb,color:#777777;

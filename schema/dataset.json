@@ -1,0 +1,52 @@
+{
+  "slug": "fipe-ficha-tecnica-veiculos",
+  "kaggle_user": "caiquedourado",
+  "title": "FIPE vehicle prices and specifications (Brazil)",
+  "title_pt": "Tabela FIPE e ficha técnica de veículos (Brasil)",
+  "kaggle_title": "Tabela FIPE e Ficha Técnica de Veículos",
+  "kaggle_subtitle": "FIPE prices 2020-2026, specs of 37,794 versions, vehicle x product matches",
+  "kaggle_license": "Attribution 4.0 International (CC BY 4.0)",
+  "keywords": [
+    "automobiles and vehicles",
+    "brazil",
+    "tabular",
+    "economics"
+  ],
+  "tables": [
+    {
+      "name": "marcas",
+      "description": "FIPE brands of cars, motorcycles and trucks.",
+      "description_pt": "Marcas da FIPE de carros, motos e caminhões."
+    },
+    {
+      "name": "modelos",
+      "description": "FIPE models (one per version) with the short names used to match them with products.",
+      "description_pt": "Modelos da FIPE (um por versão) com os nomes curtos usados no casamento com produtos."
+    },
+    {
+      "name": "precos",
+      "description": "FIPE average prices per reference month, FIPE code, model year and fuel: January 2020 to February 2023 and October 2026 on.",
+      "description_pt": "Preços médios da FIPE por mês de referência, código FIPE, ano-modelo e combustível: janeiro de 2020 a fevereiro de 2023 e outubro de 2026 em diante."
+    },
+    {
+      "name": "fichas",
+      "description": "Specifications of 37,794 car and motorcycle versions (Mobiauto, September 2022), one row per version, 81 specification columns.",
+      "description_pt": "Ficha técnica de 37.794 versões de carros e motos (Mobiauto, setembro de 2022), uma linha por versão, 81 colunas de características."
+    },
+    {
+      "name": "ficha_caracteristicas",
+      "description": "The same specifications in long form: version, section, key, value.",
+      "description_pt": "A mesma ficha em formato longo: versão, seção, chave, valor."
+    },
+    {
+      "name": "ficha_titulos",
+      "description": "Section titles, lead-in sentences and FAQ questions used to write text from the specifications.",
+      "description_pt": "Títulos de seção, frases de abertura e perguntas de FAQ usadas para escrever texto a partir da ficha."
+    },
+    {
+      "name": "veiculo_produto",
+      "description": "Vehicle model x e-commerce product group, matched by name, with a confidence (warning) level. Mostly noisy: filter by confianca.",
+      "description_pt": "Modelo de veículo x grupo de produto do e-commerce, casados pelo nome, com nível de confiança (alerta). Muito ruidoso: filtre por confianca."
+    }
+  ]
+}

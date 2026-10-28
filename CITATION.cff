@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "Tabela FIPE e ficha técnica de veículos: FIPE vehicle prices and specifications (Brazil)"
+authors:
+  - family-names: Dourado
+    given-names: Caique
+version: 1.0.0
+date-released: 2026-10-28
+license: CC-BY-4.0
+repository-code: "https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos"
+url: "https://www.kaggle.com/datasets/caiquedourado/fipe-ficha-tecnica-veiculos"
+keywords:
+  - fipe
+  - vehicles
+  - car-prices
+  - specifications
+  - brazil
+  - portuguese

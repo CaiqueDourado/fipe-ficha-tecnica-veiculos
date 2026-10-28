@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fipe-textos"
+version = "1.0.0"
+description = "Text in Brazilian Portuguese from the fipe-ficha-tecnica-veiculos tables, by rules: about paragraph, equipment, FIPE price history, FAQ and JSON-LD."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Caique Dourado" }]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos"
+
+[tool.setuptools]
+packages = ["textos"]

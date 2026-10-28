@@ -1,0 +1,424 @@
+codigo_modelo,group_id,chave,nivel,produtos_da_chave,modelos_da_chave,confianca
+6799,10184311,VW Saveiro,modelo_primeiro_nome_marca,1270,39,baixa
+509,14103537,Palio,modelo_primeiro_nome,37255,100,baixa
+509,9909562,Fiat Palio,modelo_primeiro_nome_marca,10299,100,baixa
+3904,15828965,Renault Clio,modelo_primeiro_nome_marca,5559,53,baixa
+6400,15181330,Master 2.3,modelo_primeiro_segundo_nome,587,15,media
+8674,17054485,Pajero,modelo_primeiro_nome,9403,60,baixa
+2250,17534280,Hilux,modelo_primeiro_nome,9599,70,baixa
+5874,18038953,MINI STAR,modelo_primeiro_segundo_nome,131,6,media
+509,286551,Fiat Palio,modelo_primeiro_nome_marca,10299,100,baixa
+6796,17560808,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+509,8903458,Palio,modelo_primeiro_nome,37255,100,baixa
+8983,14900177,Audi A3,modelo_primeiro_nome_marca,6217,49,baixa
+1747,6976967,Mitsubishi Pajero,modelo_primeiro_nome_marca,3851,60,baixa
+568,6630972,Fiat Premio,modelo_primeiro_nome_marca,299,5,media
+2250,5780314,Hilux,modelo_primeiro_nome,9599,70,baixa
+5938,15661072,SANDERO,modelo_primeiro_nome,9849,60,baixa
+5938,11818107,SANDERO,modelo_primeiro_nome,9849,60,baixa
+509,8178190,Palio,modelo_primeiro_nome,37255,100,baixa
+7551,17968795,Land Rover Range,modelo_primeiro_nome_marca,899,99,media
+6157,14077065,Ford EcoSport,modelo_primeiro_nome_marca,3720,34,baixa
+2250,10215793,Hilux,modelo_primeiro_nome,9599,70,baixa
+509,4063491,Palio,modelo_primeiro_nome,37255,100,baixa
+509,10654017,Palio,modelo_primeiro_nome,37255,100,baixa
+2407,9987338,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+1746,16364303,Mitsubishi Pajero,modelo_primeiro_nome_marca,3851,60,baixa
+2263,15200104,Toyota Hilux,modelo_primeiro_nome_marca,4948,70,baixa
+5938,15163794,SANDERO,modelo_primeiro_nome,9849,60,baixa
+6157,8947877,EcoSport,modelo_primeiro_nome,12656,34,baixa
+8983,4475658,Audi A3,modelo_primeiro_nome_marca,6217,49,baixa
+1216,10642076,Vectra,modelo_primeiro_nome,17241,24,baixa
+5774,4874174,MERCEDES% Axor,modelo_primeiro_nome_marca,1360,38,baixa
+709,5761344,Escort,modelo_primeiro_nome,18606,25,baixa
+1216,7814691,Vectra,modelo_primeiro_nome,17241,24,baixa
+6157,80965,EcoSport,modelo_primeiro_nome,12656,34,baixa
+509,14596229,Palio,modelo_primeiro_nome,37255,100,baixa
+8674,14027623,Pajero,modelo_primeiro_nome,9403,60,baixa
+4992,6169801,VW Polo,modelo_primeiro_nome_marca,1922,30,baixa
+980,13901401,Chevrolet Camaro,modelo_primeiro_nome_marca,716,5,media
+1861,17243735,Peugeot 206,modelo_primeiro_nome_marca,6494,37,baixa
+8532,4357135,AMAROK,modelo_primeiro_nome,6510,16,baixa
+6425,16376568,Ford Fiesta,modelo_primeiro_nome_marca,5552,59,baixa
+509,14068151,Palio,modelo_primeiro_nome,37255,100,baixa
+1736,5590585,Lancer,modelo_primeiro_nome,2432,20,baixa
+709,11087794,Escort,modelo_primeiro_nome,18606,25,baixa
+8769,10696380,Audi A4,modelo_primeiro_nome_marca,3413,56,baixa
+1746,12849858,Pajero,modelo_primeiro_nome,9403,60,baixa
+7155,8043744,HB20,modelo_primeiro_nome,3950,47,baixa
+7564,16163743,ETIOS,modelo_primeiro_nome,2517,25,baixa
+3975,5670978,Megane,modelo_primeiro_nome,6490,27,baixa
+7551,14254344,Land Rover Range,modelo_primeiro_nome_marca,899,99,media
+8919,1567297,MERCEDES% Sprinter,modelo_primeiro_nome_marca,2138,100,baixa
+3819,16281949,Meriva,modelo_primeiro_nome,8206,13,baixa
+2263,9651135,Toyota Hilux,modelo_primeiro_nome_marca,4948,70,baixa
+7564,1524165,ETIOS,modelo_primeiro_nome,2517,25,baixa
+2384,1955923,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+6144,18313158,Audi A4,modelo_primeiro_nome_marca,3413,56,baixa
+4727,15775961,Peugeot 207,modelo_primeiro_nome_marca,2170,24,baixa
+1216,8063310,Vectra,modelo_primeiro_nome,17241,24,baixa
+65,16622031,A3 1.8,modelo_primeiro_segundo_nome,434,12,media
+1216,1943530,Vectra,modelo_primeiro_nome,17241,24,baixa
+5023,2760540,Fiat Ducato,modelo_primeiro_nome_marca,2843,28,baixa
+5028,17046165,Ducato,modelo_primeiro_nome,4831,28,baixa
+2250,7275571,Hilux,modelo_primeiro_nome,9599,70,baixa
+8868,12394839,Porsche Cayenne,modelo_primeiro_nome_marca,583,29,media
+1746,9524176,Pajero,modelo_primeiro_nome,9403,60,baixa
+2250,7640466,Toyota Hilux,modelo_primeiro_nome_marca,4948,70,baixa
+1269,13818957,Honda Civic,modelo_primeiro_nome_marca,7828,39,baixa
+5938,8092853,SANDERO,modelo_primeiro_nome,9849,60,baixa
+5938,10536980,Renault SANDERO,modelo_primeiro_nome_marca,2764,60,baixa
+1747,3332611,Pajero,modelo_primeiro_nome,9403,60,baixa
+6400,1674801,Renault Master,modelo_primeiro_nome_marca,2644,29,baixa
+2263,9893259,Hilux,modelo_primeiro_nome,9599,70,baixa
+7155,2921174,HB20,modelo_primeiro_nome,3950,47,baixa
+3819,10464936,Meriva,modelo_primeiro_nome,8206,13,baixa
+7046,9036123,Hilux,modelo_primeiro_nome,9599,70,baixa
+6799,12613936,VW Saveiro,modelo_primeiro_nome_marca,1270,39,baixa
+7155,2901900,HB20,modelo_primeiro_nome,3950,47,baixa
+1747,11642926,Pajero,modelo_primeiro_nome,9403,60,baixa
+8983,7347995,Audi A3,modelo_primeiro_nome_marca,6217,49,baixa
+6157,15948345,EcoSport,modelo_primeiro_nome,12656,34,baixa
+9492,15017547,Tiggo,modelo_primeiro_nome,1861,24,baixa
+509,17241521,Palio,modelo_primeiro_nome,37255,100,baixa
+6786,16961877,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+509,4051707,Palio,modelo_primeiro_nome,37255,100,baixa
+509,8942643,Palio,modelo_primeiro_nome,37255,100,baixa
+8674,10178691,Mitsubishi Pajero,modelo_primeiro_nome_marca,3851,60,baixa
+8674,1782993,Pajero,modelo_primeiro_nome,9403,60,baixa
+8778,8025682,Fiat CRONOS,modelo_primeiro_nome_marca,708,13,media
+1736,1808150,Mitsubishi Lancer,modelo_primeiro_nome_marca,1276,20,baixa
+8983,5390463,Audi A3,modelo_primeiro_nome_marca,6217,49,baixa
+509,221732,Palio,modelo_primeiro_nome,37255,100,baixa
+452,8974111,Doblo,modelo_primeiro_nome,10003,19,baixa
+2383,4444418,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+7753,8179540,Ford Fiesta,modelo_primeiro_nome_marca,5552,59,baixa
+5023,1660471,Ducato,modelo_primeiro_nome,4831,28,baixa
+2407,16619694,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+5115,7400222,VW Golf,modelo_primeiro_nome_marca,4170,50,baixa
+7155,10693546,Hyundai HB20,modelo_primeiro_nome_marca,3780,47,baixa
+1130,9565300,Chevrolet S10,modelo_primeiro_nome_marca,2121,89,baixa
+2384,11056664,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+786,15557286,Ford Fiesta,modelo_primeiro_nome_marca,5552,59,baixa
+2250,17025546,Hilux,modelo_primeiro_nome,9599,70,baixa
+5938,10989158,SANDERO,modelo_primeiro_nome,9849,60,baixa
+1216,226250,Vectra,modelo_primeiro_nome,17241,24,baixa
+5463,11258180,Fiat Punto,modelo_primeiro_nome_marca,2869,20,baixa
+2263,5976715,Toyota Hilux,modelo_primeiro_nome_marca,4948,70,baixa
+8919,14774566,MERCEDES% Sprinter,modelo_primeiro_nome_marca,2138,100,baixa
+509,9970200,Fiat Palio,modelo_primeiro_nome_marca,10299,100,baixa
+5938,7778048,SANDERO,modelo_primeiro_nome,9849,60,baixa
+709,1061103,Ford Escort,modelo_primeiro_nome_marca,3531,24,baixa
+509,219071,Palio,modelo_primeiro_nome,37255,100,baixa
+509,7993333,Palio,modelo_primeiro_nome,37255,100,baixa
+6157,11758905,EcoSport,modelo_primeiro_nome,12656,34,baixa
+2263,9480700,Toyota Hilux,modelo_primeiro_nome_marca,4948,70,baixa
+6786,15322661,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+8769,15119412,Audi A4,modelo_primeiro_nome_marca,3413,56,baixa
+9697,9656553,IVECO DAILY,modelo_primeiro_nome_marca,2075,110,baixa
+2407,11575311,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+2383,6487648,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+509,7998467,Palio,modelo_primeiro_nome,37255,100,baixa
+6157,401344,Ford EcoSport,modelo_primeiro_nome_marca,3720,34,baixa
+1216,4092664,Vectra,modelo_primeiro_nome,17241,24,baixa
+709,4177192,Escort,modelo_primeiro_nome,18606,25,baixa
+8971,9628467,Volvo S60,modelo_primeiro_nome_marca,273,20,media
+1746,14750066,Mitsubishi Pajero,modelo_primeiro_nome_marca,3851,60,baixa
+1269,6540631,Honda Civic,modelo_primeiro_nome_marca,7828,39,baixa
+2263,6599857,Hilux,modelo_primeiro_nome,9599,70,baixa
+4986,3807696,Peugeot 307,modelo_primeiro_nome_marca,2882,21,baixa
+8837,3759350,Toyota Corolla,modelo_primeiro_nome_marca,6376,49,baixa
+7155,9572445,Hyundai HB20,modelo_primeiro_nome_marca,3780,47,baixa
+5938,4235235,SANDERO,modelo_primeiro_nome,9849,60,baixa
+6786,5172163,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+2250,1570908,Toyota Hilux,modelo_primeiro_nome_marca,4948,70,baixa
+3810,11766026,FORD CARGO,modelo_primeiro_nome_marca,3125,118,baixa
+8983,17985052,Audi A3,modelo_primeiro_nome_marca,6217,49,baixa
+2250,12324151,Hilux,modelo_primeiro_nome,9599,70,baixa
+2407,18378859,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+7046,7369451,Hilux,modelo_primeiro_nome,9599,70,baixa
+7753,12092840,Ford Fiesta,modelo_primeiro_nome_marca,5552,59,baixa
+6157,11145996,EcoSport,modelo_primeiro_nome,12656,34,baixa
+6786,6830239,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+5938,12638340,SANDERO,modelo_primeiro_nome,9849,60,baixa
+6244,17001353,Suzuki Jimny,modelo_primeiro_nome_marca,669,14,media
+8815,12711411,Audi A7,modelo_primeiro_nome_marca,75,4,alta
+2383,4147707,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+2384,10699620,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+2383,4498682,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+7046,7112815,Toyota Hilux,modelo_primeiro_nome_marca,4948,70,baixa
+7155,11707149,HB20,modelo_primeiro_nome,3950,47,baixa
+7753,913714,Ford Fiesta,modelo_primeiro_nome_marca,5552,59,baixa
+509,4235021,Fiat Palio,modelo_primeiro_nome_marca,10299,100,baixa
+509,8116668,Fiat Palio,modelo_primeiro_nome_marca,10299,100,baixa
+509,8932761,Palio,modelo_primeiro_nome,37255,100,baixa
+7155,12587138,Hyundai HB20,modelo_primeiro_nome_marca,3780,47,baixa
+6796,2920618,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+9016,16007799,IVECO DAILY,modelo_primeiro_nome_marca,2075,110,baixa
+7046,9247479,Hilux,modelo_primeiro_nome,9599,70,baixa
+2407,9629229,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+6786,15706442,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+8674,1922385,Pajero,modelo_primeiro_nome,9403,60,baixa
+8674,12770540,Pajero,modelo_primeiro_nome,9403,60,baixa
+1747,8917735,Pajero,modelo_primeiro_nome,9403,60,baixa
+5938,11698132,Renault SANDERO,modelo_primeiro_nome_marca,2764,60,baixa
+6157,8778637,EcoSport,modelo_primeiro_nome,12656,34,baixa
+2407,15439988,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+2250,3590020,Toyota Hilux,modelo_primeiro_nome_marca,4948,70,baixa
+8868,16849244,Cayenne,modelo_primeiro_nome,483,29,media
+8674,11111453,Pajero,modelo_primeiro_nome,9403,60,baixa
+2173,14218213,Suzuki Grand,modelo_primeiro_nome_marca,759,22,media
+509,13791499,Palio,modelo_primeiro_nome,37255,100,baixa
+1076,18506304,D-20,modelo_primeiro_nome,392,6,media
+709,2770979,Escort,modelo_primeiro_nome,18606,25,baixa
+2670,18213954,DAELIM ALTINO,modelo_primeiro_nome_marca,31,1,alta
+509,5404698,Fiat Palio,modelo_primeiro_nome_marca,10299,100,baixa
+2263,13988552,Hilux,modelo_primeiro_nome,9599,70,baixa
+5023,2989828,Ducato,modelo_primeiro_nome,4831,28,baixa
+5938,9843229,SANDERO,modelo_primeiro_nome,9849,60,baixa
+8837,1947801,Toyota Corolla,modelo_primeiro_nome_marca,6376,49,baixa
+1746,2819819,Mitsubishi Pajero,modelo_primeiro_nome_marca,3851,60,baixa
+367,5552487,Daewoo Nubira,modelo_primeiro_nome_marca,134,4,media
+3904,11039047,Renault Clio,modelo_primeiro_nome_marca,5559,53,baixa
+8983,10396851,Audi A3,modelo_primeiro_nome_marca,6217,49,baixa
+9696,16947874,IVECO DAILY,modelo_primeiro_nome_marca,2075,110,baixa
+3819,4416199,Meriva,modelo_primeiro_nome,8206,13,baixa
+509,17161433,Palio,modelo_primeiro_nome,37255,100,baixa
+7046,5405755,Hilux,modelo_primeiro_nome,9599,70,baixa
+452,9675425,Doblo,modelo_primeiro_nome,10003,19,baixa
+1861,284969,Peugeot 206,modelo_primeiro_nome_marca,6494,37,baixa
+2383,13389968,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+4841,11424649,CAPTIVA,modelo_primeiro_nome,3327,5,baixa
+8983,8142524,Audi A3,modelo_primeiro_nome_marca,6217,49,baixa
+1130,1280679,Chevrolet S10,modelo_primeiro_nome_marca,2121,89,baixa
+509,7173349,Palio,modelo_primeiro_nome,37255,100,baixa
+2407,17369397,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+6157,4113905,Ford EcoSport,modelo_primeiro_nome_marca,3720,34,baixa
+509,4458219,Palio,modelo_primeiro_nome,37255,100,baixa
+509,1463531,Palio,modelo_primeiro_nome,37255,100,baixa
+5115,17597148,VW Golf,modelo_primeiro_nome_marca,4170,50,baixa
+3819,1513390,Meriva,modelo_primeiro_nome,8206,13,baixa
+9016,11937345,IVECO DAILY,modelo_primeiro_nome_marca,2075,110,baixa
+509,11865713,Palio,modelo_primeiro_nome,37255,100,baixa
+1746,547561,Mitsubishi Pajero,modelo_primeiro_nome_marca,3851,60,baixa
+7046,13387766,Hilux,modelo_primeiro_nome,9599,70,baixa
+6796,10181125,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+452,14086576,Doblo,modelo_primeiro_nome,10003,19,baixa
+452,10330062,Doblo,modelo_primeiro_nome,10003,19,baixa
+2726,12748677,ELECTRA GLIDE,modelo_primeiro_segundo_nome,304,9,media
+5777,11712569,MERCEDES% Atego,modelo_primeiro_nome_marca,906,30,media
+9519,17858557,BMW S,modelo_primeiro_nome_marca,3583,5,baixa
+6796,11092903,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+2263,9846729,Hilux,modelo_primeiro_nome,9599,70,baixa
+6157,10805245,EcoSport,modelo_primeiro_nome,12656,34,baixa
+709,2881918,Escort,modelo_primeiro_nome,18606,25,baixa
+1216,16836582,Chevrolet Vectra,modelo_primeiro_nome_marca,1063,24,baixa
+452,18278628,Fiat Doblo,modelo_primeiro_nome_marca,2731,18,baixa
+6157,8679344,Ford EcoSport,modelo_primeiro_nome_marca,3720,34,baixa
+7576,16317077,MERCEDES% Actros,modelo_primeiro_nome_marca,470,19,media
+7564,16167021,ETIOS,modelo_primeiro_nome,2517,25,baixa
+2263,5409269,Hilux,modelo_primeiro_nome,9599,70,baixa
+1746,1677727,Pajero,modelo_primeiro_nome,9403,60,baixa
+2200,3816861,Vitara,modelo_primeiro_nome,2439,12,baixa
+2263,12054376,Toyota Hilux,modelo_primeiro_nome_marca,4948,70,baixa
+2250,4992737,Hilux,modelo_primeiro_nome,9599,70,baixa
+7046,1608573,Hilux,modelo_primeiro_nome,9599,70,baixa
+6157,14231754,Ford EcoSport,modelo_primeiro_nome_marca,3720,34,baixa
+7753,285598,Fiesta SE,modelo_primeiro_segundo_nome,1193,3,baixa
+65,9721690,Audi A3,modelo_primeiro_nome_marca,6217,49,baixa
+5938,13643874,SANDERO,modelo_primeiro_nome,9849,60,baixa
+8778,8449307,Fiat CRONOS,modelo_primeiro_nome_marca,708,13,media
+3185,13999175,FORD CARGO,modelo_primeiro_nome_marca,3125,118,baixa
+6786,9636098,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+8532,14506781,AMAROK,modelo_primeiro_nome,6510,16,baixa
+7690,10644619,Chevrolet ONIX,modelo_primeiro_nome_marca,1233,30,baixa
+5023,15315973,Ducato,modelo_primeiro_nome,4831,28,baixa
+6796,13384877,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+7155,1756111,HB20,modelo_primeiro_nome,3950,47,baixa
+509,9044131,Palio,modelo_primeiro_nome,37255,100,baixa
+1130,13897434,Chevrolet S10,modelo_primeiro_nome_marca,2121,89,baixa
+7155,17418453,HB20,modelo_primeiro_nome,3950,47,baixa
+8674,10278930,Pajero Sport,modelo_primeiro_segundo_nome,515,8,media
+5023,5688356,Ducato,modelo_primeiro_nome,4831,28,baixa
+7155,16631994,Hyundai HB20,modelo_primeiro_nome_marca,3780,47,baixa
+3975,9895322,Megane,modelo_primeiro_nome,6490,27,baixa
+2263,6496101,Hilux,modelo_primeiro_nome,9599,70,baixa
+6425,1361641,Ford Fiesta,modelo_primeiro_nome_marca,5552,59,baixa
+6786,17004678,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+7332,2294234,KTM DUKE,modelo_primeiro_nome_marca,314,4,media
+7690,4081273,Chevrolet ONIX,modelo_primeiro_nome_marca,1233,30,baixa
+6157,7195301,EcoSport,modelo_primeiro_nome,12656,34,baixa
+1746,18359470,Pajero,modelo_primeiro_nome,9403,60,baixa
+5023,2127264,Ducato,modelo_primeiro_nome,4831,28,baixa
+509,15048098,Palio,modelo_primeiro_nome,37255,100,baixa
+7753,14388739,Ford Fiesta,modelo_primeiro_nome_marca,5552,59,baixa
+7046,10458155,Toyota Hilux,modelo_primeiro_nome_marca,4948,70,baixa
+4477,5480432,Sportage,modelo_primeiro_nome,5641,19,baixa
+6024,14748628,IVECO TECTOR,modelo_primeiro_nome_marca,326,29,media
+8868,15203596,Porsche Cayenne,modelo_primeiro_nome_marca,583,29,media
+6968,10873854,Porsche Boxster,modelo_primeiro_nome_marca,63,11,alta
+6400,11659902,Renault Master,modelo_primeiro_nome_marca,2644,29,baixa
+7564,2018693,ETIOS,modelo_primeiro_nome,2517,25,baixa
+6796,12330139,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+9756,14210867,Peugeot Boxer,modelo_primeiro_nome_marca,1342,14,baixa
+9696,17211192,IVECO DAILY,modelo_primeiro_nome_marca,2075,110,baixa
+2200,1955994,Suzuki Vitara,modelo_primeiro_nome_marca,820,12,media
+5115,10063087,VW Golf,modelo_primeiro_nome_marca,4170,50,baixa
+709,10488257,Escort,modelo_primeiro_nome,18606,25,baixa
+65,12920360,Audi A3,modelo_primeiro_nome_marca,6217,49,baixa
+5023,346762,Fiat Ducato,modelo_primeiro_nome_marca,2843,28,baixa
+2383,462442,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+910,18379393,Ford Taurus,modelo_primeiro_nome_marca,260,5,media
+1269,1251218,Honda Civic,modelo_primeiro_nome_marca,7828,39,baixa
+9082,14900582,EQUINOX,modelo_primeiro_nome,733,6,media
+8674,17173459,Pajero,modelo_primeiro_nome,9403,60,baixa
+2384,10385671,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+6799,14207550,VW Saveiro,modelo_primeiro_nome_marca,1270,39,baixa
+1747,18205625,Pajero,modelo_primeiro_nome,9403,60,baixa
+5023,2035177,Ducato,modelo_primeiro_nome,4831,28,baixa
+7365,12706174,Volvo XC,modelo_primeiro_nome_marca,678,73,media
+1736,2732875,Lancer,modelo_primeiro_nome,2432,20,baixa
+6157,8023544,Ford EcoSport,modelo_primeiro_nome_marca,3720,34,baixa
+5028,7775548,Ducato,modelo_primeiro_nome,4831,28,baixa
+8061,4211796,Peugeot 208,modelo_primeiro_nome_marca,1419,23,baixa
+509,14377665,Palio,modelo_primeiro_nome,37255,100,baixa
+509,453471,Fiat Palio,modelo_primeiro_nome_marca,10299,100,baixa
+509,222473,Palio,modelo_primeiro_nome,37255,100,baixa
+7332,11183309,KTM DUKE,modelo_primeiro_nome_marca,314,4,media
+1216,9048544,Chevrolet Vectra,modelo_primeiro_nome_marca,1063,24,baixa
+1746,13662076,Pajero,modelo_primeiro_nome,9403,60,baixa
+1736,3815483,Mitsubishi Lancer,modelo_primeiro_nome_marca,1276,20,baixa
+2250,8321642,Toyota Hilux,modelo_primeiro_nome_marca,4948,70,baixa
+5028,6176329,Ducato,modelo_primeiro_nome,4831,28,baixa
+6619,10633291,HONDA CB,modelo_primeiro_nome_marca,6419,11,baixa
+509,13570666,Palio,modelo_primeiro_nome,37255,100,baixa
+4841,16308831,CAPTIVA,modelo_primeiro_nome,3327,5,baixa
+5938,12095438,SANDERO,modelo_primeiro_nome,9849,60,baixa
+5938,4910661,Renault SANDERO,modelo_primeiro_nome_marca,2764,60,baixa
+1746,15997686,Pajero,modelo_primeiro_nome,9403,60,baixa
+2370,5666915,VW Fox,modelo_primeiro_nome_marca,2512,46,baixa
+6934,14528363,VW Fox,modelo_primeiro_nome_marca,2512,46,baixa
+5938,18250680,Renault SANDERO,modelo_primeiro_nome_marca,2764,60,baixa
+786,11823700,Ford Fiesta,modelo_primeiro_nome_marca,5552,59,baixa
+8532,6112170,AMAROK,modelo_primeiro_nome,6510,16,baixa
+1746,2084036,Mitsubishi Pajero,modelo_primeiro_nome_marca,3851,60,baixa
+6796,11266472,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+8532,17093724,VW AMAROK,modelo_primeiro_nome_marca,1605,16,baixa
+2626,14236724,BMW F,modelo_primeiro_nome_marca,2372,17,baixa
+9946,17100034,Volvo XC,modelo_primeiro_nome_marca,678,73,media
+2383,10014254,VW - VolksWagen Gol,modelo_primeiro_nome_marca,223,106,media
+709,10644769,Escort,modelo_primeiro_nome,18606,25,baixa
+2173,505165,Suzuki Grand,modelo_primeiro_nome_marca,759,22,media
+1746,3798894,Pajero,modelo_primeiro_nome,9403,60,baixa
+7109,1963590,HONDA NXR,modelo_primeiro_nome_marca,956,11,media
+5028,378567,Fiat Ducato,modelo_primeiro_nome_marca,2843,28,baixa
+1216,4583187,Chevrolet Vectra,modelo_primeiro_nome_marca,1063,24,baixa
+5938,12037816,Renault SANDERO,modelo_primeiro_nome_marca,2764,60,baixa
+6796,10005408,VW - VolksWagen Gol,modelo_primeiro_nome_marca,223,106,media
+709,17048608,Escort,modelo_primeiro_nome,18606,25,baixa
+7155,5980358,HB20,modelo_primeiro_nome,3950,47,baixa
+709,11238506,Escort,modelo_primeiro_nome,18606,25,baixa
+1216,8740648,Vectra,modelo_primeiro_nome,17241,24,baixa
+2383,13903629,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+1747,5821077,Mitsubishi Pajero,modelo_primeiro_nome_marca,3851,60,baixa
+5377,39598,LAMBORGHINI Gallardo,modelo_primeiro_nome_marca,175,9,media
+6796,15506594,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+2384,14292888,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+8532,8719077,AMAROK,modelo_primeiro_nome,6510,16,baixa
+1747,15454487,Mitsubishi Pajero,modelo_primeiro_nome_marca,3851,60,baixa
+452,16469439,Doblo,modelo_primeiro_nome,10003,19,baixa
+7046,10008679,Hilux,modelo_primeiro_nome,9599,70,baixa
+509,16054926,Palio,modelo_primeiro_nome,37255,100,baixa
+4841,14015048,CAPTIVA,modelo_primeiro_nome,3327,5,baixa
+5236,3492421,Audi R8,modelo_primeiro_nome_marca,260,4,media
+2173,10292684,Suzuki Grand,modelo_primeiro_nome_marca,759,22,media
+1861,9148842,Peugeot 206,modelo_primeiro_nome_marca,6494,37,baixa
+3975,15163752,Megane,modelo_primeiro_nome,6490,27,baixa
+1746,11257319,Pajero,modelo_primeiro_nome,9403,60,baixa
+6786,6382133,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+6425,14777047,Ford Fiesta,modelo_primeiro_nome_marca,5552,59,baixa
+2383,11678324,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+8769,4611853,Audi A4,modelo_primeiro_nome_marca,3413,56,baixa
+5028,12083062,Fiat Ducato,modelo_primeiro_nome_marca,2843,28,baixa
+7267,14769071,Peugeot 208,modelo_primeiro_nome_marca,1419,23,baixa
+2407,15200259,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+2384,15356673,VW - VolksWagen Gol,modelo_primeiro_nome_marca,223,106,media
+509,211448,Palio,modelo_primeiro_nome,37255,100,baixa
+7749,16135071,TIGER 1200,modelo_primeiro_segundo_nome,347,13,media
+8674,14854898,Pajero,modelo_primeiro_nome,9403,60,baixa
+7090,2121163,AIRCROSS,modelo_primeiro_nome,2147,29,baixa
+7155,5826343,HB20,modelo_primeiro_nome,3950,47,baixa
+7155,371304,Hyundai HB20,modelo_primeiro_nome_marca,3780,47,baixa
+5774,16327787,MERCEDES% Axor,modelo_primeiro_nome_marca,1360,38,baixa
+6786,12069072,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+2250,9718249,Toyota Hilux,modelo_primeiro_nome_marca,4948,70,baixa
+7525,16198488,CG 160,modelo_primeiro_segundo_nome,564,7,media
+509,4153639,Palio,modelo_primeiro_nome,37255,100,baixa
+5115,316139,VW Golf,modelo_primeiro_nome_marca,4170,50,baixa
+509,9636234,Palio,modelo_primeiro_nome,37255,100,baixa
+709,16934730,Escort,modelo_primeiro_nome,18606,25,baixa
+5115,8030053,VW Golf,modelo_primeiro_nome_marca,4170,50,baixa
+7753,6983176,Fiesta SE,modelo_primeiro_segundo_nome,1193,3,baixa
+8061,4159926,Peugeot 208,modelo_primeiro_nome_marca,1419,23,baixa
+2263,9497643,Hilux,modelo_primeiro_nome,9599,70,baixa
+4477,4139684,Sportage,modelo_primeiro_nome,5641,19,baixa
+509,14477477,Fiat Palio,modelo_primeiro_nome_marca,10299,100,baixa
+8837,9571110,Toyota Corolla,modelo_primeiro_nome_marca,6376,49,baixa
+1746,12380274,Pajero,modelo_primeiro_nome,9403,60,baixa
+2250,11292470,Toyota Hilux,modelo_primeiro_nome_marca,4948,70,baixa
+8983,12353487,Audi A3,modelo_primeiro_nome_marca,6217,49,baixa
+5938,9308133,SANDERO,modelo_primeiro_nome,9849,60,baixa
+1460,17339999,Discovery ES,modelo_primeiro_segundo_nome,37,2,alta
+7537,3771109,Audi A4,modelo_primeiro_nome_marca,3413,56,baixa
+1216,4013516,Vectra,modelo_primeiro_nome,17241,24,baixa
+1747,15671909,Mitsubishi Pajero,modelo_primeiro_nome_marca,3851,60,baixa
+1130,11734519,S10 Blazer,modelo_primeiro_segundo_nome,2247,14,baixa
+6934,13970384,VW Fox,modelo_primeiro_nome_marca,2512,46,baixa
+6786,10003568,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+7109,12072589,HONDA NXR,modelo_primeiro_nome_marca,956,11,media
+2263,17460534,Hilux,modelo_primeiro_nome,9599,70,baixa
+7564,8510107,ETIOS,modelo_primeiro_nome,2517,25,baixa
+7749,11021205,TRIUMPH TIGER,modelo_primeiro_nome_marca,968,31,media
+709,7665963,Escort,modelo_primeiro_nome,18606,25,baixa
+2407,14050157,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+1746,11900954,Mitsubishi Pajero,modelo_primeiro_nome_marca,3851,60,baixa
+2384,10216321,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+3160,18208167,FORD CARGO,modelo_primeiro_nome_marca,3125,118,baixa
+509,12101808,Palio,modelo_primeiro_nome,37255,100,baixa
+8778,9317296,Fiat CRONOS,modelo_primeiro_nome_marca,708,13,media
+786,13904233,Ford Fiesta,modelo_primeiro_nome_marca,5552,59,baixa
+6796,2285154,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+1747,10635830,Pajero,modelo_primeiro_nome,9403,60,baixa
+7046,10020001,Hilux,modelo_primeiro_nome,9599,70,baixa
+1861,2841212,Peugeot 206,modelo_primeiro_nome_marca,6494,37,baixa
+1747,16463154,Pajero,modelo_primeiro_nome,9403,60,baixa
+7155,17103872,Hyundai HB20,modelo_primeiro_nome_marca,3780,47,baixa
+452,9880990,Doblo,modelo_primeiro_nome,10003,19,baixa
+2383,8077928,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+980,13545779,Chevrolet Camaro,modelo_primeiro_nome_marca,716,5,media
+6425,15127278,Ford Fiesta,modelo_primeiro_nome_marca,5552,59,baixa
+6157,9490571,EcoSport,modelo_primeiro_nome,12656,34,baixa
+2200,3815529,Vitara,modelo_primeiro_nome,2439,12,baixa
+2370,14545104,VW Fox,modelo_primeiro_nome_marca,2512,46,baixa
+1216,2997867,Vectra,modelo_primeiro_nome,17241,24,baixa
+7046,18069139,Toyota Hilux,modelo_primeiro_nome_marca,4948,70,baixa
+3904,4628336,Renault Clio,modelo_primeiro_nome_marca,5559,53,baixa
+9016,16369846,IVECO DAILY,modelo_primeiro_nome_marca,2075,110,baixa
+5028,498395,Fiat Ducato,modelo_primeiro_nome_marca,2843,28,baixa
+7753,2112487,Ford Fiesta,modelo_primeiro_nome_marca,5552,59,baixa
+8674,15014037,Pajero,modelo_primeiro_nome,9403,60,baixa
+2263,2977770,Toyota Hilux,modelo_primeiro_nome_marca,4948,70,baixa
+6796,521799,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+509,14979098,Palio,modelo_primeiro_nome,37255,100,baixa
+2383,16873750,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+2407,7079769,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+6796,14231329,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
+1746,8868748,Pajero,modelo_primeiro_nome,9403,60,baixa
+709,4586779,Escort,modelo_primeiro_nome,18606,25,baixa
+3819,14571774,Meriva,modelo_primeiro_nome,8206,13,baixa
+1216,5541974,Vectra,modelo_primeiro_nome,17241,24,baixa
+4658,11227941,YAMAHA XTZ,modelo_primeiro_nome_marca,1105,13,baixa
+7564,13909337,ETIOS,modelo_primeiro_nome,2517,25,baixa
+7972,16310085,JAC T40,modelo_primeiro_nome_marca,128,4,media
+509,11995111,Fiat Palio,modelo_primeiro_nome_marca,10299,100,baixa
+2383,11995286,VW Gol,modelo_primeiro_nome_marca,12387,106,baixa
