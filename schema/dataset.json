@@ -1,10 +1,10 @@
 {
   "slug": "fipe-ficha-tecnica-veiculos",
   "kaggle_user": "caiquedourado",
-  "title": "FIPE vehicle prices and specifications (Brazil)",
-  "title_pt": "Tabela FIPE e ficha técnica de veículos (Brasil)",
-  "kaggle_title": "Tabela FIPE e Ficha Técnica de Veículos",
-  "kaggle_subtitle": "FIPE prices 2020-2026, specs of 37,794 versions, vehicle x product matches",
+  "title": "FIPE vehicle prices, specifications and auto parts (Brazil)",
+  "title_pt": "Tabela FIPE, ficha técnica e autopeças de veículos (Brasil)",
+  "kaggle_title": "Tabela FIPE, Ficha Técnica e Peças de Veículos",
+  "kaggle_subtitle": "FIPE prices 2020-2026, specs of 37,794 versions, 25.5M vehicle x part pairs",
   "kaggle_license": "Attribution 4.0 International (CC BY 4.0)",
   "keywords": [
     "automobiles and vehicles",

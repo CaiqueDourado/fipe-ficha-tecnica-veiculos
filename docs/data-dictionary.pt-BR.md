@@ -1,4 +1,4 @@
-# Dicionário de dados: Tabela FIPE e ficha técnica de veículos (Brasil)
+# Dicionário de dados: Tabela FIPE, ficha técnica e autopeças de veículos (Brasil)
 
 Gerado por `scripts/docs.py` a partir de `schema/columns.json`. Nulos e exemplos vêm da amostra em `sample/`.
 

@@ -1,4 +1,4 @@
-# Tabela FIPE e ficha técnica de veículos · FIPE vehicle prices and specifications (Brazil)
+# Tabela FIPE, ficha técnica e autopeças de veículos · FIPE vehicle prices, specifications and auto parts (Brazil)
 
 [![validate](https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/actions/workflows/validate.yml/badge.svg)](https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/actions/workflows/validate.yml)
 [![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA.md)

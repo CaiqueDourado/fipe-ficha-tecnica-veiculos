@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
 type: dataset
-title: "Tabela FIPE e ficha técnica de veículos: FIPE vehicle prices and specifications (Brazil)"
+title: "Tabela FIPE, ficha técnica e autopeças de veículos: FIPE vehicle prices, specifications and auto parts (Brazil)"
 authors:
   - family-names: Dourado
     given-names: Caique

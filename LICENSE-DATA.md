@@ -13,7 +13,7 @@ dataset and want it removed, open an issue: it will be removed in the next versi
 
 Suggested credit:
 
-> Tabela FIPE e ficha técnica de veículos, by Caique Dourado, https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos, CC BY 4.0. Prices: FIPE.
+> Tabela FIPE, ficha técnica e autopeças de veículos, by Caique Dourado, https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos, CC BY 4.0. Prices: FIPE.
 
 Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
 

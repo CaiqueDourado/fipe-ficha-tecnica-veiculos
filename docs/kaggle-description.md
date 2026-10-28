@@ -1,4 +1,4 @@
-**Tabela FIPE e ficha técnica de veículos**: preços FIPE de carros, motos e caminhões desde 2020, ficha técnica de 37.794 versões e casamento veículo × produto. **FIPE vehicle prices and specifications (Brazil)**.
+**Tabela FIPE, ficha técnica e autopeças de veículos**: preços FIPE de carros, motos e caminhões desde 2020, ficha técnica de 37.794 versões e 25,5 milhões de pares veículo × autopeça ou acessório. **FIPE vehicle prices, specifications and auto parts (Brazil)**.
 
 The FIPE table is Brazil's monthly reference of used and new vehicle prices (insurance, taxes, car sales). This dataset has three parts:
 
