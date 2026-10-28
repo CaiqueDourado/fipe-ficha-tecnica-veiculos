@@ -1,7 +1,5 @@
 **Tabela FIPE e ficha técnica de veículos**: preços FIPE de carros, motos e caminhões desde 2020, ficha técnica de 37.794 versões e casamento veículo × produto. **FIPE vehicle prices and specifications (Brazil)**.
 
-![FIPE prices and vehicle specifications](https://raw.githubusercontent.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/main/docs/img/cover.png)
-
 The FIPE table is Brazil's monthly reference of used and new vehicle prices (insurance, taxes, car sales). This dataset has three parts:
 
 - **FIPE prices**: 1.65 million prices per month, FIPE code, model year and fuel, January 2020 to February 2023 (the author's collection for his vehicle sites) plus October 2026 from the official FIPE API.
@@ -21,6 +19,8 @@ The same pairs from the product side: one product group of the catalog and the v
 ![One product, the vehicles matched to it](https://raw.githubusercontent.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/main/docs/img/product-json.png)
 
 The whole record: https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/blob/main/docs/example-product.json
+
+![FIPE prices, specifications and auto parts of Brazilian vehicles](https://raw.githubusercontent.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/main/docs/img/cover.png)
 
 ![Used vehicle prices, January 2020 = 100](https://raw.githubusercontent.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/main/docs/img/used-prices.png)
 

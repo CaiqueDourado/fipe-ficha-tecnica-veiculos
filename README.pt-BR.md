@@ -7,7 +7,7 @@
 
 [Read in English](README.md)
 
-![Tabela FIPE e ficha técnica de veículos](docs/img/cover.pt-BR.png)
+![Preços FIPE, ficha técnica e autopeças de veículos do Brasil](docs/img/cover.pt-BR.png)
 
 Dados de veículos do Brasil em três partes:
 

@@ -7,7 +7,7 @@
 
 [Leia em português](README.pt-BR.md)
 
-![FIPE prices and vehicle specifications](docs/img/cover.png)
+![FIPE prices, specifications and auto parts of Brazilian vehicles](docs/img/cover.png)
 
 Brazilian vehicle data in three parts:
 
