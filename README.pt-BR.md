@@ -134,6 +134,87 @@ python scripts/make_json.py --fipe 003367-7 --ano 2012 --out carro.json
 python scripts/make_json.py --data <pasta do Kaggle> --out veiculos.jsonl # todos os modelos, um por linha
 ```
 
+### Os mesmos pares, do lado do produto
+
+O `veiculo_produto` lido ao contrário: um grupo de produto do [catálogo de e-commerce](https://github.com/CaiqueDourado/catalogo-produtos-ecommerce-brasil) e todos os
+veículos da FIPE casados com ele, agrupados pela chave que casou. Um jogo de calotas de centro de roda para o
+Mercedes GLC 250, resumido (o registro inteiro está em [docs/example-product.json](docs/example-product.json)):
+
+![Um produto e os veículos casados com ele](docs/img/product-json.png)
+
+- **`GLC 250` (alta)**: a chave casou 15 grupos de produto, e os 5 modelos são o carro do nome do produto.
+- **`MERCEDES% GLC` (media)**: marca e primeiro nome, 205 grupos. Outras versões do GLC (220d): plausível,
+  mas não é o que o produto diz.
+- **`MERCEDES% Classe` (baixa)**: "Classe" também está no nome do produto, então vieram 25 modelos Classe A.
+  Errado, e típico de `baixa`.
+- O `%` é o curinga do SQL original: `MERCEDES%` quer dizer "Mercedes-Benz".
+- O próprio grupo mistura calotas de GLC e GLK: `nome` e `nome_longo` vêm de ofertas diferentes do catálogo.
+
+<details><summary>JSON em texto</summary>
+
+```json
+{
+  "grupo": {
+    "group_id": 1403175,
+    "nome": "Jogo 4 Calota Centro Roda Mercedes Classe Glc 250 Prata",
+    "nome_longo": "Jogo 4 Calota Centro Roda Mercedes Classe Glk 220 280 300 350 Prata",
+    "ofertas": 386,
+    "lojas": 8,
+    "group_flag": "ok"
+  },
+  "veiculos": {
+    "pares": 35,
+    "por_confianca": {"alta": 5, "media": 5, "baixa": 25},
+    "por_chave": [
+      {
+        "chave": "GLC 250",
+        "nivel": "modelo_primeiro_segundo_nome",
+        "confianca": "alta",
+        "produtos_da_chave": 15,
+        "modelos_da_chave": 5,
+        "modelos": [
+          {"codigo_fipe": "021344-6", "marca": "Mercedes-Benz", "modelo": "GLC 250 4MATIC 2.0 TB 16V Aut."},
+          {"codigo_fipe": "021371-3", "marca": "Mercedes-Benz", "modelo": "GLC 250 Coupe 4MATIC 2.0 TB 16V Aut."},
+          {"codigo_fipe": "021376-4", "marca": "Mercedes-Benz", "modelo": "GLC 250 Coupe Highway 4MATIC 2.0 TB Aut."}
+        ]
+      },
+      {
+        "chave": "MERCEDES% GLC",
+        "nivel": "modelo_primeiro_nome_marca",
+        "confianca": "media",
+        "produtos_da_chave": 205,
+        "modelos_da_chave": 10,
+        "modelos": [
+          {"codigo_fipe": "021416-7", "marca": "Mercedes-Benz", "modelo": "GLC 220D 2.0 TB 4M Enduro Diesel"},
+          {"codigo_fipe": "021415-9", "marca": "Mercedes-Benz", "modelo": "GLC 220D 2.0 TB 4M Off-Road Diesel"},
+          {"codigo_fipe": "021416-7", "marca": "Mercedes-Benz", "modelo": "GLC 220d 2.0 TB 4M Enduro (Diesel)"}
+        ]
+      },
+      {
+        "chave": "MERCEDES% Classe",
+        "nivel": "modelo_primeiro_nome_marca",
+        "confianca": "baixa",
+        "produtos_da_chave": 3196,
+        "modelos_da_chave": 25,
+        "modelos": [
+          {"codigo_fipe": "021051-0", "marca": "Mercedes-Benz", "modelo": "Classe A 160 Classic Semi-Aut."},
+          {"codigo_fipe": "021048-0", "marca": "Mercedes-Benz", "modelo": "Classe A 160 Classic/ Spirit Mec."},
+          {"codigo_fipe": "021049-8", "marca": "Mercedes-Benz", "modelo": "Classe A 160 Elegance Mec."}
+        ]
+      }
+    ]
+  }
+}
+```
+
+</details>
+
+```bash
+# precisa dos Parquet completos deste dataset e do grupos.parquet do catálogo
+python scripts/make_product_json.py --data <pasta do Kaggle> --catalog <pasta do catálogo> --list          # candidatos
+python scripts/make_product_json.py --data <pasta do Kaggle> --catalog <pasta do catálogo> --group 1403175
+```
+
 ## Arquivos
 
 | Arquivo | Linhas | O que tem |
@@ -290,7 +371,8 @@ sample/        todas as linhas de 300 modelos sorteados, em CSV
 schema/        definição das colunas e metadados
 scripts/       exportar_fipe.py (SQL Server -> Parquet), coletor_fipe.py (API oficial da FIPE),
                probe_globo_fipe.py, probe_brasilapi_fipe.py, perfil_fipe.py, build_veiculos.py,
-               validate.py, make_figures.py, make_json.py, make_json_image.py, docs.py
+               validate.py, make_figures.py, make_json.py, make_product_json.py,
+               make_json_image.py, docs.py
 textos/        texto a partir dos dados (python -m textos); tests/ os testes
 notebooks/     eda.ipynb
 docs/          metodologia, qualidade, APIs, dicionário de dados, JSON de exemplo, descrição do Kaggle, imagens

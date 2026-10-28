@@ -6,3 +6,4 @@ build/
 *.egg-info/
 .pytest_cache/
 sample/veiculos_sample.json
+docs/produtos_candidatos.json

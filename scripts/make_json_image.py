@@ -1,4 +1,4 @@
-"""Screenshot-style image of one vehicle record in JSON (docs/img/vehicle-json.png), for the README and Kaggle.
+"""Screenshot-style images of the example records in JSON (docs/img/vehicle-json.png, product-json.png), for the README and Kaggle.
 
     python scripts/make_json.py --fipe 003367-7 --ano 2012 --out docs/example-vehicle.json
     python scripts/make_json_image.py
@@ -49,7 +49,7 @@ def fmt(o, ind: int = 0) -> str:
     sp = "  " * ind
     if isinstance(o, dict):
         flat = json.dumps(o, ensure_ascii=False)
-        if all(not isinstance(v, (dict, list)) for v in o.values()) and len(o) <= 4 and len(flat) <= 100:
+        if all(not isinstance(v, (dict, list)) for v in o.values()) and len(o) <= 4 and len(flat) <= 115:
             return flat
         return "{\n" + ",\n".join(f'{sp}  "{k}": {fmt(v, ind + 1)}' for k, v in o.items()) + f"\n{sp}}}"
     if isinstance(o, list):
@@ -77,18 +77,26 @@ pre { margin: 0; font: 14px/1.5 'DejaVu Sans Mono', monospace; }
 """
 
 
-def main() -> None:
-    rec = json.loads((ROOT / "docs" / "example-vehicle.json").read_text(encoding="utf-8"))
-    text = fmt(trim(rec))
+def trim_product(rec: dict, per_key: int = 3, keys: int = 4) -> dict:
+    v = rec["veiculos"]
+    g = {k: rec["grupo"][k] for k in ("group_id", "nome", "nome_longo", "ofertas", "lojas", "group_flag")}
+    out = []
+    for k in v["por_chave"][:keys]:
+        models = [{c: m[c] for c in ("codigo_fipe", "marca", "modelo")} for m in k["modelos"][:per_key]]
+        out.append({**{c: k[c] for c in ("chave", "nivel", "confianca", "produtos_da_chave", "modelos_da_chave")},
+                    "modelos": models})
+    return {"grupo": g, "veiculos": {"pares": v["pares"], "por_confianca": v["por_confianca"], "por_chave": out}}
+
+
+def render(text: str, title: str, out: Path) -> None:
     json.loads(text)  # still valid JSON
     code = highlight(text, JsonLexer(), HtmlFormatter(nowrap=True))
     lines = "\n".join(str(i) for i in range(1, text.count("\n") + 2))
     html = f"""<!doctype html><html><head><meta charset="utf-8"><style>{CSS}</style></head><body>
 <div class="win" id="win"><div class="bar"><span class="dot" style="background:#ff5f57"></span>
 <span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span>
-<span class="title">docs/example-vehicle.json · Ford EcoSport Freestyle 1.6 16V Flex 2012 (trimmed)</span></div>
+<span class="title">{title}</span></div>
 <div class="code"><pre class="ln">{lines}</pre><pre class="highlight">{code}</pre></div></div></body></html>"""
-    out = ROOT / "docs" / "img" / "vehicle-json.png"
     with sync_playwright() as pw:
         browser = pw.chromium.launch()
         page = browser.new_page(device_scale_factor=2, viewport={"width": 1100, "height": 800})
@@ -96,6 +104,18 @@ def main() -> None:
         page.locator("#win").screenshot(path=str(out))
         browser.close()
     print(out)
+
+
+def main() -> None:
+    docs = ROOT / "docs"
+    rec = json.loads((docs / "example-vehicle.json").read_text(encoding="utf-8"))
+    render(fmt(trim(rec)), "docs/example-vehicle.json · Ford EcoSport Freestyle 1.6 16V Flex 2012 (trimmed)",
+           docs / "img" / "vehicle-json.png")
+    product = docs / "example-product.json"
+    if product.exists():
+        rec = json.loads(product.read_text(encoding="utf-8"))
+        render(fmt(trim_product(rec)), f"docs/example-product.json · group {rec['grupo']['group_id']} (trimmed)",
+               docs / "img" / "product-json.png")
 
 
 if __name__ == "__main__":

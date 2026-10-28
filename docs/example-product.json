@@ -1,0 +1,293 @@
+{
+ "grupo": {
+  "group_id": 1403175,
+  "nome": "Jogo 4 Calota Centro Roda Mercedes Classe Glc 250 Prata",
+  "nome_longo": "Jogo 4 Calota Centro Roda Mercedes Classe Glk 220 280 300 350 Prata",
+  "ofertas": 386,
+  "lojas": 8,
+  "marcas": 3,
+  "group_flag": "ok"
+ },
+ "veiculos": {
+  "pares": 35,
+  "por_confianca": {
+   "alta": 5,
+   "media": 5,
+   "baixa": 25
+  },
+  "por_chave": [
+   {
+    "chave": "GLC 250",
+    "nivel": "modelo_primeiro_segundo_nome",
+    "confianca": "alta",
+    "produtos_da_chave": 15,
+    "modelos_da_chave": 5,
+    "modelos": [
+     {
+      "codigo_modelo": 7508,
+      "codigo_fipe": "021344-6",
+      "marca": "Mercedes-Benz",
+      "modelo": "GLC 250 4MATIC 2.0 TB 16V Aut.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 7886,
+      "codigo_fipe": "021371-3",
+      "marca": "Mercedes-Benz",
+      "modelo": "GLC 250 Coupe 4MATIC 2.0 TB 16V Aut.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 7940,
+      "codigo_fipe": "021376-4",
+      "marca": "Mercedes-Benz",
+      "modelo": "GLC 250 Coupe Highway 4MATIC 2.0 TB Aut.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 7941,
+      "codigo_fipe": "021375-6",
+      "marca": "Mercedes-Benz",
+      "modelo": "GLC 250 Highway 4MATIC 2.0 TB Aut.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 7509,
+      "codigo_fipe": "021343-8",
+      "marca": "Mercedes-Benz",
+      "modelo": "GLC 250 Sport 4MATIC 2.0 TB 16V Aut.",
+      "tipo_veiculo": "carro"
+     }
+    ]
+   },
+   {
+    "chave": "MERCEDES% GLC",
+    "nivel": "modelo_primeiro_nome_marca",
+    "confianca": "media",
+    "produtos_da_chave": 205,
+    "modelos_da_chave": 10,
+    "modelos": [
+     {
+      "codigo_modelo": 9615,
+      "codigo_fipe": "021416-7",
+      "marca": "Mercedes-Benz",
+      "modelo": "GLC 220D 2.0 TB 4M Enduro Diesel",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 9616,
+      "codigo_fipe": "021415-9",
+      "marca": "Mercedes-Benz",
+      "modelo": "GLC 220D 2.0 TB 4M Off-Road Diesel",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 8907,
+      "codigo_fipe": "021416-7",
+      "marca": "Mercedes-Benz",
+      "modelo": "GLC 220d 2.0 TB 4M Enduro (Diesel)",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 8908,
+      "codigo_fipe": "021415-9",
+      "marca": "Mercedes-Benz",
+      "modelo": "GLC 220d 2.0 TB 4M Off-Road (Diesel)",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 8909,
+      "codigo_fipe": "021423-0",
+      "marca": "Mercedes-Benz",
+      "modelo": "GLC 300 Coupe 4MATIC 2.0 TB 16V Aut.",
+      "tipo_veiculo": "carro"
+     }
+    ]
+   },
+   {
+    "chave": "MERCEDES% Classe",
+    "nivel": "modelo_primeiro_nome_marca",
+    "confianca": "baixa",
+    "produtos_da_chave": 3196,
+    "modelos_da_chave": 25,
+    "modelos": [
+     {
+      "codigo_modelo": 1566,
+      "codigo_fipe": "021051-0",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe A 160 Classic Semi-Aut.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 1567,
+      "codigo_fipe": "021048-0",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe A 160 Classic/ Spirit Mec.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 1568,
+      "codigo_fipe": "021049-8",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe A 160 Elegance Mec.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 1569,
+      "codigo_fipe": "021098-6",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe A 160 Elegance Semi-Aut.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 1570,
+      "codigo_fipe": "021161-3",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe A 190 AvantGarde 1.9 8V 125cv Aut",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 1571,
+      "codigo_fipe": "021141-9",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe A 190 AvantGarde 1.9 8V 125cv Mec",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 1572,
+      "codigo_fipe": "021113-3",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe A 190 Classic 1.9 Semi-Aut.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 1573,
+      "codigo_fipe": "021112-5",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe A 190 Classic/ Spirit 1.9 Mec.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 1574,
+      "codigo_fipe": "021129-0",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe A 190 Elegance 1.9 Aut.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 1575,
+      "codigo_fipe": "021114-1",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe A 190 Elegance 1.9 Mec.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 1576,
+      "codigo_fipe": "021115-0",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe A 190 Elegance 1.9 Semi-Aut.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 6443,
+      "codigo_fipe": "021288-1",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe A 200 1.6 TB 16V Style 156cv Aut.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 6444,
+      "codigo_fipe": "021289-0",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe A 200 1.6 TB 16V Urban 156cv Aut.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 7228,
+      "codigo_fipe": "021327-6",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe A 200 1.6 TB/Flex Aut.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 3829,
+      "codigo_fipe": "021182-6",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe A 200 Elegance 2.0 136cv Aut.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 6754,
+      "codigo_fipe": "021304-7",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe A 250 2.0 TB Sport Aut.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 6698,
+      "codigo_fipe": "021300-4",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe A45 AMG 4MATIC 2.0 Turbo Aut.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 4831,
+      "codigo_fipe": "021218-0",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe B 170 1.7 116cv Aut.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 5003,
+      "codigo_fipe": "021220-2",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe B 180 1.7 116cv Aut.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 4012,
+      "codigo_fipe": "021194-0",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe B 200 2.0 136cv Aut.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 4202,
+      "codigo_fipe": "021197-4",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe B 200 2.0 Turbo 193cv Aut.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 6238,
+      "codigo_fipe": "021278-4",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe B 200 CGI 1.6 TB Sport 156cv Aut",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 6237,
+      "codigo_fipe": "021277-6",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe B 200 CGI 1.6 TB/Flex Aut.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 4064,
+      "codigo_fipe": "021195-8",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe R 500 5.0 V8 306cv Aut.",
+      "tipo_veiculo": "carro"
+     },
+     {
+      "codigo_modelo": 5033,
+      "codigo_fipe": "021226-1",
+      "marca": "Mercedes-Benz",
+      "modelo": "Classe R 500 L 5.5 V8 388cv Aut.",
+      "tipo_veiculo": "carro"
+     }
+    ]
+   }
+  ]
+ }
+}

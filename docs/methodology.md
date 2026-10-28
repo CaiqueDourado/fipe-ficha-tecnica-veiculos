@@ -77,7 +77,8 @@ For the auto parts pages of the author's sites ("Tapete para Gol", "Palheta para
 was searched by name inside the names of the product groups of the
 [e-commerce catalog dataset](https://github.com/CaiqueDourado/catalogo-produtos-ecommerce-brasil):
 
-1. brand + first word (`VW Gol`), with the brand rewritten for GM, VW, Mercedes and Harley-Davidson;
+1. brand + first word (`VW Gol`), with the brand rewritten for GM, VW, Mercedes and Harley-Davidson (the key
+   keeps the SQL wildcard: `MERCEDES% GLC` stands for "Mercedes-Benz GLC");
 2. first word alone (`Gol`), as a whole word;
 3. first two words (`Gol G5`).
 

@@ -16,6 +16,12 @@ Linked by FIPE code and model year, the tables nest into one record per vehicle:
 
 The whole record: https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/blob/main/docs/example-vehicle.json
 
+The same pairs from the product side: one product group of the catalog and the vehicles matched to it, by matching key. `GLC 250` (alta) found the right car; `MERCEDES% GLC` (media) other GLC versions; `MERCEDES% Classe` (baixa) 25 unrelated Classe A models. Read `confianca` before using a pair.
+
+![One product, the vehicles matched to it](https://raw.githubusercontent.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/main/docs/img/product-json.png)
+
+The whole record: https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/blob/main/docs/example-product.json
+
 ![Used vehicle prices, January 2020 = 100](https://raw.githubusercontent.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/main/docs/img/used-prices.png)
 
 How much of the zero km price a car keeps, by age, in October 2026 (median of 917 cars):
