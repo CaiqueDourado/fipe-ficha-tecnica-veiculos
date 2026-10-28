@@ -36,8 +36,11 @@ def batches(folder: Path, table: str, size: int = 200_000):
     if parquet.exists():
         for b in pq.ParquetFile(parquet).iter_batches(batch_size=size):
             yield b.to_pandas()
-    else:
+    elif (folder / f"{table}_sample.csv").exists():
         yield from pd.read_csv(folder / f"{table}_sample.csv", dtype={"codigo_fipe": str}, chunksize=size)
+    else:
+        raise SystemExit(f"{table}.parquet not found in {folder}: download the Kaggle files there first "
+                         "(kaggle datasets download caiquedourado/fipe-ficha-tecnica-veiculos -p <folder> --unzip)")
 
 
 def main() -> None:
@@ -47,6 +50,7 @@ def main() -> None:
     ap.add_argument("--confianca", default="alta,media", help="veiculo_produto levels to keep")
     a = ap.parse_args()
     keep = set(a.confianca.split(","))
+    a.out.parent.mkdir(parents=True, exist_ok=True)
     a.out.unlink(missing_ok=True)
     con = sqlite3.connect(a.out)
     con.execute("PRAGMA journal_mode = OFF")

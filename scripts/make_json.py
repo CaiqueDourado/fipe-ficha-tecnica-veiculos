@@ -33,6 +33,9 @@ def source(folder: Path, name: str) -> str:
     parquet = folder / f"{name}.parquet"
     if parquet.exists():
         return f"read_parquet('{parquet.as_posix()}')"
+    if not (folder / f"{name}_sample.csv").exists():
+        raise SystemExit(f"{name}.parquet not found in {folder}: download the Kaggle files there first "
+                         "(kaggle datasets download caiquedourado/fipe-ficha-tecnica-veiculos -p <folder> --unzip)")
     types = ", types={'codigo_fipe': 'VARCHAR'}" if name in ("modelos", "precos", "fichas") else ""
     return f"read_csv_auto('{(folder / f'{name}_sample.csv').as_posix()}'{types})"
 
