@@ -62,6 +62,111 @@ price and used prices of the same FIPE code):
 
 86% in the first year, 57% after five years, 39% after ten and 28% after fifteen.
 
+## How each vehicle is structured
+
+The seven tables nest into one tree: **brand → model (FIPE code) → model year → monthly prices and
+specification versions**, plus the product pairs of the model. `scripts/make_json.py` writes it, from
+`sample/` or from the full Kaggle files. The EcoSport above, trimmed (the whole record, with its 39
+prices and 81 specifications per version, is in [docs/example-vehicle.json](docs/example-vehicle.json)):
+
+```json
+{
+  "marcas": [
+    {
+      "codigo_marca": 22,
+      "marca": "Ford",
+      "tipo_veiculo": "carro",
+      "modelos": [
+        {
+          "codigo_modelo": 6157,
+          "codigo_fipe": "003367-7",
+          "modelo": "EcoSport FREESTYLE 1.6 16V Flex 5p",
+          "modelo_curto": "EcoSport FREESTYLE",
+          "fonte": "dump",
+          "anos": [
+            {
+              "ano_modelo": 2012,
+              "zero_km": false,
+              "precos": [
+                {"referencia": "2020-01", "valor": 33276, "combustivel": "Gasolina", "fonte": "dump"},
+                {"referencia": "2022-05", "valor": 44119, "combustivel": "Gasolina", "fonte": "dump"},
+                {"referencia": "2023-02", "valor": 42026, "combustivel": "Gasolina", "fonte": "dump"},
+                {"referencia": "2026-10", "valor": 41862, "combustivel": "Flex", "fonte": "fipe_api"}
+              ],
+              "fichas": [
+                {
+                  "id_versao": 37057,
+                  "versao": "Freestyle 1.6 16V (Flex)",
+                  "preco_mobiauto": 41403,
+                  "data_coleta": "2022-09-06",
+                  "motor": {
+                    "combustivel": "Etanol / Gasolina",
+                    "motorizacao": "1.6",
+                    "potencia_cv": "115 (Etanol) / 110 (Gasolina)",
+                    "tracao": "dianteira",
+                    "freios_dianteiros": "Dois freios à disco com dois discos ventilados."
+                  },
+                  "medidas": {
+                    "comprimento_mm": 4239,
+                    "largura_mm": 1734,
+                    "altura_mm": 1672,
+                    "entre_eixos_mm": 2520,
+                    "peso_kg": 1243,
+                    "porta_malas_l": 296,
+                    "tanque_l": 52,
+                    "ocupantes": 5
+                  },
+                  "itens": {
+                    "airbag_motorista": true,
+                    "airbag_passageiro": true,
+                    "freios_abs": true,
+                    "ar_condicionado": true,
+                    "teto_solar": false
+                  },
+                  "caracteristicas": {
+                    "Conforto / Ar condicionado": "Sim",
+                    "Dimensões / Comprimento (mm)": "4239",
+                    "Mecânica / Potência (cv)": "115 (Etanol) / 110 (Gasolina)"
+                  }
+                }
+              ]
+            }
+          ],
+          "produtos": {
+            "pares": 15,
+            "por_confianca": {"baixa": 15},
+            "exemplos": [
+              {"group_id": 401344, "chave": "Ford EcoSport", "confianca": "baixa", "produtos_da_chave": 3720},
+              {
+                "group_id": 4113905,
+                "chave": "Ford EcoSport",
+                "confianca": "baixa",
+                "produtos_da_chave": 3720
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+- `precos`: one entry per reference month. The fuel changed from "Gasolina" to "Flex" between the two
+  sources ([data quality](docs/data-quality.md)).
+- `fichas`: every Mobiauto version of that FIPE code and year. FIPE prices one "EcoSport FREESTYLE 1.6 16V
+  Flex 5p"; Mobiauto lists two versions under the same code, with different power and equipment.
+- `medidas` and `itens` are typed columns of `fichas`; `caracteristicas` is the same page as text,
+  `"section / key": "value"`.
+- `produtos`: pair counts by warning level and up to five examples, best level first. In the sample the
+  counts are the sample's.
+
+```bash
+python scripts/make_json.py                                           # sample/ -> sample/veiculos_sample.json
+python scripts/make_json.py --fipe 003367-7 --ano 2012 --out carro.json
+python scripts/make_json.py --data <kaggle folder> --out veiculos.jsonl # all models, one per line
+```
+
 ## Where the data came from
 
 ![Sources and tables](docs/img/flow.png)
@@ -78,6 +183,19 @@ price and used prices of the same FIPE code):
   names), published as it ran, with how wide each key was.
 
 Details: [methodology](docs/methodology.md). What is wrong and what was fixed: [data quality report](docs/data-quality.md).
+
+### The three FIPE sources, with real answers
+
+[docs/apis.md](docs/apis.md) shows each request and the answer it got on 22/10/2026. In short:
+
+| Source | Call | Answer |
+|---|---|---|
+| g1 | `GET g1.globo.com/static/fipe/json/carro/023067-7.json` | `[{"tipo": "2013 gasolina", "valor": "29732"}, …]`: no reference month, stale |
+| BrasilAPI | `GET brasilapi.com.br/api/fipe/preco/v1/023067-7` | HTTP 500, "Fonte de dados FIPE temporariamente indisponível" |
+| FIPE (used) | `POST veiculos.fipe.org.br/api/veiculos/ConsultarValorComTodosParametros` | `{"Valor": "R$ 57.839,00", "CodigoFipe": "003367-7", "MesReferencia": "outubro de 2026 ", …}` |
+
+The official API takes five POST calls to reach a price: reference months, brands, models, model years,
+price.
 
 ## Use it
 
@@ -145,10 +263,10 @@ sample/        every row of 300 random models, in CSV
 schema/        column definitions and dataset metadata
 scripts/       exportar_fipe.py (SQL Server -> Parquet), coletor_fipe.py (official FIPE API),
                probe_globo_fipe.py, probe_brasilapi_fipe.py, perfil_fipe.py, build_veiculos.py,
-               validate.py, make_figures.py, docs.py
+               validate.py, make_figures.py, make_json.py, docs.py
 textos/        text from the data (python -m textos); tests/ its tests
 notebooks/     eda.ipynb
-docs/          methodology, data quality, data dictionary, Kaggle description, images
+docs/          methodology, data quality, APIs, data dictionary, example JSON, Kaggle description, images
 kaggle/        dataset-metadata.json
 stats.json     counts of every build step
 ```
@@ -157,6 +275,7 @@ stats.json     counts of every build step
 
 - [catalogo-produtos-ecommerce-brasil](https://github.com/CaiqueDourado/catalogo-produtos-ecommerce-brasil): the product groups of `veiculo_produto`.
 - [DedupKit](https://github.com/CaiqueDourado/DedupKit): matching product names in Portuguese, the problem behind the noise in `veiculo_produto`.
+- [PtBr.Text](https://github.com/CaiqueDourado/PtBr.Text): Portuguese text from data for .NET (numbers in words, money, plural and gender), the same idea as `textos/`.
 - [municipios-e-estados-do-brasil](https://github.com/CaiqueDourado/municipios-e-estados-do-brasil): Brazilian states and cities, for regional analysis.
 
 ## License

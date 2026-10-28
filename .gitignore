@@ -5,3 +5,4 @@ kaggle/*.parquet
 build/
 *.egg-info/
 .pytest_cache/
+sample/veiculos_sample.json

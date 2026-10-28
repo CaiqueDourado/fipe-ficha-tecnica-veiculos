@@ -30,6 +30,28 @@ How much of the zero km price a car keeps, by age, in October 2026 (median of 91
 
 To bring the FIPE series up to date in 2026 the project tried the g1 (Globo) FIPE JSON files (stopped around 2022, no reference month), then BrasilAPI (its price endpoint failing on FIPE's side), and settled on the official FIPE site's JSON API, with a resumable collector that slows down when the site answers HTTP 429. The specifications came from a 2022 crawler that read yes/no items from the SVG path of each icon on the page. Zero km prices are flagged instead of carrying an invented model year; the data quality report lists every fix and every known limit.
 
+## How each vehicle is structured
+
+The tables nest into one tree: brand → model (FIPE code) → model year → monthly prices and specification versions, plus the model's product pairs. `scripts/make_json.py` in the repository writes it from these files. One car, trimmed (the whole record: https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/blob/main/docs/example-vehicle.json):
+
+```json
+{"marca": "Ford", "tipo_veiculo": "carro",
+ "modelos": [{"codigo_modelo": 6157, "codigo_fipe": "003367-7", "modelo": "EcoSport FREESTYLE 1.6 16V Flex 5p",
+   "anos": [{"ano_modelo": 2012, "zero_km": false,
+     "precos": [{"referencia": "2020-01", "valor": 33276, "combustivel": "Gasolina", "fonte": "dump"}, …,
+                {"referencia": "2026-10", "valor": 41862, "combustivel": "Flex", "fonte": "fipe_api"}],
+     "fichas": [{"id_versao": 37057, "versao": "Freestyle 1.6 16V (Flex)",
+                 "motor": {"potencia_cv": "115 (Etanol) / 110 (Gasolina)", …},
+                 "medidas": {"comprimento_mm": 4239, "porta_malas_l": 296, …},
+                 "itens": {"airbag_motorista": true, "freios_abs": true, …},
+                 "caracteristicas": {"Conforto / Ar condicionado": "Sim", …}}]}],
+   "produtos": {"pares": 15, "por_confianca": {"baixa": 15}, "exemplos": […]}}]}
+```
+
+## The FIPE sources, with real answers
+
+g1's static JSON had no reference month and was stale; BrasilAPI answered HTTP 500 for every price; the official FIPE site's API (five POST calls: reference months, brands, models, model years, price) was used. Each request and its real answer: https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/blob/main/docs/apis.md
+
 The repository also has `textos/`, which writes the "about" paragraph, equipment, price history and FAQ of a version from these tables, by rules (the notebook shows it).
 
 Methodology, data quality report, data dictionary (EN and PT), scripts and a sample: **https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos**

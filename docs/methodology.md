@@ -26,6 +26,8 @@ waits what the site asks and slows down by half, up to one request every 8 secon
 without a 429 it speeds up a little. Every answer is appended to a JSON Lines file as it arrives, with the
 request that produced it, so a run can stop and resume. A month is about 55 thousand requests.
 
+Requests and real answers of the three sources: [apis.md](apis.md).
+
 ### From the sources to the tables
 
 - `marcas` and `modelos` come from the dump; brands and models that exist only in the API (launched after

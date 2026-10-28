@@ -1,0 +1,656 @@
+{
+ "fonte": "https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos",
+ "marcas": [
+  {
+   "codigo_marca": 22,
+   "marca": "Ford",
+   "tipo_veiculo": "carro",
+   "modelos": [
+    {
+     "codigo_modelo": 6157,
+     "codigo_fipe": "003367-7",
+     "modelo": "EcoSport FREESTYLE 1.6 16V Flex 5p",
+     "modelo_curto": "EcoSport FREESTYLE",
+     "slug": "ecosport-freestyle-1-6-16v-flex-5p",
+     "fonte": "dump",
+     "anos": [
+      {
+       "ano_modelo": 2012,
+       "zero_km": false,
+       "precos": [
+        {
+         "referencia": "2020-01",
+         "valor": 33276,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2020-02",
+         "valor": 33035,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2020-03",
+         "valor": 32881,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2020-04",
+         "valor": 32738,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2020-05",
+         "valor": 32550,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2020-06",
+         "valor": 32454,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2020-07",
+         "valor": 32339,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2020-08",
+         "valor": 32274,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2020-09",
+         "valor": 32204,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2020-10",
+         "valor": 32426,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2020-11",
+         "valor": 32637,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2020-12",
+         "valor": 33320,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2021-01",
+         "valor": 33525,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2021-02",
+         "valor": 34356,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2021-03",
+         "valor": 34651,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2021-04",
+         "valor": 35230,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2021-05",
+         "valor": 35578,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2021-06",
+         "valor": 36579,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2021-07",
+         "valor": 38201,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2021-08",
+         "valor": 38277,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2021-09",
+         "valor": 38684,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2021-10",
+         "valor": 39138,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2021-11",
+         "valor": 39871,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2021-12",
+         "valor": 40555,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2022-01",
+         "valor": 41247,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2022-02",
+         "valor": 41628,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2022-03",
+         "valor": 41754,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2022-04",
+         "valor": 42896,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2022-05",
+         "valor": 44119,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2022-06",
+         "valor": 41957,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2022-07",
+         "valor": 41612,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2022-08",
+         "valor": 41720,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2022-09",
+         "valor": 41403,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2022-10",
+         "valor": 41471,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2022-11",
+         "valor": 41263,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2022-12",
+         "valor": 41562,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2023-01",
+         "valor": 42364,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2023-02",
+         "valor": 42026,
+         "combustivel": "Gasolina",
+         "fonte": "dump"
+        },
+        {
+         "referencia": "2026-10",
+         "valor": 41862,
+         "combustivel": "Flex",
+         "fonte": "fipe_api"
+        }
+       ],
+       "fichas": [
+        {
+         "id_versao": 37054,
+         "versao": "FREESTYLE 1.6 16V Flex 5p",
+         "preco_mobiauto": 41403,
+         "data_coleta": "2022-09-06",
+         "url": "https://www.mobiauto.com.br/tabela-fipe/carros/ford/ecosport/2012/freestyle-1-6-16v-flex-5p",
+         "motor": {
+          "combustivel": "Etanol / Gasolina",
+          "motorizacao": "1.6",
+          "potencia_cv": "107 (Etanol) / 101 (Gasolina)",
+          "torque_kgf_m": "15.295743 (Etanol) / 14.47997 (Gasolina)",
+          "cambio": null,
+          "tracao": "dianteira",
+          "direcao": null,
+          "velocidade_maxima_km_h": 165,
+          "tempo_0_100_s": "13.4 (Etanol) / 13.1 (Gasolina)",
+          "consumo_cidade_km_l": null,
+          "consumo_estrada_km_l": null,
+          "freios_dianteiros": "Dois freios à disco com dois discos ventilados.",
+          "freios_traseiros": null,
+          "suspensao_dianteira": "Suspensão tipo McPherson e dianteira com barra estabilizadora, roda tipo independente e molas helicoidal.",
+          "suspensao_traseira": "Suspensão tipo eixo de torção, roda tipo semi-independente e molas helicoidal."
+         },
+         "medidas": {
+          "comprimento_mm": 4228,
+          "largura_mm": 1734,
+          "altura_mm": 1679,
+          "entre_eixos_mm": 2490,
+          "peso_kg": 1204,
+          "porta_malas_l": 296,
+          "tanque_l": 54,
+          "ocupantes": 5
+         },
+         "itens": {
+          "ajuste_de_altura": false,
+          "ajuste_eletrico": false,
+          "bancos_de_couro": false,
+          "ar_condicionado": false,
+          "ar_quente": false,
+          "cambio_automatico": false,
+          "direcao_eletrica": false,
+          "direcao_hidraulica": false,
+          "kit_acendimento_automatico_dos_farois": false,
+          "piloto_automatico": false,
+          "retrovisores_eletricos": false,
+          "travas_eletricas": false,
+          "trio_eletrico": false,
+          "volante_com_regulagem_de_altura": false,
+          "volante_multifuncional": false,
+          "desemb_traseiro": false,
+          "limp_traseiro": false,
+          "teto_solar": false,
+          "vidros_eletricos_dianteiros": false,
+          "vidros_eletricos_traseiros": false,
+          "adaptado_para_deficiente_fisico": false,
+          "aerofolio": false,
+          "calotas": false,
+          "capa_de_banco": false,
+          "capota_maritima": false,
+          "cacamba_de_fibra": false,
+          "computador_de_bordo": false,
+          "farol_de_neblina": false,
+          "friso_lateral": false,
+          "gps": false,
+          "kit_gas": false,
+          "protetor_de_cacamba": false,
+          "rodas_de_liga_leve": false,
+          "sensor_de_chuva": false,
+          "sensor_de_estacionamento": false,
+          "sensor_de_farol": false,
+          "tracao_4x4": false,
+          "airbag_lateral": false,
+          "airbag_motorista": false,
+          "airbag_passageiro": false,
+          "alarme": false,
+          "brake_light": false,
+          "calha_de_chuva": false,
+          "controle_de_tracao": false,
+          "distribuicao_eletronica_de_frenagem": false,
+          "freios_abs": false,
+          "kit_visibilidade": false,
+          "sensor_estacionamento_re": false,
+          "trava_multilock": false,
+          "cd_player": false,
+          "cd_player_com_mp3": false,
+          "entrada_usb": false,
+          "kit_multimidia": false,
+          "kit_multimidia_com_tv_e_camera_de_re": false,
+          "mylink": false,
+          "radio_com_bluetooth": false,
+          "radio_fm_am": false,
+          "toca_fitas": false
+         },
+         "caracteristicas": {
+          "Bancos / Ajuste de altura": "Não",
+          "Bancos / Ajuste elétrico": "Não",
+          "Bancos / Bancos de couro": "Não",
+          "Conforto / Ar condicionado": "Não",
+          "Conforto / Ar-quente": "Não",
+          "Conforto / Câmbio automático": "Não",
+          "Conforto / Direção elétrica": "Não",
+          "Conforto / Direção hidráulica": "Não",
+          "Conforto / Kit acendimento automático dos faróis": "Não",
+          "Conforto / Piloto automático": "Não",
+          "Conforto / Retrovisores elétricos": "Não",
+          "Conforto / Travas elétricas": "Não",
+          "Conforto / Trio eletrico": "Não",
+          "Conforto / Volante com regulagem de altura": "Não",
+          "Conforto / Volante multifuncional": "Não",
+          "Dimensões / Altura (mm)": "1679",
+          "Dimensões / Comprimento (mm)": "4228",
+          "Dimensões / Entre-eixos (mm)": "2490",
+          "Dimensões / Largura (mm)": "1734",
+          "Dimensões / Ocupantes": "5",
+          "Dimensões / Peso (kg)": "1204",
+          "Dimensões / Porta-Malas (L)": "296",
+          "Dimensões / Tanque (L)": "54",
+          "Janelas / Desemb. traseiro": "Não",
+          "Janelas / Limp. traseiro": "Não",
+          "Janelas / Teto solar": "Não",
+          "Janelas / Vidros elétricos dianteiros": "Não",
+          "Janelas / Vidros elétricos traseiros": "Não",
+          "Mecânica / Combustível": "Etanol / Gasolina",
+          "Mecânica / Consumo cidade (km/l)": null,
+          "Mecânica / Consumo estrada (km/l)": null,
+          "Mecânica / Câmbio": null,
+          "Mecânica / Direção": null,
+          "Mecânica / Freios dianteiros": "Dois freios à disco com dois discos ventilados.",
+          "Mecânica / Freios traseiros": null,
+          "Mecânica / Motorização": "1.6",
+          "Mecânica / Potência (cv)": "107 (Etanol) / 101 (Gasolina)",
+          "Mecânica / Suspensão dianteira": "Suspensão tipo McPherson e dianteira com barra estabilizadora, roda tipo independente e molas helicoidal.",
+          "Mecânica / Suspensão traseira": "Suspensão tipo eixo de torção, roda tipo semi-independente e molas helicoidal.",
+          "Mecânica / Tempo 0-100 (s)": "13.4 (Etanol) / 13.1 (Gasolina)",
+          "Mecânica / Torque (kgf.m)": "15.295743 (Etanol) / 14.47997 (Gasolina)",
+          "Mecânica / Tração": "dianteira",
+          "Mecânica / Velocidade máxima (km/h)": "165",
+          "Outros / Adaptado para deficiente físico": "Não",
+          "Outros / Aerofólio": "Não",
+          "Outros / Calotas": "Não",
+          "Outros / Capa de banco": "Não",
+          "Outros / Capota marítima": "Não",
+          "Outros / Caçamba de fibra": "Não",
+          "Outros / Computador de bordo": "Não",
+          "Outros / Farol de neblina": "Não",
+          "Outros / Friso lateral": "Não",
+          "Outros / Gps": "Não",
+          "Outros / Kit gás": "Não",
+          "Outros / Protetor de caçamba": "Não",
+          "Outros / Rodas de liga leve": "Não",
+          "Outros / Sensor de chuva": "Não",
+          "Outros / Sensor de estacionamento": "Não",
+          "Outros / Sensor de farol": "Não",
+          "Outros / Tração 4x4": "Não",
+          "Segurança / Airbag lateral": "Não",
+          "Segurança / Airbag motorista": "Não",
+          "Segurança / Airbag passageiro": "Não",
+          "Segurança / Alarme": "Não",
+          "Segurança / Brake light": "Não",
+          "Segurança / Calha de chuva": "Não",
+          "Segurança / Controle de tração": "Não",
+          "Segurança / Distribuição eletrônica de frenagem": "Não",
+          "Segurança / Freios abs": "Não",
+          "Segurança / Kit visibilidade": "Não",
+          "Segurança / Sensor estacionamento ré": "Não",
+          "Segurança / Trava multilock": "Não",
+          "Som / Cd player": "Não",
+          "Som / Cd player com mp3": "Não",
+          "Som / Entrada usb": "Não",
+          "Som / Kit multimídia": "Não",
+          "Som / Kit multimídia com tv e câmera de ré": "Não",
+          "Som / Mylink": "Não",
+          "Som / Rádio com bluetooth": "Não",
+          "Som / Rádio fm/am": "Não",
+          "Som / Toca-fitas": "Não"
+         }
+        },
+        {
+         "id_versao": 37057,
+         "versao": "Freestyle 1.6 16V (Flex)",
+         "preco_mobiauto": 41403,
+         "data_coleta": "2022-09-06",
+         "url": "https://www.mobiauto.com.br/tabela-fipe/carros/ford/ecosport/2012/freestyle-1-6-16v-flex",
+         "motor": {
+          "combustivel": "Etanol / Gasolina",
+          "motorizacao": "1.6",
+          "potencia_cv": "115 (Etanol) / 110 (Gasolina)",
+          "torque_kgf_m": "16.213488 (Etanol) / 15.805601 (Gasolina)",
+          "cambio": null,
+          "tracao": "dianteira",
+          "direcao": null,
+          "velocidade_maxima_km_h": null,
+          "tempo_0_100_s": null,
+          "consumo_cidade_km_l": null,
+          "consumo_estrada_km_l": null,
+          "freios_dianteiros": "Dois freios à disco com dois discos ventilados.",
+          "freios_traseiros": null,
+          "suspensao_dianteira": "Suspensão tipo McPherson e dianteira com barra estabilizadora, roda tipo independente e molas helicoidal.",
+          "suspensao_traseira": "Suspensão tipo eixo de torção, roda tipo semi-independente e molas helicoidal."
+         },
+         "medidas": {
+          "comprimento_mm": 4239,
+          "largura_mm": 1734,
+          "altura_mm": 1672,
+          "entre_eixos_mm": 2520,
+          "peso_kg": 1243,
+          "porta_malas_l": 296,
+          "tanque_l": 52,
+          "ocupantes": 5
+         },
+         "itens": {
+          "ajuste_de_altura": false,
+          "ajuste_eletrico": false,
+          "bancos_de_couro": false,
+          "ar_condicionado": true,
+          "ar_quente": false,
+          "cambio_automatico": false,
+          "direcao_eletrica": false,
+          "direcao_hidraulica": true,
+          "kit_acendimento_automatico_dos_farois": false,
+          "piloto_automatico": false,
+          "retrovisores_eletricos": true,
+          "travas_eletricas": true,
+          "trio_eletrico": false,
+          "volante_com_regulagem_de_altura": true,
+          "volante_multifuncional": false,
+          "desemb_traseiro": true,
+          "limp_traseiro": true,
+          "teto_solar": false,
+          "vidros_eletricos_dianteiros": true,
+          "vidros_eletricos_traseiros": true,
+          "adaptado_para_deficiente_fisico": false,
+          "aerofolio": false,
+          "calotas": false,
+          "capa_de_banco": false,
+          "capota_maritima": false,
+          "cacamba_de_fibra": false,
+          "computador_de_bordo": true,
+          "farol_de_neblina": true,
+          "friso_lateral": false,
+          "gps": false,
+          "kit_gas": false,
+          "protetor_de_cacamba": false,
+          "rodas_de_liga_leve": true,
+          "sensor_de_chuva": false,
+          "sensor_de_estacionamento": true,
+          "sensor_de_farol": true,
+          "tracao_4x4": false,
+          "airbag_lateral": false,
+          "airbag_motorista": true,
+          "airbag_passageiro": true,
+          "alarme": true,
+          "brake_light": false,
+          "calha_de_chuva": false,
+          "controle_de_tracao": true,
+          "distribuicao_eletronica_de_frenagem": true,
+          "freios_abs": true,
+          "kit_visibilidade": false,
+          "sensor_estacionamento_re": false,
+          "trava_multilock": false,
+          "cd_player": true,
+          "cd_player_com_mp3": true,
+          "entrada_usb": true,
+          "kit_multimidia": false,
+          "kit_multimidia_com_tv_e_camera_de_re": false,
+          "mylink": false,
+          "radio_com_bluetooth": false,
+          "radio_fm_am": true,
+          "toca_fitas": false
+         },
+         "caracteristicas": {
+          "Bancos / Ajuste de altura": "Não",
+          "Bancos / Ajuste elétrico": "Não",
+          "Bancos / Bancos de couro": "Não",
+          "Conforto / Ar condicionado": "Sim",
+          "Conforto / Ar-quente": "Não",
+          "Conforto / Câmbio automático": "Não",
+          "Conforto / Direção elétrica": "Não",
+          "Conforto / Direção hidráulica": "Sim",
+          "Conforto / Kit acendimento automático dos faróis": "Não",
+          "Conforto / Piloto automático": "Não",
+          "Conforto / Retrovisores elétricos": "Sim",
+          "Conforto / Travas elétricas": "Sim",
+          "Conforto / Trio eletrico": "Não",
+          "Conforto / Volante com regulagem de altura": "Sim",
+          "Conforto / Volante multifuncional": "Não",
+          "Dimensões / Altura (mm)": "1672",
+          "Dimensões / Comprimento (mm)": "4239",
+          "Dimensões / Entre-eixos (mm)": "2520",
+          "Dimensões / Largura (mm)": "1734",
+          "Dimensões / Ocupantes": "5",
+          "Dimensões / Peso (kg)": "1243",
+          "Dimensões / Porta-Malas (L)": "296",
+          "Dimensões / Tanque (L)": "52",
+          "Janelas / Desemb. traseiro": "Sim",
+          "Janelas / Limp. traseiro": "Sim",
+          "Janelas / Teto solar": "Não",
+          "Janelas / Vidros elétricos dianteiros": "Sim",
+          "Janelas / Vidros elétricos traseiros": "Sim",
+          "Mecânica / Combustível": "Etanol / Gasolina",
+          "Mecânica / Consumo cidade (km/l)": null,
+          "Mecânica / Consumo estrada (km/l)": null,
+          "Mecânica / Câmbio": null,
+          "Mecânica / Direção": null,
+          "Mecânica / Freios dianteiros": "Dois freios à disco com dois discos ventilados.",
+          "Mecânica / Freios traseiros": null,
+          "Mecânica / Motorização": "1.6",
+          "Mecânica / Potência (cv)": "115 (Etanol) / 110 (Gasolina)",
+          "Mecânica / Suspensão dianteira": "Suspensão tipo McPherson e dianteira com barra estabilizadora, roda tipo independente e molas helicoidal.",
+          "Mecânica / Suspensão traseira": "Suspensão tipo eixo de torção, roda tipo semi-independente e molas helicoidal.",
+          "Mecânica / Tempo 0-100 (s)": null,
+          "Mecânica / Torque (kgf.m)": "16.213488 (Etanol) / 15.805601 (Gasolina)",
+          "Mecânica / Tração": "dianteira",
+          "Mecânica / Velocidade máxima (km/h)": null,
+          "Outros / Adaptado para deficiente físico": "Não",
+          "Outros / Aerofólio": "Não",
+          "Outros / Calotas": "Não",
+          "Outros / Capa de banco": "Não",
+          "Outros / Capota marítima": "Não",
+          "Outros / Caçamba de fibra": "Não",
+          "Outros / Computador de bordo": "Sim",
+          "Outros / Farol de neblina": "Sim",
+          "Outros / Friso lateral": "Não",
+          "Outros / Gps": "Não",
+          "Outros / Kit gás": "Não",
+          "Outros / Protetor de caçamba": "Não",
+          "Outros / Rodas de liga leve": "Sim",
+          "Outros / Sensor de chuva": "Não",
+          "Outros / Sensor de estacionamento": "Sim",
+          "Outros / Sensor de farol": "Sim",
+          "Outros / Tração 4x4": "Não",
+          "Segurança / Airbag lateral": "Não",
+          "Segurança / Airbag motorista": "Sim",
+          "Segurança / Airbag passageiro": "Sim",
+          "Segurança / Alarme": "Sim",
+          "Segurança / Brake light": "Não",
+          "Segurança / Calha de chuva": "Não",
+          "Segurança / Controle de tração": "Sim",
+          "Segurança / Distribuição eletrônica de frenagem": "Sim",
+          "Segurança / Freios abs": "Sim",
+          "Segurança / Kit visibilidade": "Não",
+          "Segurança / Sensor estacionamento ré": "Não",
+          "Segurança / Trava multilock": "Não",
+          "Som / Cd player": "Sim",
+          "Som / Cd player com mp3": "Sim",
+          "Som / Entrada usb": "Sim",
+          "Som / Kit multimídia": "Não",
+          "Som / Kit multimídia com tv e câmera de ré": "Não",
+          "Som / Mylink": "Não",
+          "Som / Rádio com bluetooth": "Não",
+          "Som / Rádio fm/am": "Sim",
+          "Som / Toca-fitas": "Não"
+         }
+        }
+       ]
+      }
+     ],
+     "produtos": {
+      "pares": 15,
+      "por_confianca": {
+       "baixa": 15
+      },
+      "exemplos": [
+       {
+        "group_id": 401344,
+        "chave": "Ford EcoSport",
+        "confianca": "baixa",
+        "produtos_da_chave": 3720
+       },
+       {
+        "group_id": 4113905,
+        "chave": "Ford EcoSport",
+        "confianca": "baixa",
+        "produtos_da_chave": 3720
+       },
+       {
+        "group_id": 8023544,
+        "chave": "Ford EcoSport",
+        "confianca": "baixa",
+        "produtos_da_chave": 3720
+       },
+       {
+        "group_id": 8679344,
+        "chave": "Ford EcoSport",
+        "confianca": "baixa",
+        "produtos_da_chave": 3720
+       },
+       {
+        "group_id": 14077065,
+        "chave": "Ford EcoSport",
+        "confianca": "baixa",
+        "produtos_da_chave": 3720
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

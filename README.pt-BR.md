@@ -65,6 +65,113 @@ de zero km e preços de usado do mesmo código FIPE):
 
 86% no primeiro ano, 57% depois de cinco anos, 39% depois de dez e 28% depois de quinze.
 
+## Como cada veículo está estruturado
+
+As sete tabelas se encaixam numa árvore: **marca → modelo (código FIPE) → ano-modelo → preços por mês e
+versões da ficha técnica**, mais os pares de produto do modelo. O `scripts/make_json.py` escreve essa
+árvore a partir de `sample/` ou dos arquivos completos do Kaggle. O EcoSport acima, resumido (o registro
+inteiro, com os 39 preços e as 81 características de cada versão, está em
+[docs/example-vehicle.json](docs/example-vehicle.json)):
+
+```json
+{
+  "marcas": [
+    {
+      "codigo_marca": 22,
+      "marca": "Ford",
+      "tipo_veiculo": "carro",
+      "modelos": [
+        {
+          "codigo_modelo": 6157,
+          "codigo_fipe": "003367-7",
+          "modelo": "EcoSport FREESTYLE 1.6 16V Flex 5p",
+          "modelo_curto": "EcoSport FREESTYLE",
+          "fonte": "dump",
+          "anos": [
+            {
+              "ano_modelo": 2012,
+              "zero_km": false,
+              "precos": [
+                {"referencia": "2020-01", "valor": 33276, "combustivel": "Gasolina", "fonte": "dump"},
+                {"referencia": "2022-05", "valor": 44119, "combustivel": "Gasolina", "fonte": "dump"},
+                {"referencia": "2023-02", "valor": 42026, "combustivel": "Gasolina", "fonte": "dump"},
+                {"referencia": "2026-10", "valor": 41862, "combustivel": "Flex", "fonte": "fipe_api"}
+              ],
+              "fichas": [
+                {
+                  "id_versao": 37057,
+                  "versao": "Freestyle 1.6 16V (Flex)",
+                  "preco_mobiauto": 41403,
+                  "data_coleta": "2022-09-06",
+                  "motor": {
+                    "combustivel": "Etanol / Gasolina",
+                    "motorizacao": "1.6",
+                    "potencia_cv": "115 (Etanol) / 110 (Gasolina)",
+                    "tracao": "dianteira",
+                    "freios_dianteiros": "Dois freios à disco com dois discos ventilados."
+                  },
+                  "medidas": {
+                    "comprimento_mm": 4239,
+                    "largura_mm": 1734,
+                    "altura_mm": 1672,
+                    "entre_eixos_mm": 2520,
+                    "peso_kg": 1243,
+                    "porta_malas_l": 296,
+                    "tanque_l": 52,
+                    "ocupantes": 5
+                  },
+                  "itens": {
+                    "airbag_motorista": true,
+                    "airbag_passageiro": true,
+                    "freios_abs": true,
+                    "ar_condicionado": true,
+                    "teto_solar": false
+                  },
+                  "caracteristicas": {
+                    "Conforto / Ar condicionado": "Sim",
+                    "Dimensões / Comprimento (mm)": "4239",
+                    "Mecânica / Potência (cv)": "115 (Etanol) / 110 (Gasolina)"
+                  }
+                }
+              ]
+            }
+          ],
+          "produtos": {
+            "pares": 15,
+            "por_confianca": {"baixa": 15},
+            "exemplos": [
+              {"group_id": 401344, "chave": "Ford EcoSport", "confianca": "baixa", "produtos_da_chave": 3720},
+              {
+                "group_id": 4113905,
+                "chave": "Ford EcoSport",
+                "confianca": "baixa",
+                "produtos_da_chave": 3720
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+- `precos`: um item por mês de referência. O combustível mudou de "Gasolina" para "Flex" entre as duas
+  fontes ([qualidade dos dados](docs/data-quality.md), em inglês).
+- `fichas`: todas as versões do Mobiauto daquele código FIPE e ano. A FIPE dá um preço para "EcoSport
+  FREESTYLE 1.6 16V Flex 5p"; o Mobiauto lista duas versões no mesmo código, com potência e itens
+  diferentes.
+- `medidas` e `itens` são colunas tipadas de `fichas`; `caracteristicas` é a mesma página em texto,
+  `"seção / chave": "valor"`.
+- `produtos`: quantos pares por nível de alerta e até cinco exemplos, do melhor nível para o pior. Na
+  amostra, as contagens são as da amostra.
+
+```bash
+python scripts/make_json.py                                           # sample/ -> sample/veiculos_sample.json
+python scripts/make_json.py --fipe 003367-7 --ano 2012 --out carro.json
+python scripts/make_json.py --data <pasta do Kaggle> --out veiculos.jsonl # todos os modelos, um por linha
+```
+
 ## De onde vieram os dados
 
 ![Fontes e tabelas](docs/img/flow.pt-BR.png)
@@ -89,6 +196,19 @@ de zero km e preços de usado do mesmo código FIPE):
 
 Detalhes na [metodologia](docs/methodology.md) (em inglês). O que está errado e o que foi corrigido está no
 [relatório de qualidade](docs/data-quality.md).
+
+### As três fontes da FIPE, com respostas reais
+
+O [docs/apis.md](docs/apis.md) (em inglês) mostra cada pedido e a resposta que veio em 22/10/2026. Resumo:
+
+| Fonte | Chamada | Resposta |
+|---|---|---|
+| g1 | `GET g1.globo.com/static/fipe/json/carro/023067-7.json` | `[{"tipo": "2013 gasolina", "valor": "29732"}, …]`: sem mês de referência, desatualizado |
+| BrasilAPI | `GET brasilapi.com.br/api/fipe/preco/v1/023067-7` | HTTP 500, "Fonte de dados FIPE temporariamente indisponível" |
+| FIPE (usada) | `POST veiculos.fipe.org.br/api/veiculos/ConsultarValorComTodosParametros` | `{"Valor": "R$ 57.839,00", "CodigoFipe": "003367-7", "MesReferencia": "outubro de 2026 ", …}` |
+
+A API oficial pede cinco chamadas POST até o preço: meses de referência, marcas, modelos, anos-modelo e
+preço.
 
 ## Como usar
 
@@ -162,10 +282,10 @@ sample/        todas as linhas de 300 modelos sorteados, em CSV
 schema/        definição das colunas e metadados
 scripts/       exportar_fipe.py (SQL Server -> Parquet), coletor_fipe.py (API oficial da FIPE),
                probe_globo_fipe.py, probe_brasilapi_fipe.py, perfil_fipe.py, build_veiculos.py,
-               validate.py, make_figures.py, docs.py
+               validate.py, make_figures.py, make_json.py, docs.py
 textos/        texto a partir dos dados (python -m textos); tests/ os testes
 notebooks/     eda.ipynb
-docs/          metodologia, qualidade, dicionário de dados, descrição do Kaggle, imagens
+docs/          metodologia, qualidade, APIs, dicionário de dados, JSON de exemplo, descrição do Kaggle, imagens
 kaggle/        dataset-metadata.json
 stats.json     contagens de cada etapa do build
 ```
@@ -174,6 +294,7 @@ stats.json     contagens de cada etapa do build
 
 - [catalogo-produtos-ecommerce-brasil](https://github.com/CaiqueDourado/catalogo-produtos-ecommerce-brasil): os grupos de produto de `veiculo_produto`.
 - [DedupKit](https://github.com/CaiqueDourado/DedupKit): casamento de nomes de produtos em português, o problema por trás do ruído de `veiculo_produto`.
+- [PtBr.Text](https://github.com/CaiqueDourado/PtBr.Text): texto em português a partir de dados para .NET (número por extenso, dinheiro, plural e gênero), a mesma ideia do `textos/`.
 - [municipios-e-estados-do-brasil](https://github.com/CaiqueDourado/municipios-e-estados-do-brasil): estados e municípios, para análises regionais.
 
 ## Licença
