@@ -5,7 +5,7 @@ title: "Tabela FIPE, ficha técnica e autopeças de veículos: FIPE vehicle pric
 authors:
   - family-names: Dourado
     given-names: Caique
-version: 1.0.0
+version: 1.1.0
 date-released: 2026-10-28
 license: CC-BY-4.0
 repository-code: "https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos"

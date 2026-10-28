@@ -9,7 +9,9 @@
 
 ![FIPE prices, specifications and auto parts of Brazilian vehicles](docs/img/cover.png)
 
-Brazilian vehicle data in three parts:
+An open **vehicle database for Brazil**: 245 makes and 11,948 models of cars, motorcycles and trucks
+(make → model → year → version), with FIPE prices, specifications and **auto parts fitment**. CSV sample here,
+Parquet on Kaggle, and a SQLite file and JSON per vehicle in the [releases](https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/releases). In three parts:
 
 - **FIPE prices**, the monthly reference of used and new vehicle prices in Brazil: 1.65 million prices of
   cars, motorcycles and trucks from January 2020 to February 2023, plus October 2026 collected from the
@@ -228,6 +230,12 @@ python scripts/make_product_json.py --data <kaggle folder> --catalog <catalog fo
 The full files (Parquet) are on [Kaggle](https://www.kaggle.com/datasets/caiquedourado/fipe-ficha-tecnica-veiculos).
 This repository has the scripts, the documentation and `sample/`: every row of 300 random models.
 
+The [releases](https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/releases) also have:
+
+- `veiculos.sqlite.gz`: every table in one SQLite file, with indexes; `veiculo_produto` keeps only the
+  `alta` and `media` pairs (`scripts/make_sqlite.py`).
+- `veiculos.jsonl.gz`: one JSON record per model, nested as in the section above (`scripts/make_json.py`).
+
 ## One car in all three parts
 
 **Ford EcoSport Freestyle 1.6 16V Flex 2012** (FIPE code `003367-7`, model 6157), in `sample/`:
@@ -256,6 +264,27 @@ price and used prices of the same FIPE code):
 ![Share of the zero km price by age](docs/img/depreciation.png)
 
 86% in the first year, 57% after five years, 39% after ten and 28% after fifteen.
+
+## The sites this data ran
+
+From 2022 the author ran four vehicle sites on these tables: **Tudo Sobre Carros**
+(tudosobreautomoveiseveiculos.com), **Tudo para Seus Carros**
+([tudoparaseuscarros.com](https://web.archive.org/web/20230123215505/https://tudoparaseuscarros.com/)),
+**Tudo Sobre Motos** ([tudosobreduasrodas.com](https://web.archive.org/web/20230309142752/https://tudosobreduasrodas.com/))
+and **Tudo Sobre Caminhões** ([tudosobrecaminhoes.com](https://web.archive.org/web/20230309142750/https://tudosobrecaminhoes.com/)):
+"auto parts and accessories + specifications + FIPE table", with a page per make, model and version.
+
+![Tudo Sobre Motos](https://raw.githubusercontent.com/CaiqueDourado/CaiqueDourado/main/assets/tudosobreduasrodas.com_screenshot.png)
+![Tudo Sobre Caminhões](https://raw.githubusercontent.com/CaiqueDourado/CaiqueDourado/main/assets/tudosobrecaminhoes.com_screenshot.png)
+
+| On the sites | In this dataset |
+|---|---|
+| Marcas (makes) and a page per model and version | `marcas`, `modelos` |
+| Tabela FIPE, Histórico de Preços (price history) | `precos`, 2020–2023 then, October 2026 added |
+| IPVA (vehicle tax) estimate | `textos/` (`ipva()`), from the FIPE price and a rate you give |
+| Ficha-Técnica (specifications) | `fichas`, `ficha_caracteristicas`, `ficha_titulos` |
+| Peças e Acessórios: "this product fits these vehicles" | `veiculo_produto` |
+| The text of each page ("Tudo sobre <make> <model>") | `textos/` |
 
 ## Where the data came from
 
@@ -353,7 +382,7 @@ sample/        every row of 300 random models, in CSV
 schema/        column definitions and dataset metadata
 scripts/       exportar_fipe.py (SQL Server -> Parquet), coletor_fipe.py (official FIPE API),
                probe_globo_fipe.py, probe_brasilapi_fipe.py, perfil_fipe.py, build_veiculos.py,
-               validate.py, make_figures.py, make_json.py, make_product_json.py,
+               validate.py, make_figures.py, make_json.py, make_product_json.py, make_sqlite.py,
                make_json_image.py, docs.py
 textos/        text from the data (python -m textos); tests/ its tests
 notebooks/     eda.ipynb

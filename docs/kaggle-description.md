@@ -1,6 +1,6 @@
 **Tabela FIPE, ficha técnica e autopeças de veículos**: preços FIPE de carros, motos e caminhões desde 2020, ficha técnica de 37.794 versões e 25,5 milhões de pares veículo × autopeça ou acessório. **FIPE vehicle prices, specifications and auto parts (Brazil)**.
 
-The FIPE table is Brazil's monthly reference of used and new vehicle prices (insurance, taxes, car sales). This dataset has three parts:
+An open **vehicle database for Brazil**: 245 makes and 11,948 models of cars, motorcycles and trucks (make → model → year → version), with FIPE prices, specifications and **auto parts fitment**. The FIPE table is Brazil's monthly reference of used and new vehicle prices (insurance, taxes, car sales). This dataset has three parts:
 
 - **FIPE prices**: 1.65 million prices per month, FIPE code, model year and fuel, January 2020 to February 2023 (the author's collection for his vehicle sites) plus October 2026 from the official FIPE API.
 - **Specifications** of 37,794 car and motorcycle versions (Mobiauto, September 2022): engine, power, consumption, dimensions and 58 yes/no items.
@@ -38,6 +38,16 @@ How much of the zero km price a car keeps, by age, in October 2026 (median of 91
 - `ficha_titulos.parquet`: section titles and FAQ questions for writing text from the specifications.
 - `veiculo_produto.parquet`: vehicle model × product group, with how many products the key matched and the warning level.
 
+## The sites this data ran
+
+From 2022 these tables ran four sites by the author, "auto parts and accessories + specifications + FIPE table" with a page per make, model and version: Tudo Sobre Carros, Tudo para Seus Carros (https://web.archive.org/web/20230123215505/https://tudoparaseuscarros.com/), Tudo Sobre Motos (https://web.archive.org/web/20230309142752/https://tudosobreduasrodas.com/) and Tudo Sobre Caminhões (https://web.archive.org/web/20230309142750/https://tudosobrecaminhoes.com/). The parts pages listed "this product fits these vehicles": that is `veiculo_produto`.
+
+![Tudo Sobre Motos](https://raw.githubusercontent.com/CaiqueDourado/CaiqueDourado/main/assets/tudosobreduasrodas.com_screenshot.png)
+
+![Tudo Sobre Caminhões](https://raw.githubusercontent.com/CaiqueDourado/CaiqueDourado/main/assets/tudosobrecaminhoes.com_screenshot.png)
+
+The GitHub releases also have the whole dataset as one SQLite file (pairs `alta` and `media`) and as JSON, one record per model: https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/releases
+
 ## How it was collected
 
 ![Sources and tables](https://raw.githubusercontent.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/main/docs/img/flow.png)
@@ -58,4 +68,4 @@ Methodology, data quality report, data dictionary (EN and PT), scripts and a sam
 - [Municípios e estados do Brasil](https://www.kaggle.com/datasets/caiquedourado/municipios-e-estados-do-brasil)
 - [DedupKit](https://github.com/CaiqueDourado/DedupKit): matching product names in Portuguese
 
-License: CC BY 4.0 for the compilation and derived columns; prices by FIPE. Version 1.0.0. Author: Caique Dourado.
+License: CC BY 4.0 for the compilation and derived columns; prices by FIPE. Version 1.1.0. Author: Caique Dourado.

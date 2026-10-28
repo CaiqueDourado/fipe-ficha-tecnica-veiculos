@@ -2,6 +2,13 @@
 
 Versions follow [Semantic Versioning](https://semver.org/): a new major version renames or removes columns.
 
+## [1.1.0] - 2026-10-28
+
+### Added
+- `scripts/make_sqlite.py`: the whole dataset as one SQLite file with indexes (`veiculo_produto` with `alta` and `media` pairs by default); release asset `veiculos.sqlite.gz`.
+- Release asset `veiculos.jsonl.gz`: one nested JSON record per model (`scripts/make_json.py`).
+- README and Kaggle: the four vehicle sites these tables ran (Tudo Sobre Carros, Tudo para Seus Carros, Tudo Sobre Motos, Tudo Sobre Caminhões), with what each part of the sites became in the dataset.
+
 ## [1.0.0] - 2026-10-28
 
 ### Added

@@ -9,7 +9,9 @@
 
 ![Preços FIPE, ficha técnica e autopeças de veículos do Brasil](docs/img/cover.pt-BR.png)
 
-Dados de veículos do Brasil em três partes:
+Uma **base aberta de veículos do Brasil**: 245 marcas e 11.948 modelos de carros, motos e caminhões
+(marca → modelo → ano → versão), com preços FIPE, ficha técnica e **compatibilidade de autopeças**. Amostra
+em CSV aqui, Parquet no Kaggle, e um arquivo SQLite e o JSON por veículo nas [releases](https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/releases). Em três partes:
 
 - **Preços FIPE**, a referência mensal de preços de veículos usados e novos no Brasil. São 1,65 milhão de
   preços de carros, motos e caminhões, de janeiro de 2020 a fevereiro de 2023, mais outubro de 2026,
@@ -231,6 +233,12 @@ Os arquivos completos (Parquet) estão no [Kaggle](https://www.kaggle.com/datase
 Este repositório tem os scripts, a documentação e a pasta `sample/`, com todas as linhas de 300 modelos
 sorteados.
 
+As [releases](https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos/releases) também têm:
+
+- `veiculos.sqlite.gz`: todas as tabelas num arquivo SQLite, com índices; `veiculo_produto` só com os pares
+  `alta` e `media` (`scripts/make_sqlite.py`).
+- `veiculos.jsonl.gz`: um registro JSON por modelo, aninhado como na seção acima (`scripts/make_json.py`).
+
 ## Um carro nas três partes
 
 **Ford EcoSport Freestyle 1.6 16V Flex 2012** (código FIPE `003367-7`, modelo 6157), em `sample/`:
@@ -260,6 +268,27 @@ de zero km e preços de usado do mesmo código FIPE):
 ![Parte do preço de zero km por idade](docs/img/depreciation.pt-BR.png)
 
 86% no primeiro ano, 57% depois de cinco anos, 39% depois de dez e 28% depois de quinze.
+
+## Os sites que rodavam com estes dados
+
+A partir de 2022 o autor manteve quatro sites de veículos sobre estas tabelas: **Tudo Sobre Carros**
+(tudosobreautomoveiseveiculos.com), **Tudo para Seus Carros**
+([tudoparaseuscarros.com](https://web.archive.org/web/20230123215505/https://tudoparaseuscarros.com/)),
+**Tudo Sobre Motos** ([tudosobreduasrodas.com](https://web.archive.org/web/20230309142752/https://tudosobreduasrodas.com/))
+e **Tudo Sobre Caminhões** ([tudosobrecaminhoes.com](https://web.archive.org/web/20230309142750/https://tudosobrecaminhoes.com/)):
+"peças e acessórios + ficha técnica + tabela FIPE", com uma página por marca, modelo e versão.
+
+![Tudo Sobre Motos](https://raw.githubusercontent.com/CaiqueDourado/CaiqueDourado/main/assets/tudosobreduasrodas.com_screenshot.png)
+![Tudo Sobre Caminhões](https://raw.githubusercontent.com/CaiqueDourado/CaiqueDourado/main/assets/tudosobrecaminhoes.com_screenshot.png)
+
+| Nos sites | Neste dataset |
+|---|---|
+| Marcas e uma página por modelo e versão | `marcas`, `modelos` |
+| Tabela FIPE, Histórico de Preços | `precos`, 2020–2023 na época, outubro de 2026 acrescentado |
+| Estimativa de IPVA | `textos/` (`ipva()`), a partir do preço FIPE e de uma alíquota informada |
+| Ficha-Técnica | `fichas`, `ficha_caracteristicas`, `ficha_titulos` |
+| Peças e Acessórios: "esse produto é indicado para os seguintes veículos" | `veiculo_produto` |
+| O texto de cada página ("Tudo sobre <marca> <modelo>") | `textos/` |
 
 ## De onde vieram os dados
 
@@ -371,7 +400,7 @@ sample/        todas as linhas de 300 modelos sorteados, em CSV
 schema/        definição das colunas e metadados
 scripts/       exportar_fipe.py (SQL Server -> Parquet), coletor_fipe.py (API oficial da FIPE),
                probe_globo_fipe.py, probe_brasilapi_fipe.py, perfil_fipe.py, build_veiculos.py,
-               validate.py, make_figures.py, make_json.py, make_product_json.py,
+               validate.py, make_figures.py, make_json.py, make_product_json.py, make_sqlite.py,
                make_json_image.py, docs.py
 textos/        texto a partir dos dados (python -m textos); tests/ os testes
 notebooks/     eda.ipynb
